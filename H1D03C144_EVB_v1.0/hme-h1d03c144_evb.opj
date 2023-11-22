@@ -1,0 +1,38 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\hme-h1m03c144_evb.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\hme-h1m03c144_evb.dsn")
+      (Path "Design Resources" ".\hme-h1m03c144_evb.dsn" "SCHEMATIC1")
+      (Select "Design Resources" ".\hme-h1m03c144_evb.dsn" "SCHEMATIC1"
+         "PAGE01:H1D03_IO"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 417"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1700 52 580")
+        (Scroll "-40 214")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\THINKPAD\DESKTOP\DOC\PRODUCT\H6\MG144\H1M03C144_REF\H1M03C144_EVB\HME-H1M03C144_EVB.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE01:H1D03_IO")))
+  (MPSSessionName "Thinkpad"))
