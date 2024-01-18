@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project_status>
+    <project_file_status size="4304" time_stamp="1594411224000" checksum="61e6be73b9fe12a9874a184f19245f6f"/>
+    <file_signature size="8822" time_stamp="1577325584000" checksum="6f48bb473b50a1f25e6f71547c493856" name="constraint/mipi_rx_pinf_tx_pinf_1080.sdc"/>
+    <file_signature size="0" time_stamp="0" checksum="" name="debug/profile_1/mipi_rx_pinf_tx_pinf_1080.aoc"/>
+    <file_signature size="0" time_stamp="0" checksum="" name="debug/test0/mipi_rx_pinf_tx_pinf_1080.aoc"/>
+    <file_signature size="7516" time_stamp="1592841062000" checksum="feb32d8e867f747fb8e775340c41e688" name="mipi_rx_pinf_tx_pinf_1080.aoc"/>
+    <file_signature size="1164" time_stamp="1571713694000" checksum="3a44db2c3ab429162198e93140256ff9" name="src/clkctrlswitch_0.v"/>
+    <file_signature size="1165" time_stamp="1574115882000" checksum="3572d2ea69e4622631264ff7585bfb93" name="src/clkctrlswitch_1.v"/>
+    <file_signature size="1165" time_stamp="1573941664000" checksum="57821851d94a039093157c00c8484dde" name="src/clkctrlswitch_2.v"/>
+    <file_signature size="1165" time_stamp="1573941680000" checksum="c7c9a7aacefdd4f517f9f5bf2356a47d" name="src/clkctrlswitch_3.v"/>
+    <file_signature size="1164" time_stamp="1571764112000" checksum="c8c888e6541b583e7307c8c6e4229a9a" name="src/clkctrlswitch_5.v"/>
+    <file_signature size="1164" time_stamp="1572657122000" checksum="f88b430663f1fdd83eaf850921915a66" name="src/clkctrlswitch_6.v"/>
+    <file_signature size="7521" time_stamp="1585795278000" checksum="5360bb63d05b26ea702f04efc06b6f8d" name="src/dataReadBack.v"/>
+    <file_signature size="3028" time_stamp="1576522416000" checksum="6b5cf5db8747d47ee1d0f745255037fb" name="src/dataReadBack_fifo.v"/>
+    <file_signature size="2597" time_stamp="1571109216000" checksum="943842f96b00848686111a2bce193200" name="src/ddr_io.v"/>
+    <file_signature size="6953" time_stamp="1573769718000" checksum="dc91c88d1563ea19e458450604c0e2e2" name="src/ddrio_lvds.v"/>
+    <file_signature size="1950" time_stamp="1572376680000" checksum="8c0fc8f23670752f724fb5ec9b749ffa" name="src/ddrio_v1.v"/>
+    <file_signature size="2821" time_stamp="1573522812000" checksum="843ce73e9923f0d593a0a537b9d45572" name="src/debugware_v2_1.v"/>
+    <file_signature size="1909" time_stamp="1562704014000" checksum="d48b5c8cfdf1599fb33dbb441823b25e" name="src/delaybuf.v"/>
+    <file_signature size="929" time_stamp="1562182266000" checksum="21f2746224cc3b3401ff11e27730f601" name="src/delaybuf_v1_1.v"/>
+    <file_signature size="1156" time_stamp="1576108218000" checksum="87667a9f2d83051faaa1004901fa2ff1" name="src/emb1.v"/>
+    <file_signature size="18443" time_stamp="1582326094000" checksum="4d52ac80b65ee70659e2ff9103c98b42" name="src/emb_2340_1080_to_1560_720.dat"/>
+    <file_signature size="4227" time_stamp="1562365488000" checksum="bb79779d6dd97436d8f8765bef77acf1" name="src/emif2apb.v"/>
+    <file_signature size="44815" time_stamp="1594411072000" checksum="54c34aabf6af32be2d9c7e791f04cc35" name="src/enc_psram_fb_top_all.v"/>
+    <file_signature size="56090" time_stamp="1585608292000" checksum="4a8d37a4bf89dbadc361d01878d7dd58" name="src/enc_sc_down_top_all_ok.v"/>
+    <file_signature size="1989" time_stamp="1574988436000" checksum="be6aec5486da3c41cffde021c4dc6c4d" name="src/fifo_32_1k.v"/>
+    <file_signature size="4023" time_stamp="1573512184000" checksum="e72fb87e504ebfef043849c95a3244c1" name="src/fifo_mcu_rd_ram.v"/>
+    <file_signature size="1362" time_stamp="1573512184000" checksum="3ddb1d453e4f66e31cd4b4c88edbd37b" name="src/fifo_mcu_rd_ram_emb_v1.v"/>
+    <file_signature size="4032" time_stamp="1573512166000" checksum="c0c9db37115f99e7e5861d3af1bd1e69" name="src/fifo_mcu_wr_ram.v"/>
+    <file_signature size="1348" time_stamp="1573512166000" checksum="7dffcea7db7e478e8adb873f176dbe58" name="src/fifo_mcu_wr_ram_emb_v1.v"/>
+    <file_signature size="2483" time_stamp="1573779062000" checksum="53acca759e363ab9572be90c058f50b4" name="src/fifo_mipi_rx.v"/>
+    <file_signature size="7031" time_stamp="1567662606000" checksum="6cdac103c140b8840c7d214c3962a4f2" name="src/fifo_pdata_emb_v1.v"/>
+    <file_signature size="2419" time_stamp="1576187388000" checksum="82341252c9db2dea9e40592d2cfbe05a" name="src/fifo_pdata_hard.v"/>
+    <file_signature size="1461" time_stamp="1571947000000" checksum="50b4650cb64b9df83cf9ff63ea9d03ac" name="src/fifo_pram_wr_top.v"/>
+    <file_signature size="1945" time_stamp="1572030386000" checksum="f0db03a5ed0f527e517b13d2d93f5e14" name="src/fifo_pram_wr_top_quarter.v"/>
+    <file_signature size="2561" time_stamp="1570931688000" checksum="e4dc3df3570f97e70bd2baeff1df40be" name="src/fifo_psram_io_rd.v"/>
+    <file_signature size="1327" time_stamp="1569003404000" checksum="b15240e2aea7be716f3d18c011eeafcc" name="src/fifo_psram_io_rd_emb_v1.v"/>
+    <file_signature size="2582" time_stamp="1574459812000" checksum="4f0ea0ecb44cc3defd4ac392bdde0a15" name="src/fifo_psram_lbuf.v"/>
+    <file_signature size="1928" time_stamp="1571250616000" checksum="0f9395b9fcaa66c7b8d94745c3c93a99" name="src/fifo_psram_lbuf_emb_v1.v"/>
+    <file_signature size="2530" time_stamp="1576534584000" checksum="f1566face49a45cb8ac486d78ad80023" name="src/fifo_psram_lbuf_rd.v"/>
+    <file_signature size="7160" time_stamp="1571182922000" checksum="3592d025d07f7485bc64d1c92f99fba3" name="src/fifo_psram_lbuf_rd_emb_v1.v"/>
+    <file_signature size="2574" time_stamp="1574109208000" checksum="7e67ac0d97a365a37f6415e5b51e7034" name="src/fifo_pwr_half.v"/>
+    <file_signature size="2306" time_stamp="1573702452000" checksum="985449ad870ae3e3af2c2b8d790166ef" name="src/fifo_pwr_quarter.v"/>
+    <file_signature size="889" time_stamp="1573527510000" checksum="f9d495212ef87ad21406d150c4018393" name="src/gbuf_v1_1.v"/>
+    <file_signature size="4056" time_stamp="1585892430000" checksum="574fd1d5adc7c71452cd01093d1bca3f" name="src/glue.v"/>
+    <file_signature size="3055" time_stamp="1576637818000" checksum="148ac7d6fcfefb2f0c90749589e8beae" name="src/h1mac_v2.v"/>
+    <file_signature size="3130" time_stamp="1575584098000" checksum="cac85db35b81844a8571eeb5fb619dbe" name="src/h6_mac.v"/>
+    <file_signature size="2718" time_stamp="1567722970000" checksum="eacd3fc4e3b55c5141dc07848ae04f0d" name="src/hard_fifo_18x10.v"/>
+    <file_signature size="3140" time_stamp="1576106352000" checksum="59cf6ec30944b261956fb33470231e9c" name="src/mac_psram.v"/>
+    <file_signature size="15448" time_stamp="1576806656000" checksum="ec54f073f9b0a0e914846ffd284400c5" name="src/mcu_arbiter.v"/>
+    <file_signature size="4002" time_stamp="1575681596000" checksum="87f5c82d828af0e9dd640f62acf48939" name="src/mcu_v1.v"/>
+    <file_signature size="23685" time_stamp="1594411168000" checksum="20a0001a74b9c647300565591e14caa7" name="src/mipi_rx_pinf_tx_pinf_1080.v"/>
+    <file_signature size="15045" time_stamp="1576803422000" checksum="c3cf92ac9333cf7a79118725eec43851" name="src/mipi_v1.v"/>
+    <file_signature size="1690" time_stamp="1576192118000" checksum="934f10bf039b3015275b643bfd8ab2a5" name="src/packet_asm.v"/>
+    <file_signature size="6834" time_stamp="1582592266000" checksum="c951c16b2e954b6f04c7c07bdcfc8edf" name="src/pattern_gen.v"/>
+    <file_signature size="6372" time_stamp="1571773780000" checksum="5fae8b0c9adf0b03d08a0b2bd27ab0ae" name="src/pattern_gen_test.v"/>
+    <file_signature size="5569" time_stamp="1585892444000" checksum="702b74b2b6d8b5d20e38997c79f2db5d" name="src/pll_v1.v"/>
+    <file_signature size="871" time_stamp="1562610690000" checksum="3227da6a088a31e7e07cdd79f42eb147" name="src/por_v1_1.v"/>
+    <file_signature size="2856" time_stamp="1573687790000" checksum="138fe89ef62a91092486e2ce7c10c0af" name="src/psram_io_ddr.v"/>
+    <file_signature size="1745" time_stamp="1553036726000" checksum="83bbbc042ffe85e13b8fb8da2abf5b7b" name="src/psram_wrap.v"/>
+    <file_signature size="14928" time_stamp="1585892772000" checksum="ea96093f18c13e3b3ad5fd665e996db7" name="src/rx_packet_cmd_mode_dpi.v"/>
+    <file_signature size="2292" time_stamp="1576697330000" checksum="853fdd035b7cdb9ade56c52c6a6fb3af" name="src/scc2v/fifo_32s_1k.v"/>
+    <file_signature size="2929" time_stamp="1576697316000" checksum="1b84cc414f3be083619e06d53ebc7bb6" name="src/scc2v/hard_fifos_18x10.v"/>
+    <file_signature size="11402" time_stamp="1576110074000" checksum="c13982caa8e3bc754de556f9bccdd2c4" name="src/sdpram.v"/>
+    <file_signature size="1066" time_stamp="1574534484000" checksum="03afca99e73a77e82caf3dfaa3e7fd7c" name="src/spiInterface_v1.v"/>
+    <file_signature size="1232" time_stamp="1582326138000" checksum="63c580637a1f4577065a0274bff88148" name="src/sram_v2.v"/>
+    <file_signature size="1065" time_stamp="1585792026000" checksum="7fa70375cd0a8fb0c9775a539c266fed" name="src/te_gen.v"/>
+    <file_signature size="4056" time_stamp="1576642602000" checksum="c2d3d807505638b26f884fd62258f197" name="src/tsc_fifo_v2.v"/>
+    <file_signature size="6894" time_stamp="1576642602000" checksum="9b516e6faddfde7435734c86d1fb8bc1" name="src/tsc_fifo_v2_emb_v1.v"/>
+    <flow_status>
+        <status status="NeedRun" error_count="0" end="" run_time="0" start="" flow="synthesis" warning_count="0"/>
+        <status status="NeedRun" error_count="0" end="" run_time="0" start="" flow="placer" warning_count="0"/>
+        <status status="NeedRun" error_count="0" end="" run_time="0" start="" flow="router" warning_count="0"/>
+        <status status="NeedRun" error_count="0" end="" run_time="0" start="" flow="bitgen" warning_count="0"/>
+        <status status="NeedRun" error_count="0" end="" run_time="0" start="" flow="timer" warning_count="0"/>
+        <status status="NeedRun" flow="ixplorer"/>
+        <status profile="test0" status="NeedRun" flow="signal_monitor"/>
+        <status profile="profile_1" status="NeedRun" flow="signal_monitor"/>
+    </flow_status>
+    <io_editor_enabled value="false"/>
+    <io_editor_outdated value="false"/>
+    <sdc_editor_outdated value="false"/>
+    <ixplorer clock="" count="-1" msecs="-1" scan_high="-1" scan_low="-1" target_fmax="-1"/>
+    <pin_alias/>
+    <opened_file>
+        <file name="$(PRJ_DIR)/constraint/mipi_rx_pinf_tx_pinf_1080.sdc"/>
+        <file name="$(PRJ_DIR)/src/dataReadBack.v"/>
+        <file name="$(PRJ_DIR)/src/ddrio_lvds.v"/>
+        <file name="$(PRJ_DIR)/src/mipi_rx_pinf_tx_pinf_1080.v"/>
+    </opened_file>
+    <tools/>
+    <platform value="win64"/>
+</project_status>

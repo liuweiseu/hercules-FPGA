@@ -1,0 +1,548 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/26/2019  09:30:38  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\STARTUP_M5.obj, .\Objects\main.obj TO .\Objects\mipi_rx_pinf_tx_pinf_1080 PRINT (.
+>> \Listings\mipi_rx_pinf_tx_pinf_1080.m51) RAMSIZE (256) CODE (0X0000-0X5FFF) XDATA (0X6000-0X7FFF)
+
+
+MEMORY MODEL: LARGE
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP_M5.obj (?C_STARTUP)
+  .\Objects\main.obj (MAIN)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C_INIT)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?CLDPTR)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?CLDOPTR)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?ULCMP)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?LSTPTR)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?LSTXDATA)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?LSTKXDATA)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?LSTIDATA)
+  C:\KEIL_V5\C51\LIB\C51L.LIB (?C?LSTPDATA)
+
+
+LINK MAP OF MODULE:  .\Objects\mipi_rx_pinf_tx_pinf_1080 (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+                    0008H     0018H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         _BIT_GROUP_
+                    0020H.1   0000H.7                *** GAP ***
+            IDATA   0021H     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+                    0000H     6000H                  *** GAP ***
+            XDATA   6000H     0132H     UNIT         ?XD?MAIN
+            XDATA   6132H     0011H     UNIT         _XDATA_GROUP_
+                    6143H     1EBDH                  *** GAP ***
+            XDATA   8000H     0004H     ABSOLUTE     
+            XDATA   8004H     0004H     ABSOLUTE     
+            XDATA   8008H     0004H     ABSOLUTE     
+            XDATA   800CH     0004H     ABSOLUTE     
+            XDATA   8010H     0004H     ABSOLUTE     
+            XDATA   8014H     0004H     ABSOLUTE     
+            XDATA   8018H     0004H     ABSOLUTE     
+            XDATA   801CH     0004H     ABSOLUTE     
+            XDATA   8020H     0004H     ABSOLUTE     
+            XDATA   8024H     0004H     ABSOLUTE     
+            XDATA   8028H     0004H     ABSOLUTE     
+            XDATA   802CH     0004H     ABSOLUTE     
+            XDATA   8030H     0004H     ABSOLUTE     
+                    8034H     01CCH                  *** GAP ***
+            XDATA   8200H     0004H     ABSOLUTE     
+            XDATA   8204H     0004H     ABSOLUTE     
+            XDATA   8208H     0004H     ABSOLUTE     
+            XDATA   820CH     0004H     ABSOLUTE     
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 2
+
+
+            XDATA   8210H     0004H     ABSOLUTE     
+            XDATA   8214H     0004H     ABSOLUTE     
+            XDATA   8218H     0004H     ABSOLUTE     
+            XDATA   821CH     0004H     ABSOLUTE     
+            XDATA   8220H     0004H     ABSOLUTE     
+            XDATA   8224H     0004H     ABSOLUTE     
+            XDATA   8228H     0004H     ABSOLUTE     
+            XDATA   822CH     0004H     ABSOLUTE     
+            XDATA   8230H     0004H     ABSOLUTE     
+            XDATA   8234H     0004H     ABSOLUTE     
+            XDATA   8238H     0004H     ABSOLUTE     
+            XDATA   823CH     0004H     ABSOLUTE     
+            XDATA   8240H     0004H     ABSOLUTE     
+                    8244H     00BCH                  *** GAP ***
+            XDATA   8300H     0004H     ABSOLUTE     
+            XDATA   8304H     0004H     ABSOLUTE     
+            XDATA   8308H     0004H     ABSOLUTE     
+            XDATA   830CH     0004H     ABSOLUTE     
+            XDATA   8310H     0004H     ABSOLUTE     
+            XDATA   8314H     0004H     ABSOLUTE     
+            XDATA   8318H     0004H     ABSOLUTE     
+            XDATA   831CH     0004H     ABSOLUTE     
+            XDATA   8320H     0004H     ABSOLUTE     
+                    8324H     00DCH                  *** GAP ***
+            XDATA   8400H     0004H     ABSOLUTE     
+            XDATA   8404H     0004H     ABSOLUTE     
+            XDATA   8408H     0004H     ABSOLUTE     
+            XDATA   840CH     0004H     ABSOLUTE     
+            XDATA   8410H     0004H     ABSOLUTE     
+            XDATA   8414H     0004H     ABSOLUTE     
+            XDATA   8418H     0004H     ABSOLUTE     
+            XDATA   841CH     0004H     ABSOLUTE     
+            XDATA   8420H     0004H     ABSOLUTE     
+            XDATA   8424H     0004H     ABSOLUTE     
+            XDATA   8428H     0004H     ABSOLUTE     
+            XDATA   842CH     0004H     ABSOLUTE     
+                    8430H     0250H                  *** GAP ***
+            XDATA   8680H     0004H     ABSOLUTE     
+            XDATA   8684H     0004H     ABSOLUTE     
+                    8688H     0178H                  *** GAP ***
+            XDATA   8800H     0001H     ABSOLUTE     
+                    8801H     0003H                  *** GAP ***
+            XDATA   8804H     0001H     ABSOLUTE     
+            XDATA   8805H     0001H     ABSOLUTE     
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     055CH     UNIT         ?PR?MAIN?MAIN
+            CODE    055FH     014AH     UNIT         ?C_INITSEG
+            CODE    06A9H     00C6H     UNIT         ?C?LIB_CODE
+            CODE    076FH     00B3H     UNIT         ?PR?_MIPI_LP_CMD_SEND?MAIN
+            CODE    0822H     008CH     UNIT         ?C_C51STARTUP
+            CODE    08AEH     0052H     UNIT         ?PR?_MYDELAY?MAIN
+            CODE    0900H     0032H     UNIT         ?PR?FIFORST?MAIN
+            CODE    0932H     001AH     UNIT         ?PR?_HS_ENTER?MAIN
+            CODE    094CH     0004H     UNIT         ?PR?_MIPI_CFG_SET?MAIN
+            CODE    0950H     0001H     UNIT         ?PR?PANEL_INIT?MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 3
+
+
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\mipi_rx_pinf_tx_pinf_1080 (?C_STARTUP)
+
+
+SEGMENT                               BIT_GROUP          XDATA_GROUP
+  +--> CALLED SEGMENT              START    LENGTH     START    LENGTH
+----------------------------------------------------------------------
+?C_C51STARTUP                      -----    -----      -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                      0020H.0  0000H.1    6132H    0001H
+  +--> ?PR?_MIPI_CFG_SET?MAIN
+  +--> ?PR?_MYDELAY?MAIN
+  +--> ?PR?_MIPI_LP_CMD_SEND?MAIN
+
+?PR?_MYDELAY?MAIN                  -----    -----      613BH    0008H
+
+?PR?_MIPI_LP_CMD_SEND?MAIN         -----    -----      6133H    0007H
+  +--> ?PR?_HS_ENTER?MAIN
+  +--> ?PR?FIFORST?MAIN
+
+?PR?FIFORST?MAIN                   -----    -----      613AH    0001H
+  +--> ?PR?_MYDELAY?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\mipi_rx_pinf_tx_pinf_1080 (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0822H         SEGMENT       ?C_C51STARTUP
+  I:0021H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0100H         SYMBOL        IDATALEN
+  C:0825H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0822H         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 4
+
+
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         127
+  C:0822H         LINE#         134
+  C:0824H         LINE#         135
+  C:0825H         LINE#         136
+  C:0826H         LINE#         137
+  C:0828H         LINE#         186
+  C:082BH         LINE#         197
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  C:0900H         SYMBOL        fiforst
+  X:8400H         PUBLIC        periph_lanes
+  X:820CH         PUBLIC        host_rbg_fmt
+  X:8018H         PUBLIC        host_ext_cmd
+  X:802CH         PUBLIC        host_status_ro
+  X:8314H         PUBLIC        host_phy_clk_trail
+  B:0080H.0       PUBLIC        P0_0
+  X:8030H         PUBLIC        host_error_ro
+  B:0080H.1       PUBLIC        P0_1
+  C:076FH         PUBLIC        _mipi_lp_cmd_send
+  B:0080H.2       PUBLIC        P0_2
+  B:0080H.3       PUBLIC        P0_3
+  B:0080H.4       PUBLIC        P0_4
+  B:0080H.5       PUBLIC        P0_5
+  B:0080H.7       PUBLIC        P0_7
+  X:823CH         PUBLIC        host_vactive
+  X:831CH         PUBLIC        host_pll_cm
+  X:8318H         PUBLIC        host_pll_cn
+  X:8320H         PUBLIC        host_pll_co
+  X:8418H         PUBLIC        periph_bta
+  C:0003H         PUBLIC        main
+  X:8028H         PUBLIC        host_twakeup
+  X:8408H         PUBLIC        periph_vc_check
+  X:8010H         PUBLIC        host_tx_gap
+  D:0095H         PUBLIC        D_PAGESEL
+  C:0950H         SYMBOL        panel_init
+  X:8214H         PUBLIC        host_hs_pol
+  X:6000H         PUBLIC        cfg_data
+  X:8684H         PUBLIC        periph_mc_settle
+  X:830CH         PUBLIC        host_phy_clk_zero
+  X:842CH         PUBLIC        periph_clr_status
+  X:8424H         PUBLIC        periph_dis_rlpdt
+  X:8310H         PUBLIC        host_phy_d_trail
+  X:8210H         PUBLIC        host_vs_pol
+  X:8304H         PUBLIC        host_phy_clk_pre
+  X:8800H         PUBLIC        cmd_fifo
+  X:800CH         PUBLIC        host_t_post
+  X:8008H         PUBLIC        host_t_pre
+  X:8228H         PUBLIC        host_en_mult_pkts
+  X:8410H         PUBLIC        periph_hrx
+  X:8208H         PUBLIC        host_color_code
+  X:6094H         PUBLIC        peri_cfg_data
+  X:8218H         PUBLIC        host_video_mode
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 5
+
+
+  X:8204H         PUBLIC        host_fifo_level
+  X:840CH         PUBLIC        periph_ecc_err
+  X:8238H         PUBLIC        host_en_null_pkt
+  X:8414H         PUBLIC        periph_ltx
+  X:8404H         PUBLIC        periph_vc
+  X:8428H         PUBLIC        periph_dis_eotp
+  B:00A8H.0       PUBLIC        EX0
+  B:00A8H.2       PUBLIC        EX1
+  X:8680H         PUBLIC        periph_m_settle
+  X:8420H         PUBLIC        periph_bta_err
+  X:841CH         PUBLIC        periph_crc_err
+  B:00A8H.7       PUBLIC        EAL
+  X:8234H         PUBLIC        host_bllp_mode
+  X:8804H         PUBLIC        mipi_sel
+  X:8308H         PUBLIC        host_phy_d_zero
+  X:8805H         PUBLIC        func_set
+  X:8220H         PUBLIC        host_hbp
+  X:8020H         PUBLIC        host_lpdt_timer
+  C:0932H         SYMBOL        _hs_enter
+  X:8224H         PUBLIC        host_hsa
+  X:8024H         PUBLIC        host_bta_timer
+  X:821CH         PUBLIC        host_hfp
+  X:8300H         PUBLIC        host_phy_d_pre
+  X:8004H         PUBLIC        host_noctn_clk
+  X:8200H         PUBLIC        host_line_size
+  X:8000H         PUBLIC        host_num_lanes
+  X:822CH         PUBLIC        host_vbp
+  X:8230H         PUBLIC        host_vfp
+  X:801CH         PUBLIC        host_hstx_timer
+  D:008EH         PUBLIC        CKCON
+  C:094CH         SYMBOL        _mipi_cfg_set
+  X:6128H         PUBLIC        cmd_cfg_data0
+  X:612AH         PUBLIC        cmd_cfg_data1
+  X:612CH         PUBLIC        cmd_cfg_data2
+  X:8014H         PUBLIC        host_auto_eotp
+  X:612EH         PUBLIC        cmd_cfg_data3
+  X:6130H         PUBLIC        cmd_cfg_data4
+  C:08AEH         SYMBOL        _mydelay
+  X:8240H         PUBLIC        host_vc
+  -------         PROC          _MIPI_CFG_SET
+  D:0001H         SYMBOL        reg
+  D:0004H         SYMBOL        dat
+  C:094CH         LINE#         164
+  C:094CH         LINE#         165
+  C:094CH         LINE#         166
+  C:094FH         LINE#         168
+  -------         ENDPROC       _MIPI_CFG_SET
+  -------         PROC          _MYDELAY
+  X:613BH         SYMBOL        delay
+  -------         DO            
+  X:613FH         SYMBOL        i
+  -------         ENDDO         
+  C:08AEH         LINE#         176
+  C:08B4H         LINE#         177
+  C:08B4H         LINE#         179
+  C:08FFH         LINE#         180
+  -------         ENDPROC       _MYDELAY
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 6
+
+
+  -------         PROC          FIFORST
+  -------         DO            
+  X:613AH         SYMBOL        tmp
+  -------         ENDDO         
+  C:0900H         LINE#         182
+  C:0900H         LINE#         183
+  C:0900H         LINE#         185
+  C:0908H         LINE#         186
+  C:090CH         LINE#         187
+  C:0910H         LINE#         188
+  C:091BH         LINE#         189
+  C:0922H         LINE#         190
+  C:0926H         LINE#         191
+  C:0931H         LINE#         192
+  -------         ENDPROC       FIFORST
+  -------         PROC          _HS_ENTER
+  D:0007H         SYMBOL        flag
+  -------         DO            
+  D:0006H         SYMBOL        tmp
+  -------         ENDDO         
+  C:0932H         LINE#         194
+  C:0932H         LINE#         195
+  C:0932H         LINE#         197
+  C:0937H         LINE#         198
+  C:093AH         LINE#         199
+  C:093AH         LINE#         200
+  C:093EH         LINE#         201
+  C:0940H         LINE#         203
+  C:0940H         LINE#         204
+  C:0944H         LINE#         205
+  C:0944H         LINE#         206
+  C:094BH         LINE#         207
+  -------         ENDPROC       _HS_ENTER
+  -------         PROC          _MIPI_LP_CMD_SEND
+  X:6133H         SYMBOL        cmd_set
+  X:6134H         SYMBOL        cmd_length
+  X:6136H         SYMBOL        buf
+  X:6139H         SYMBOL        long_cmd
+  -------         DO            
+  D:0006H         SYMBOL        u16j
+  D:0005H         SYMBOL        tmp
+  -------         ENDDO         
+  C:076FH         LINE#         282
+  C:0783H         LINE#         283
+  C:0783H         LINE#         286
+  C:0788H         LINE#         287
+  C:078BH         LINE#         289
+  C:0793H         LINE#         290
+  C:0799H         LINE#         291
+  C:0799H         LINE#         292
+  C:07A1H         LINE#         294
+  C:07A5H         LINE#         295
+  C:07A7H         LINE#         297
+  C:07A8H         LINE#         298
+  C:07AAH         LINE#         302
+  C:07B9H         LINE#         303
+  C:07B9H         LINE#         305
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 7
+
+
+  C:07CFH         LINE#         307
+  C:07D6H         LINE#         308
+  C:07DBH         LINE#         309
+  C:07DCH         LINE#         310
+  C:07DDH         LINE#         311
+  C:07DEH         LINE#         317
+  C:07E0H         LINE#         318
+  C:07E3H         LINE#         319
+  C:07E5H         LINE#         320
+  C:07E8H         LINE#         321
+  C:07E9H         LINE#         323
+  C:07E9H         LINE#         325
+  C:07FBH         LINE#         326
+  C:0807H         LINE#         328
+  C:0811H         LINE#         329
+  C:0816H         LINE#         330
+  C:0817H         LINE#         332
+  C:0819H         LINE#         333
+  C:081CH         LINE#         334
+  C:081EH         LINE#         335
+  C:0821H         LINE#         336
+  C:0821H         LINE#         339
+  -------         ENDPROC       _MIPI_LP_CMD_SEND
+  -------         PROC          PANEL_INIT
+  C:0950H         LINE#         342
+  C:0950H         LINE#         343
+  C:0950H         LINE#         388
+  -------         ENDPROC       PANEL_INIT
+  -------         PROC          MAIN
+  -------         DO            
+  B:0020H.0       SYMBOL        prst
+  X:6132H         SYMBOL        b
+  -------         ENDDO         
+  C:0003H         LINE#         391
+  C:0003H         LINE#         393
+  C:0003H         LINE#         395
+  C:0008H         LINE#         398
+  C:000BH         LINE#         400
+  C:000EH         LINE#         402
+  C:0010H         LINE#         403
+  C:0012H         LINE#         404
+  C:0014H         LINE#         405
+  C:0016H         LINE#         406
+  C:0018H         LINE#         407
+  C:001AH         LINE#         408
+  C:001CH         LINE#         409
+  C:001EH         LINE#         411
+  C:0023H         LINE#         412
+  C:0039H         LINE#         413
+  C:004EH         LINE#         414
+  C:0063H         LINE#         415
+  C:0078H         LINE#         416
+  C:008DH         LINE#         417
+  C:00A2H         LINE#         418
+  C:00B7H         LINE#         419
+  C:00CCH         LINE#         420
+  C:00E1H         LINE#         421
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 8
+
+
+  C:00F6H         LINE#         422
+  C:010BH         LINE#         423
+  C:0120H         LINE#         424
+  C:0135H         LINE#         425
+  C:014AH         LINE#         426
+  C:015FH         LINE#         427
+  C:0174H         LINE#         428
+  C:0189H         LINE#         429
+  C:019EH         LINE#         430
+  C:01B3H         LINE#         431
+  C:01C8H         LINE#         432
+  C:01DDH         LINE#         433
+  C:01F2H         LINE#         434
+  C:0207H         LINE#         435
+  C:021CH         LINE#         436
+  C:0231H         LINE#         437
+  C:0246H         LINE#         438
+  C:025BH         LINE#         439
+  C:0270H         LINE#         440
+  C:0285H         LINE#         441
+  C:029AH         LINE#         442
+  C:02AFH         LINE#         443
+  C:02C4H         LINE#         444
+  C:02D9H         LINE#         445
+  C:02EEH         LINE#         446
+  C:0303H         LINE#         447
+  C:0318H         LINE#         448
+  C:032DH         LINE#         450
+  C:0332H         LINE#         451
+  C:0347H         LINE#         452
+  C:035CH         LINE#         453
+  C:0371H         LINE#         454
+  C:0386H         LINE#         455
+  C:039BH         LINE#         456
+  C:03B0H         LINE#         457
+  C:03C5H         LINE#         458
+  C:03DAH         LINE#         459
+  C:03EFH         LINE#         460
+  C:0404H         LINE#         461
+  C:0419H         LINE#         462
+  C:042EH         LINE#         463
+  C:0443H         LINE#         464
+  C:0458H         LINE#         466
+  C:045EH         LINE#         472
+  C:0460H         LINE#         473
+  C:0463H         LINE#         475
+  C:046EH         LINE#         476
+  C:0479H         LINE#         479
+  C:047BH         LINE#         480
+  C:047EH         LINE#         482
+  C:0480H         LINE#         483
+  C:0483H         LINE#         487
+  C:048EH         LINE#         489
+  C:04A3H         LINE#         490
+  C:04AEH         LINE#         492
+  C:04C3H         LINE#         493
+  C:04CEH         LINE#         498
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 9
+
+
+  C:04E1H         LINE#         499
+  C:04ECH         LINE#         503
+  C:04FFH         LINE#         512
+  C:0501H         LINE#         514
+  C:0505H         LINE#         516
+  C:0505H         LINE#         522
+  C:0508H         LINE#         523
+  C:050BH         LINE#         524
+  C:050BH         LINE#         526
+  C:050DH         LINE#         527
+  C:0518H         LINE#         528
+  C:052BH         LINE#         529
+  C:0536H         LINE#         530
+  C:0549H         LINE#         531
+  C:0554H         LINE#         532
+  C:0556H         LINE#         534
+  C:0556H         LINE#         535
+  C:0558H         LINE#         536
+  C:055AH         LINE#         537
+  C:055CH         LINE#         538
+  C:055CH         LINE#         539
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?CLDPTR
+  C:06A9H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+  -------         MODULE        ?C?CLDOPTR
+  C:06C2H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?ULCMP
+  C:06EFH         PUBLIC        ?C?ULCMP
+  -------         ENDMOD        ?C?ULCMP
+
+  -------         MODULE        ?C?LSTPTR
+  C:0700H         PUBLIC        ?C?LSTPTR
+  -------         ENDMOD        ?C?LSTPTR
+
+  -------         MODULE        ?C?LSTXDATA
+  C:071AH         PUBLIC        ?C?LSTXDATA
+  -------         ENDMOD        ?C?LSTXDATA
+
+  -------         MODULE        ?C?LSTKXDATA
+  C:0726H         PUBLIC        ?C?LSTKXDATA
+  -------         ENDMOD        ?C?LSTKXDATA
+
+  -------         MODULE        ?C?LSTIDATA
+  C:0757H         PUBLIC        ?C?LSTIDATA
+  -------         ENDMOD        ?C?LSTIDATA
+
+  -------         MODULE        ?C?LSTPDATA
+  C:0763H         PUBLIC        ?C?LSTPDATA
+  -------         ENDMOD        ?C?LSTPDATA
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/26/2019  09:30:38  PAGE 10
+
+
+    SEGMENT: ?PR?PANEL_INIT?MAIN
+
+Program Size: data=9.1 xdata=538 code=2385
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

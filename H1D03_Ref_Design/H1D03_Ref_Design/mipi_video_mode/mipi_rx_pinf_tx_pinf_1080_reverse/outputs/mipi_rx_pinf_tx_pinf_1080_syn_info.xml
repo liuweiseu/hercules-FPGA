@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<designinfo>
+
+  <topmodule>
+    <port direction="input" name="phone_rst" pmname="phone_rst"/>
+    <port direction="output" name="rx_decode_hsync" pmname="rx_decode_hsync"/>
+    <port direction="output" name="rx_decode_vsync" pmname="rx_decode_vsync"/>
+    <port direction="output" name="swire" pmname="swire"/>
+    <inst modulename="glue" name="glue" pmname="glue:glue" type="combination">
+      <inst modulename="packet_asm" name="pasm" pmname="packet_asm:pasm" type="combination"/>
+      <inst modulename="rx_packet_tx_packet_video" name="rx_packet_tx_packet" pmname="rx_packet_tx_packet_video:rx_packet_tx_packet" type="combination">
+        <inst modulename="fifo_sync" name="fifo_sync_inst" pmname="fifo_sync:fifo_sync_inst" type="combination"/>
+        <inst modulename="fifo_32_1k" name="from_sc_fifo" pmname="fifo_32_1k:from_sc_fifo" type="combination">
+          <inst modulename="hard_fifo_18x10" name="u0_hardfifo" pmname="hard_fifo_18x10:u0_hardfifo" type="combination"/>
+          <inst modulename="hard_fifo_18x10" name="u1_hardfifo" pmname="hard_fifo_18x10:u1_hardfifo" type="combination"/>
+        </inst>
+        <inst modulename="MIPI_Tx_Packet_Generator" name="mipi_tx_packet_generator" pmname="MIPI_Tx_Packet_Generator:mipi_tx_packet_generator" type="combination">
+          <inst modulename="MIPI_TX_Fifo_Readen_Generator" name="mipi_tx_fifo_readen_generator_inst" pmname="MIPI_TX_Fifo_Readen_Generator:mipi_tx_fifo_readen_generator_inst" type="combination"/>
+          <inst modulename="MIPI_TX_Timing_Generator" name="mipi_tx_timing_generator_inst" pmname="MIPI_TX_Timing_Generator:mipi_tx_timing_generator_inst" type="combination"/>
+        </inst>
+        <inst modulename="MIPI_SC_Timing" name="sc1" pmname="MIPI_SC_Timing:sc1" type="combination"/>
+        <inst modulename="fifo_32_1k" name="to_sc_fifo" pmname="fifo_32_1k:to_sc_fifo" type="combination">
+          <inst modulename="hard_fifo_18x10" name="u0_hardfifo" pmname="hard_fifo_18x10:u0_hardfifo" type="combination"/>
+          <inst modulename="hard_fifo_18x10" name="u1_hardfifo" pmname="hard_fifo_18x10:u1_hardfifo" type="combination"/>
+        </inst>
+        <inst modulename="mipi_data_process" name="u_data_process" pmname="mipi_data_process:u_data_process" type="combination"/>
+        <inst modulename="sc_1080_720" name="u_scaler" pmname="sc_1080_720:u_scaler" type="combination">
+          <inst modulename="MAC_block" name="u_MAC_0" pmname="MAC_block:u_MAC_0" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_1" pmname="MAC_block:u_MAC_1" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_10" pmname="MAC_block:u_MAC_10" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_11" pmname="MAC_block:u_MAC_11" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_2" pmname="MAC_block:u_MAC_2" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_3" pmname="MAC_block:u_MAC_3" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_4" pmname="MAC_block:u_MAC_4" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_5" pmname="MAC_block:u_MAC_5" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_6" pmname="MAC_block:u_MAC_6" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_7" pmname="MAC_block:u_MAC_7" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_8" pmname="MAC_block:u_MAC_8" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="MAC_block" name="u_MAC_9" pmname="MAC_block:u_MAC_9" type="combination">
+            <inst modulename="h6_mac" name="i73" pmname="h6_mac:i73" type="combination"/>
+          </inst>
+          <inst modulename="emb1" name="u_emb1" pmname="emb1:u_emb1" type="combination">
+            <inst modulename="sram_v2" name="xx2" pmname="sram_v2:xx2" type="combination"/>
+          </inst>
+          <inst modulename="t40" name="u_t40" pmname="t40:u_t40" type="combination"/>
+          <inst modulename="t51_0" name="u_t51_00" pmname="t51_0:u_t51_00" type="combination"/>
+          <inst modulename="t51_0" name="u_t51_01" pmname="t51_0:u_t51_01" type="combination"/>
+          <inst modulename="t51_1" name="u_t51_1" pmname="t51_1:u_t51_1" type="combination"/>
+          <inst modulename="SimpleDualPortRAM_generic(AddrWidth=10,DataWidth=32)" name="u_t7" pmname="SimpleDualPortRAM_generic(AddrWidth=10,DataWidth=32):u_t7" type="combination"/>
+        </inst>
+        <inst modulename="sync_delay" name="u_sync_delay" pmname="sync_delay:u_sync_delay" type="combination"/>
+      </inst>
+    </inst>
+    <inst modulename="mcu_arbiter" name="mcu_arbiter" pmname="mcu_arbiter:mcu_arbiter" type="combination">
+      <inst modulename="emif2apb" name="u_emif2apb" pmname="emif2apb:u_emif2apb" type="combination">
+        <inst modulename="delaybuf_v1_1" name="u0_dbuf" pmname="delaybuf_v1_1:u0_dbuf" type="combination"/>
+        <inst modulename="delaybuf_x32" name="u0_dx32" pmname="delaybuf_x32:u0_dx32" type="combination"/>
+      </inst>
+      <inst modulename="fifo_pdata" name="u_pfifo" pmname="fifo_pdata:u_pfifo" type="combination"/>
+      <inst modulename="psram_wrap" name="u_psram" pmname="psram_wrap:u_psram" type="combination"/>
+    </inst>
+    <inst modulename="mipi_v1" name="mipi_inst" pmname="mipi_v1:mipi_inst" type="combination"/>
+    <inst modulename="mipi_byteclk_delay(DLY_LEVEL=4)" name="u0_mipi1_clkdly" pmname="mipi_byteclk_delay(DLY_LEVEL=4):u0_mipi1_clkdly" type="combination"/>
+    <inst modulename="mcu_v1" name="u_8051" pmname="mcu_v1:u_8051" type="combination"/>
+    <inst modulename="gbuf_v1_1" name="u_gbuf" pmname="gbuf_v1_1:u_gbuf" type="combination"/>
+    <inst modulename="pll_v1" name="u_pll" pmname="pll_v1:u_pll" type="combination"/>
+    <inst modulename="dataReadBack" name="uut_dataReadBack" pmname="dataReadBack:uut_dataReadBack" type="combination"/>
+  </topmodule>
+
+  <modulelist>
+    <module fileloc="src/enc_scaler_v2.v" lineno="0" module_name="MAC_block" name="MAC_block"/>
+    <module fileloc="src/MIPI_SC_Timing.v" lineno="2" module_name="MIPI_SC_Timing" name="MIPI_SC_Timing"/>
+    <module fileloc="src/mipi_tx_fifo_readen_gen.v" lineno="2" module_name="MIPI_TX_Fifo_Readen_Generator" name="MIPI_TX_Fifo_Readen_Generator"/>
+    <module fileloc="src/mipi_tx_timing_gen.v" lineno="2" module_name="MIPI_TX_Timing_Generator" name="MIPI_TX_Timing_Generator"/>
+    <module fileloc="src/mipi_tx_packet_gen.v" lineno="3" module_name="MIPI_Tx_Packet_Generator" name="MIPI_Tx_Packet_Generator"/>
+    <module fileloc="src/enc_scaler_v2.v" lineno="0" module_name="SimpleDualPortRAM_generic" name="SimpleDualPortRAM_generic(AddrWidth=10,DataWidth=32)"/>
+    <module fileloc="src/dataReadBack.v" lineno="21" module_name="dataReadBack" name="dataReadBack"/>
+    <module fileloc="src/delaybuf_v1_1.v" lineno="14" module_name="delaybuf_v1_1" name="delaybuf_v1_1"/>
+    <module fileloc="src/delaybuf_x32.v" lineno="21" module_name="delaybuf_x32" name="delaybuf_x32"/>
+    <module fileloc="src/emb1.v" lineno="5" module_name="emb1" name="emb1"/>
+    <module fileloc="src/emif2apb.v" lineno="3" module_name="emif2apb" name="emif2apb"/>
+    <module fileloc="src/fifo_32_1k.v" lineno="24" module_name="fifo_32_1k" name="fifo_32_1k"/>
+    <module fileloc="src/fifo_pdata.v" lineno="14" module_name="fifo_pdata" name="fifo_pdata"/>
+    <module fileloc="src/fifo_sync.v" lineno="14" module_name="fifo_sync" name="fifo_sync"/>
+    <module fileloc="src/gbuf_v1_1.v" lineno="14" module_name="gbuf_v1_1" name="gbuf_v1_1"/>
+    <module fileloc="src/glue.v" lineno="1" module_name="glue" name="glue"/>
+    <module fileloc="src/h6_mac.v" lineno="14" module_name="h6_mac" name="h6_mac"/>
+    <module fileloc="src/hard_fifo_18x10.v" lineno="14" module_name="hard_fifo_18x10" name="hard_fifo_18x10"/>
+    <module fileloc="src/mcu_arbiter.v" lineno="1" module_name="mcu_arbiter" name="mcu_arbiter"/>
+    <module fileloc="src/mcu_v1.v" lineno="14" module_name="mcu_v1" name="mcu_v1"/>
+    <module fileloc="src/mipi_byteclk_delay.v" lineno="21" module_name="mipi_byteclk_delay" name="mipi_byteclk_delay(DLY_LEVEL=4)"/>
+    <module fileloc="src/mipi_data_process.v" lineno="3" module_name="mipi_data_process" name="mipi_data_process"/>
+    <module fileloc="src/mipi_rx_pinf_tx_pinf_1080.v" isTop="top" lineno="23" module_name="mipi_rx_pinf_tx_pinf_1080" name="mipi_rx_pinf_tx_pinf_1080"/>
+    <module fileloc="src/mipi_v1.v" lineno="14" module_name="mipi_v1" name="mipi_v1"/>
+    <module fileloc="src/packet_asm.v" lineno="23" module_name="packet_asm" name="packet_asm"/>
+    <module fileloc="src/pll_v1.v" lineno="14" module_name="pll_v1" name="pll_v1"/>
+    <module fileloc="src/psram_wrap.v" lineno="1" module_name="psram_wrap" name="psram_wrap"/>
+    <module fileloc="src/rx_packet_tx_packet_video.v" lineno="21" module_name="rx_packet_tx_packet_video" name="rx_packet_tx_packet_video"/>
+    <module fileloc="src/enc_scaler_v2.v" lineno="5" module_name="sc_1080_720" name="sc_1080_720"/>
+    <module fileloc="src/sram_v2.v" lineno="14" module_name="sram_v2" name="sram_v2"/>
+    <module fileloc="src/sync_delay.v" lineno="4" module_name="sync_delay" name="sync_delay"/>
+    <module fileloc="src/enc_scaler_v2.v" lineno="0" module_name="t40" name="t40"/>
+    <module fileloc="src/enc_scaler_v2.v" lineno="0" module_name="t51_0" name="t51_0"/>
+    <module fileloc="src/enc_scaler_v2.v" lineno="0" module_name="t51_1" name="t51_1"/>
+  </modulelist>
+
+</designinfo>

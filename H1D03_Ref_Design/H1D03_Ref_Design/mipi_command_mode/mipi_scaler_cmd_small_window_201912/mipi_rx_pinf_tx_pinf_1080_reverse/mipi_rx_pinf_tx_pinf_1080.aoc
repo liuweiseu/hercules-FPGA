@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aoc version="2.3" device="H1D03N3W72C7">
+	<ioConstraint>
+		<IO signal_name="i_spi_clk" location="IO_03N_1" inst_name="io_i_spi_clk_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="i_spi_cs" location="IO_CLK04P_CLK_1" inst_name="io_i_spi_cs_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="i_spi_mosi" location="IO_CLK04N_1" inst_name="io_i_spi_mosi_inst" direction="inout" operation_mode="normal"/>
+		<IO signal_name="lcd_reset" location="io18_clk1_4" inst_name="io_lcd_reset_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="o_spi_miso" location="" inst_name="io_o_spi_miso_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="panel_rst" location="" inst_name="io_panel_rst_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="swire" location="io17_clk0_4" inst_name="io_swire_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="t0" location="IO_11P_2" inst_name="io_t0_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="tt_0_" location="io4_tck_4" inst_name="io_tt_0__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="tt_1_" location="io7_tdo_4" inst_name="io_tt_1__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="tt_2_" location="io5_tms_4" inst_name="io_tt_2__inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="tt_3_" location="io6_tdi_4" inst_name="io_tt_3__inst" direction="output" operation_mode="normal"/>
+	</ioConstraint>
+</aoc>
+

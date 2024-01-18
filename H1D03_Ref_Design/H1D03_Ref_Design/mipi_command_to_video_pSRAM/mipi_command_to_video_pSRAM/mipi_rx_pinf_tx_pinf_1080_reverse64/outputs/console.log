@@ -1,0 +1,625 @@
+=========================RTL Analysis Result start at: 2023-12-06 22:51:55==========================
+command: cst "-tcl" "scripts/parse_design_file.tcl" ""
+-----------------------------------------------------------------------------
+Fuxi CST Tool Version fx2023.1 win64 Build 20230827-19:06:13
+Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+WARNING: [RTL Analysis VERI-1372]: src/mcu_arbiter.v:107: redeclaration of ansi port fifo_rst is not allowed
+WARNING: [RTL Analysis VERI-1199]: src/pattern_gen.v:48: parameter declaration becomes local in pattern_gen with formal parameter declaration list
+WARNING: [RTL Analysis VERI-1199]: src/pattern_gen.v:49: parameter declaration becomes local in pattern_gen with formal parameter declaration list
+WARNING: [RTL Analysis VERI-1011]: src/pattern_gen.v:105: cannot index into non-array key_s
+WARNING: [RTL Analysis VERI-1011]: src/pattern_gen.v:111: cannot index into non-array key_s
+WARNING: [RTL Analysis VERI-1927]: src/mipi_rx_pinf_tx_pinf_1080.v:416: port clkin remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/mipi_rx_pinf_tx_pinf_1080.v:461: port host_dpi_d remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/mipi_rx_pinf_tx_pinf_1080.v:583: port test remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/mipi_rx_pinf_tx_pinf_1080.v:757: port mipi1_host_tx_ulps_active remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/enc_psram_fb_top_all.v:0: port host_dpi_de remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/fifo_pwr_half.v:66: port regce remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:50: actual bit length 8 differs from formal bit length 64 for port dout
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:51: actual bit length 1 differs from formal bit length 8 for port doutp
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:52: actual bit length 16 differs from formal bit length 64 for port din
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:53: actual bit length 2 differs from formal bit length 8 for port dinp
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:62: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:63: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:64: actual bit length 32 differs from formal bit length 1 for port eccindberr
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_half.v:65: actual bit length 32 differs from formal bit length 1 for port eccinsberr
+WARNING: [RTL Analysis VDB-1013]: src/fifo_pwr_half.v:66: input port regce is not connected on this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pram_wr_top.v:56: actual bit length 8 differs from formal bit length 9 for port dout
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pram_wr_top.v:69: actual bit length 8 differs from formal bit length 9 for port dout
+WARNING: [RTL Analysis VERI-1927]: src/fifo_psram_lbuf_rd.v:64: port regce remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf_rd.v:52: actual bit length 16 differs from formal bit length 32 for port din
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf_rd.v:53: actual bit length 2 differs from formal bit length 4 for port dinp
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf_rd.v:62: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf_rd.v:63: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VDB-1013]: src/fifo_psram_lbuf_rd.v:64: input port regce is not connected on this instance
+WARNING: [RTL Analysis VERI-1330]: src/enc_psram_fb_top_all.v:0: actual bit length 32 differs from formal bit length 36 for port dout
+WARNING: [RTL Analysis VERI-1927]: src/fifo_psram_io_rd.v:66: port regce remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_io_rd.v:64: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_io_rd.v:65: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VDB-1013]: src/fifo_psram_io_rd.v:66: input port regce is not connected on this instance
+WARNING: [RTL Analysis VERI-1330]: src/enc_psram_fb_top_all.v:0: actual bit length 16 differs from formal bit length 18 for port dout
+WARNING: [RTL Analysis VERI-1927]: src/psram_io_ddr.v:60: port pad_out remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/psram_io_ddr.v:71: port pad_out remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/psram_io_ddr.v:83: port pad_out remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/psram_io_ddr.v:105: port pad_out remains unconnected for this instance
+WARNING: [RTL Analysis VDB-1013]: src/ddrio_v1.v:64: input port rstn is not connected on this instance
+WARNING: [RTL Analysis VDB-1002]: src/enc_psram_fb_top_all.v:0: net clk_en_90_t does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/enc_psram_fb_top_all.v:0: net mipitx_clk does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/enc_psram_fb_top_all.v:0: input port host_dpi_de is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/scc2v/hard_fifos_18x10.v:77: port almostfull remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/scc2v/hard_fifos_18x10.v:60: actual bit length 18 differs from formal bit length 64 for port dout
+WARNING: [RTL Analysis VERI-1330]: src/scc2v/hard_fifos_18x10.v:61: actual bit length 18 differs from formal bit length 64 for port din
+WARNING: [RTL Analysis VERI-1330]: src/scc2v/hard_fifos_18x10.v:63: actual bit length 2 differs from formal bit length 8 for port dinp
+WARNING: [RTL Analysis VERI-1330]: src/scc2v/hard_fifos_18x10.v:72: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/scc2v/hard_fifos_18x10.v:73: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VERI-1330]: src/scc2v/hard_fifos_18x10.v:75: actual bit length 32 differs from formal bit length 1 for port eccindberr
+WARNING: [RTL Analysis VERI-1330]: src/scc2v/hard_fifos_18x10.v:76: actual bit length 32 differs from formal bit length 1 for port eccinsberr
+WARNING: [RTL Analysis VERI-1927]: src/enc_sc_down_top_all_ok.v:0: port enb remains unconnected for this instance
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:53: net nc781 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:54: net nc782 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:55: net nc783 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:56: net nc784 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:57: net nc785 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:58: net nc786 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:59: net nc787 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:60: net nc788 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:61: net nc789 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:62: net nc790 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:63: net nc791 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:64: net nc792 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:77: net nc805 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:78: net nc806 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:79: net nc807 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:80: net nc808 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:81: net nc809 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:82: net nc810 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:83: net nc811 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:84: net nc812 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:85: net nc813 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:86: net nc814 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:87: net nc815 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:88: net nc816 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:101: net nc829 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:102: net nc830 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:103: net nc831 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:104: net nc832 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:105: net nc833 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:106: net nc834 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:107: net nc835 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:108: net nc836 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:109: net nc837 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:110: net nc838 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:111: net nc839 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:112: net nc840 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:125: net nc853 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:126: net nc854 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:127: net nc855 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:128: net nc856 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:129: net nc857 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:130: net nc858 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:131: net nc859 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:132: net nc860 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:133: net nc861 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:134: net nc862 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:135: net nc863 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:136: net nc864 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:149: net nc877 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:150: net nc878 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:151: net nc879 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:152: net nc880 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:153: net nc881 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:154: net nc882 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:155: net nc883 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:156: net nc884 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:157: net nc885 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:158: net nc886 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:159: net nc887 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:160: net nc888 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:173: net nc901 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:174: net nc902 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:175: net nc903 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:176: net nc904 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:177: net nc905 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:178: net nc906 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:179: net nc907 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:180: net nc908 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:181: net nc909 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:182: net nc910 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:183: net nc911 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:184: net nc912 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:197: net nc925 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:198: net nc926 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:199: net nc927 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:200: net nc928 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:201: net nc929 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:202: net nc930 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:203: net nc931 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:204: net nc932 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:205: net nc933 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:206: net nc934 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:207: net nc935 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:208: net nc936 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:221: net nc949 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:222: net nc950 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:223: net nc951 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:224: net nc952 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:225: net nc953 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:226: net nc954 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:227: net nc955 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:228: net nc956 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:229: net nc957 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:230: net nc958 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:231: net nc959 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/sdpram.v:232: net nc960 does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:269: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:302: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:335: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:368: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:401: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:434: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:467: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/sdpram.v:500: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VDB-1002]: src/enc_sc_down_top_all_ok.v:234: net enb does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/enc_sc_down_top_all_ok.v:0: input port enb is not connected on this instance
+WARNING: [RTL Analysis VDB-1002]: src/enc_sc_down_top_all_ok.v:50: net ToSclV_out1 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/enc_sc_down_top_all_ok.v:52: net ToSclV_out2 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/enc_sc_down_top_all_ok.v:54: net y[31] does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/enc_sc_down_top_all_ok.v:65: net FrScl_out1[31] does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/enc_sc_down_top_all_ok.v:66: net FrScl_out3 does not have a driver
+WARNING: [RTL Analysis VERI-1330]: src/rx_packet_cmd_mode_dpi.v:502: actual bit length 1 differs from formal bit length 12 for port vstart
+WARNING: [RTL Analysis VERI-1330]: src/rx_packet_cmd_mode_dpi.v:503: actual bit length 1 differs from formal bit length 10 for port hstart
+WARNING: [RTL Analysis VDB-1002]: src/rx_packet_cmd_mode_dpi.v:75: net v_start_en does not have a driver
+WARNING: [RTL Analysis VERI-1927]: src/glue.v:168: port empty remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1011]: src/pattern_gen.v:105: cannot index into non-array key_s
+WARNING: [RTL Analysis VERI-1011]: src/pattern_gen.v:111: cannot index into non-array key_s
+WARNING: [RTL Analysis VDB-1013]: src/glue.v:168: input port empty is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/pll_v1.v:137: port fp_cf_clk remains unconnected for this instance
+WARNING: [RTL Analysis VDB-1013]: src/pll_v1.v:137: input port FBIN is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/fifo_pdata_hard.v:61: port regce remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pdata_hard.v:50: actual bit length 8 differs from formal bit length 32 for port din
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pdata_hard.v:51: actual bit length 1 differs from formal bit length 4 for port dinp
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pdata_hard.v:59: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pdata_hard.v:60: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VDB-1013]: src/fifo_pdata_hard.v:61: input port regce is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/mcu_arbiter.v:195: input port interrupt is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/mipi_v1.v:268: port CLKEXT remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/mipi_v1.v:350: port clk_periph remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/mipi_v1.v:425: port CN remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/mipi_v1.v:348: actual bit length 1 differs from formal bit length 6 for port TEST_ENBL
+WARNING: [RTL Analysis VERI-1330]: src/mipi_v1.v:423: actual bit length 1 differs from formal bit length 6 for port TEST_ENBL
+WARNING: [RTL Analysis VDB-1013]: src/mipi_v1.v:268: input port CLKEXT is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/mipi_v1.v:350: input port clk_periph is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/mipi_v1.v:425: input port dpi_pclk is not connected on this instance
+WARNING: [RTL Analysis VERI-1330]: src/mipi_rx_pinf_tx_pinf_1080.v:731: actual bit length 1 differs from formal bit length 2 for port mipi2_periph_tx_cmd_vc
+WARNING: [RTL Analysis VERI-1209]: src/dataReadBack.v:242: expression size 9 truncated to fit in target size 8
+WARNING: [RTL Analysis VERI-1330]: src/mipi_rx_pinf_tx_pinf_1080.v:777: actual bit length 1 differs from formal bit length 2 for port mipi_periph_tx_cmd_vc
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:139: net port0i[7] does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:140: net port1i[7] does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:141: net port3i[7] does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:142: net port2i[7] does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:197: net scli does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:198: net sdai does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:246: net bta_clk does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/mipi_rx_pinf_tx_pinf_1080.v:247: net bta_rd does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/mipi_rx_pinf_tx_pinf_1080.v:416: input port clkin is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/mipi_rx_pinf_tx_pinf_1080.v:634: input port sfrack is not connected on this instance
+WARNING: [RTL Analysis VERI-1209]: ip_core/dwip_v2_1/src/dwip.v:0: expression size 10 truncated to fit in target size 9
+WARNING: [RTL Analysis VDB-1002]: ip_core/dwip_v2_1/src/dwip.v:0: net nc10 does not have a driver
+WARNING: [RTL Analysis VDB-1013]: ip_core/dwip_v2_1/src/dwip.v:0: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VERI-1209]: ip_core/dwip_v2_1/src/dwip.v:0: expression size 18 truncated to fit in target size 17
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:64: net nc49 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:65: net nc50 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:66: net nc51 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:67: net nc52 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:68: net nc53 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:69: net nc54 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:70: net nc55 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:71: net nc56 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:72: net nc57 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:73: net nc58 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:74: net nc59 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:75: net nc60 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:76: net nc61 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:77: net nc62 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:78: net nc63 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:79: net nc64 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:80: net nc65 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:81: net nc66 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:82: net nc67 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:83: net nc68 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:84: net nc69 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:85: net nc70 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:86: net nc71 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:87: net nc72 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:88: net nc73 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:89: net nc74 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:90: net nc75 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:91: net nc76 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:92: net nc77 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:93: net nc78 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:94: net nc79 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:95: net nc80 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:96: net nc81 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:97: net nc82 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:98: net nc83 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:99: net nc84 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:100: net nc85 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:101: net nc86 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:102: net nc87 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:103: net nc88 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:104: net nc89 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:105: net nc90 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:106: net nc91 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:107: net nc92 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:108: net nc93 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:109: net nc94 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:110: net nc95 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:111: net nc96 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:112: net nc97 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:113: net nc98 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:114: net nc99 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:115: net nc100 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:116: net nc101 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:117: net nc102 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:118: net nc103 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:119: net nc104 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:120: net nc105 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:121: net nc106 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:122: net nc107 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:123: net nc108 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:172: net nc157 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:173: net nc158 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:174: net nc159 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:175: net nc160 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:176: net nc161 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:177: net nc162 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:178: net nc163 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:179: net nc164 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:180: net nc165 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:181: net nc166 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:182: net nc167 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:183: net nc168 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:184: net nc169 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:185: net nc170 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:186: net nc171 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:187: net nc172 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:188: net nc173 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:189: net nc174 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:190: net nc175 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:191: net nc176 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:192: net nc177 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:193: net nc178 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:194: net nc179 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:195: net nc180 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:196: net nc181 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:197: net nc182 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:198: net nc183 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:199: net nc184 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:200: net nc185 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:201: net nc186 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:202: net nc187 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:203: net nc188 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:204: net nc189 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:205: net nc190 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:206: net nc191 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:207: net nc192 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:208: net nc193 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:209: net nc194 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:210: net nc195 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:211: net nc196 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:212: net nc197 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:213: net nc198 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:214: net nc199 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:215: net nc200 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:216: net nc201 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:217: net nc202 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:218: net nc203 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:219: net nc204 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:220: net nc205 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:221: net nc206 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:222: net nc207 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:223: net nc208 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:224: net nc209 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:225: net nc210 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:226: net nc211 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:227: net nc212 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:228: net nc213 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:229: net nc214 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:230: net nc215 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_pdata_emb_v1.v:231: net nc216 does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/fifo_pdata_emb_v1.v:281: input port dia[63] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/fifo_pdata_emb_v1.v:328: input port dia[63] is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/hard_fifo_18x10.v:69: port almostfull remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/hard_fifo_18x10.v:52: actual bit length 16 differs from formal bit length 64 for port dout
+WARNING: [RTL Analysis VERI-1330]: src/hard_fifo_18x10.v:54: actual bit length 16 differs from formal bit length 64 for port din
+WARNING: [RTL Analysis VERI-1330]: src/hard_fifo_18x10.v:55: actual bit length 2 differs from formal bit length 8 for port dinp
+WARNING: [RTL Analysis VERI-1330]: src/hard_fifo_18x10.v:64: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/hard_fifo_18x10.v:65: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VERI-1330]: src/hard_fifo_18x10.v:67: actual bit length 32 differs from formal bit length 1 for port eccindberr
+WARNING: [RTL Analysis VERI-1330]: src/hard_fifo_18x10.v:68: actual bit length 32 differs from formal bit length 1 for port eccinsberr
+WARNING: [RTL Analysis VDB-1013]: src/fifo_psram_io_rd_emb_v1.v:50: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/fifo_psram_lbuf.v:66: port regce remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:50: actual bit length 16 differs from formal bit length 64 for port dout
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:51: actual bit length 2 differs from formal bit length 8 for port doutp
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:52: actual bit length 32 differs from formal bit length 64 for port din
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:53: actual bit length 4 differs from formal bit length 8 for port dinp
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:62: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:63: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:64: actual bit length 32 differs from formal bit length 1 for port eccindberr
+WARNING: [RTL Analysis VERI-1330]: src/fifo_psram_lbuf.v:65: actual bit length 32 differs from formal bit length 1 for port eccinsberr
+WARNING: [RTL Analysis VDB-1013]: src/fifo_psram_lbuf.v:66: input port regce is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/fifo_psram_lbuf_emb_v1.v:71: input port dia[31] is not connected on this instance
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:64: net nc401 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:65: net nc402 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:66: net nc403 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:67: net nc404 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:68: net nc405 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:69: net nc406 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:70: net nc407 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:71: net nc408 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:72: net nc409 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:73: net nc410 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:74: net nc411 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:75: net nc412 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:76: net nc413 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:77: net nc414 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:78: net nc415 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:79: net nc416 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:80: net nc417 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:81: net nc418 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:82: net nc419 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:83: net nc420 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:84: net nc421 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:85: net nc422 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:86: net nc423 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:87: net nc424 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:88: net nc425 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:89: net nc426 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:90: net nc427 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:91: net nc428 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:92: net nc429 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:93: net nc430 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:94: net nc431 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:95: net nc432 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:96: net nc433 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:97: net nc434 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:98: net nc435 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:99: net nc436 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:100: net nc437 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:101: net nc438 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:102: net nc439 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:103: net nc440 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:104: net nc441 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:105: net nc442 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:106: net nc443 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:107: net nc444 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:108: net nc445 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:109: net nc446 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:110: net nc447 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:111: net nc448 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:112: net nc449 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:113: net nc450 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:114: net nc451 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:115: net nc452 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:116: net nc453 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:117: net nc454 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:118: net nc455 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:119: net nc456 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:168: net nc505 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:169: net nc506 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:170: net nc507 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:171: net nc508 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:172: net nc509 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:173: net nc510 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:174: net nc511 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:175: net nc512 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:176: net nc513 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:177: net nc514 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:178: net nc515 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:179: net nc516 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:180: net nc517 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:181: net nc518 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:182: net nc519 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:183: net nc520 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:184: net nc521 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:185: net nc522 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:186: net nc523 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:187: net nc524 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:188: net nc525 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:189: net nc526 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:190: net nc527 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:191: net nc528 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:192: net nc529 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:193: net nc530 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:194: net nc531 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:195: net nc532 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:196: net nc533 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:197: net nc534 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:198: net nc535 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:199: net nc536 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:200: net nc537 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:201: net nc538 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:202: net nc539 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:203: net nc540 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:204: net nc541 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:205: net nc542 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:206: net nc543 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:207: net nc544 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:208: net nc545 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:209: net nc546 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:210: net nc547 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:211: net nc548 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:212: net nc549 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:213: net nc550 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:214: net nc551 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:215: net nc552 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:216: net nc553 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:217: net nc554 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:218: net nc555 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:219: net nc556 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:220: net nc557 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:221: net nc558 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:222: net nc559 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_psram_lbuf_rd_emb_v1.v:223: net nc560 does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/fifo_psram_lbuf_rd_emb_v1.v:273: input port dia[63] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/fifo_psram_lbuf_rd_emb_v1.v:320: input port dia[63] is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/ddrio_lvds.v:159: port in_del remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/ddrio_lvds.v:231: port in_del remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1927]: src/ddrio_lvds.v:277: port FP_TERM_DIFF_EN_B remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/ddrio_lvds.v:158: actual bit length 2 differs from formal bit length 8 for port d
+WARNING: [RTL Analysis VERI-1330]: src/ddrio_lvds.v:230: actual bit length 2 differs from formal bit length 8 for port d
+WARNING: [RTL Analysis VDB-1002]: src/ddrio_lvds.v:144: net shiftin0_il_0_d0 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/ddrio_lvds.v:146: net shiftin1_il_0_d0 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/ddrio_lvds.v:216: net shiftin0_il_1_d0 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/ddrio_lvds.v:218: net shiftin1_il_1_d0 does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/ddrio_lvds.v:159: input port shiftin0_ol is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/ddrio_lvds.v:231: input port shiftin0_ol is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/ddrio_lvds.v:277: input port FP_TERM_DIFF_EN_B is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/fifo_pwr_quarter.v:55: port regce remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_quarter.v:39: actual bit length 4 differs from formal bit length 64 for port dout
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_quarter.v:41: actual bit length 8 differs from formal bit length 64 for port din
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_quarter.v:51: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_quarter.v:52: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_quarter.v:53: actual bit length 32 differs from formal bit length 1 for port eccindberr
+WARNING: [RTL Analysis VERI-1330]: src/fifo_pwr_quarter.v:54: actual bit length 32 differs from formal bit length 1 for port eccinsberr
+WARNING: [RTL Analysis VDB-1013]: src/fifo_pwr_quarter.v:55: input port dinp[7] is not connected on this instance
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:14: net nc1 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:15: net nc2 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:16: net nc3 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:17: net nc4 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:18: net nc5 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:19: net nc6 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:20: net nc7 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/fifo_mcu_wr_ram_emb_v1.v:21: net nc8 does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/fifo_mcu_wr_ram_emb_v1.v:58: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:225: expression size 8 truncated to fit in target size 7
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:310: expression size 9 truncated to fit in target size 8
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:345: expression size 8 truncated to fit in target size 7
+WARNING: [RTL Analysis VDB-1013]: src/fifo_mcu_wr_ram.v:126: input port wclr is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/fifo_mcu_rd_ram_emb_v1.v:58: input port dia[15] is not connected on this instance
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:225: expression size 9 truncated to fit in target size 8
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:310: expression size 8 truncated to fit in target size 7
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:342: expression size 8 truncated to fit in target size 7
+WARNING: [RTL Analysis VDB-1013]: src/fifo_mcu_rd_ram.v:126: input port wclr is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/fifo_mipi_rx.v:64: port almostfull remains unconnected for this instance
+WARNING: [RTL Analysis VERI-1330]: src/fifo_mipi_rx.v:61: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [RTL Analysis VERI-1330]: src/fifo_mipi_rx.v:62: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [RTL Analysis VERI-1927]: src/h6_mac.v:86: port dsp_en remains unconnected for this instance
+WARNING: [RTL Analysis VDB-1013]: src/h6_mac.v:86: input port b_acc_en is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/mac_psram.v:86: port dsp_en remains unconnected for this instance
+WARNING: [RTL Analysis VDB-1013]: src/mac_psram.v:86: input port b_acc_en is not connected on this instance
+WARNING: [RTL Analysis VERI-1927]: src/h1mac_v2.v:82: port dsp_en remains unconnected for this instance
+WARNING: [RTL Analysis VDB-1013]: src/h1mac_v2.v:82: input port b_acc_en is not connected on this instance
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:64: net nc113 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:65: net nc114 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:66: net nc115 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:67: net nc116 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:68: net nc117 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:69: net nc118 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:70: net nc119 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:71: net nc120 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:72: net nc121 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:73: net nc122 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:74: net nc123 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:75: net nc124 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:76: net nc125 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:77: net nc126 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:78: net nc127 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:79: net nc128 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:80: net nc129 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:81: net nc130 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:82: net nc131 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:83: net nc132 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:84: net nc133 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:85: net nc134 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:86: net nc135 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:87: net nc136 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:88: net nc137 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:89: net nc138 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:90: net nc139 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:91: net nc140 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:92: net nc141 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:93: net nc142 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:94: net nc143 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:95: net nc144 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:96: net nc145 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:97: net nc146 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:98: net nc147 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:99: net nc148 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:100: net nc149 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:101: net nc150 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:102: net nc151 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:103: net nc152 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:104: net nc153 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:105: net nc154 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:106: net nc155 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:107: net nc156 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:108: net nc157 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:109: net nc158 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:110: net nc159 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:111: net nc160 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:160: net nc209 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:161: net nc210 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:162: net nc211 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:163: net nc212 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:164: net nc213 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:165: net nc214 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:166: net nc215 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:167: net nc216 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:168: net nc217 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:169: net nc218 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:170: net nc219 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:171: net nc220 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:172: net nc221 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:173: net nc222 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:174: net nc223 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:175: net nc224 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:176: net nc225 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:177: net nc226 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:178: net nc227 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:179: net nc228 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:180: net nc229 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:181: net nc230 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:182: net nc231 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:183: net nc232 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:184: net nc233 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:185: net nc234 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:186: net nc235 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:187: net nc236 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:188: net nc237 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:189: net nc238 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:190: net nc239 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:191: net nc240 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:192: net nc241 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:193: net nc242 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:194: net nc243 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:195: net nc244 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:196: net nc245 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:197: net nc246 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:198: net nc247 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:199: net nc248 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:200: net nc249 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:201: net nc250 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:202: net nc251 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:203: net nc252 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:204: net nc253 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:205: net nc254 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:206: net nc255 does not have a driver
+WARNING: [RTL Analysis VDB-1002]: src/tsc_fifo_v2_emb_v1.v:207: net nc256 does not have a driver
+WARNING: [RTL Analysis VDB-1013]: src/tsc_fifo_v2_emb_v1.v:257: input port dia[63] is not connected on this instance
+WARNING: [RTL Analysis VDB-1013]: src/tsc_fifo_v2_emb_v1.v:304: input port dia[63] is not connected on this instance
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:225: expression size 12 truncated to fit in target size 11
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:310: expression size 12 truncated to fit in target size 11
+WARNING: [RTL Analysis VDB-1013]: src/tsc_fifo_v2.v:128: input port wclr is not connected on this instance
+WARNING: [RTL Analysis VERI-1330]: src/enc_sc_down_top_all_ok.v:237: actual bit length 1 differs from formal bit length 10 for port ar
+WARNING: [RTL Analysis VERI-1330]: src/enc_sc_down_top_all_ok.v:238: actual bit length 1 differs from formal bit length 10 for port aw
+WARNING: [RTL Analysis VERI-1330]: src/enc_sc_down_top_all_ok.v:239: actual bit length 1 differs from formal bit length 32 for port dw
+WARNING: [RTL Analysis VERI-1330]: src/enc_sc_down_top_all_ok.v:240: actual bit length 1 differs from formal bit length 32 for port qr
+WARNING: [RTL Analysis VDB-1002]: src/enc_sc_down_top_all_ok.v:234: net enb does not have a driver
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/syn_fifo.v:196: expression size 15 truncated to fit in target size 14
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/syn_fifo.v:271: expression size 14 truncated to fit in target size 13
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/syn_fifo.v:301: expression size 15 truncated to fit in target size 13
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:225: expression size 15 truncated to fit in target size 14
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:310: expression size 14 truncated to fit in target size 13
+WARNING: [RTL Analysis VERI-1209]: ip_core/fifo_v2/src/asyn_fifo.v:342: expression size 14 truncated to fit in target size 13
+=========================RTL Analysis Result finish at: 2023-12-06 22:51:56=========================

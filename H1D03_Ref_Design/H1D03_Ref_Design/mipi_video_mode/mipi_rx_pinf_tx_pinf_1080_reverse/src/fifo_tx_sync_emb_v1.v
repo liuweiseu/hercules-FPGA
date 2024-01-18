@@ -1,0 +1,306 @@
+module fifo_tx_sync_emb_v1 (clkr, clkw, cer, cew, rstnr, ar, aw, dw, qr);
+input clkr;
+input clkw;
+input cer;
+input cew;
+input rstnr;
+input [9:0] ar;
+input [9:0] aw;
+input [31:0] dw;
+output [31:0] qr;
+
+wire vcc_net;
+wire gnd_net;
+wire net_57;
+wire net_58;
+wire nc1601;
+wire nc1602;
+wire nc1603;
+wire nc1604;
+wire nc1605;
+wire nc1606;
+wire nc1607;
+wire nc1608;
+wire nc1609;
+wire nc1610;
+wire nc1611;
+wire nc1612;
+wire nc1613;
+wire nc1614;
+wire nc1615;
+wire nc1616;
+wire nc1617;
+wire nc1618;
+wire nc1619;
+wire nc1620;
+wire nc1621;
+wire nc1622;
+wire nc1623;
+wire nc1624;
+wire nc1625;
+wire nc1626;
+wire nc1627;
+wire nc1628;
+wire nc1629;
+wire nc1630;
+wire nc1631;
+wire nc1632;
+wire nc1633;
+wire nc1634;
+wire nc1635;
+wire nc1636;
+wire nc1637;
+wire nc1638;
+wire nc1639;
+wire nc1640;
+wire nc1641;
+wire nc1642;
+wire nc1643;
+wire nc1644;
+wire nc1645;
+wire nc1646;
+wire nc1647;
+wire nc1648;
+wire nc1649;
+wire nc1650;
+wire nc1651;
+wire nc1652;
+wire nc1653;
+wire nc1654;
+wire nc1655;
+wire nc1656;
+wire nc1657;
+wire nc1658;
+wire nc1659;
+wire nc1660;
+wire nc1661;
+wire nc1662;
+wire nc1663;
+wire nc1664;
+wire nc1665;
+wire nc1666;
+wire nc1667;
+wire nc1668;
+wire nc1669;
+wire nc1670;
+wire nc1671;
+wire nc1672;
+wire nc1673;
+wire nc1674;
+wire nc1675;
+wire nc1676;
+wire nc1677;
+wire nc1678;
+wire nc1679;
+wire nc1680;
+wire nc1681;
+wire nc1682;
+wire nc1683;
+wire nc1684;
+wire nc1685;
+wire nc1686;
+wire nc1687;
+wire nc1688;
+wire nc1689;
+wire nc1690;
+wire nc1691;
+wire nc1692;
+wire nc1693;
+wire nc1694;
+wire nc1695;
+wire nc1696;
+wire nc1697;
+wire nc1698;
+wire nc1699;
+wire nc1700;
+wire nc1701;
+wire nc1702;
+wire nc1703;
+wire nc1704;
+wire nc1705;
+wire nc1706;
+wire nc1707;
+wire nc1708;
+wire nc1709;
+wire nc1710;
+wire nc1711;
+wire nc1712;
+wire nc1713;
+wire nc1714;
+wire nc1715;
+wire nc1716;
+wire nc1717;
+wire nc1718;
+wire nc1719;
+wire nc1720;
+wire nc1721;
+wire nc1722;
+wire nc1723;
+wire nc1724;
+wire nc1725;
+wire nc1726;
+wire nc1727;
+wire nc1728;
+wire nc1729;
+wire nc1730;
+wire nc1731;
+wire nc1732;
+wire nc1733;
+wire nc1734;
+wire nc1735;
+wire nc1736;
+wire nc1737;
+wire nc1738;
+wire nc1739;
+wire nc1740;
+wire nc1741;
+wire nc1742;
+wire nc1743;
+wire nc1744;
+wire nc1745;
+wire nc1746;
+wire nc1747;
+wire nc1748;
+wire nc1749;
+wire nc1750;
+wire nc1751;
+wire nc1752;
+wire nc1753;
+wire nc1754;
+wire nc1755;
+wire nc1756;
+wire nc1757;
+wire nc1758;
+wire nc1759;
+wire nc1760;
+wire nc1761;
+wire nc1762;
+wire nc1763;
+wire nc1764;
+wire nc1765;
+wire nc1766;
+wire nc1767;
+wire nc1768;
+wire nc1769;
+wire nc1770;
+wire nc1771;
+wire nc1772;
+wire nc1773;
+wire nc1774;
+wire nc1775;
+wire nc1776;
+wire nc1777;
+wire nc1778;
+wire nc1779;
+wire nc1780;
+wire nc1781;
+wire nc1782;
+wire nc1783;
+wire nc1784;
+wire nc1785;
+wire nc1786;
+wire nc1787;
+wire nc1788;
+wire nc1789;
+wire nc1790;
+wire nc1791;
+wire nc1792;
+
+assign vcc_net = 1;
+assign gnd_net = 0;
+EMB18K #(
+		.clka_inv (1'b0),
+		.clkb_inv (1'b0),
+		.eccreaden (1'b0),
+		.eccwriteen (1'b0),
+		.emb5k_1_init_file (""),
+		.emb5k_2_init_file (""),
+		.emb5k_3_init_file (""),
+		.emb5k_4_init_file (""),
+		.extension_mode ("power"),
+		.init_file ("none"),
+		.outreg_a (1'b0),
+		.outreg_b (1'b0),
+		.rammode ("sdp"),
+		.use_parity (1'b0),
+		.width_a (18),
+		.width_b (18),
+		.writemode_a ("write_first"),
+		.writemode_b ("write_first")
+	)
+	emb_0 (
+		.doa ({nc1601, nc1602, nc1603, nc1604, nc1605, nc1606, nc1607, nc1608, nc1609, nc1610, nc1611, nc1612, nc1613, nc1614, nc1615, nc1616, nc1617, nc1618, nc1619, nc1620, nc1621, nc1622, nc1623, nc1624, nc1625, nc1626, nc1627, nc1628, nc1629, nc1630, nc1631, nc1632, nc1633, nc1634, nc1635, nc1636, nc1637, nc1638, nc1639, nc1640, nc1641, nc1642, nc1643, nc1644, nc1645, nc1646, nc1647, nc1648, qr[15], qr[14], qr[13], qr[12], qr[11], qr[10], qr[9], qr[8], qr[7], qr[6], qr[5], qr[4], qr[3], qr[2], qr[1], qr[0]}),
+		.dob (),
+		.dopa (),
+		.dopb (),
+		.addra ({gnd_net, gnd_net, gnd_net, gnd_net, ar[9], ar[8], ar[7], ar[6], ar[5], ar[4], ar[3], ar[2], ar[1], ar[0]}),
+		.addrb ({gnd_net, gnd_net, gnd_net, gnd_net, aw[9], aw[8], aw[7], aw[6], aw[5], aw[4], aw[3], aw[2], aw[1], aw[0]}),
+		.clka (clkr),
+		.clkb (clkw),
+		.dia (),
+		.dib ({nc1649, nc1650, nc1651, nc1652, nc1653, nc1654, nc1655, nc1656, nc1657, nc1658, nc1659, nc1660, nc1661, nc1662, nc1663, nc1664, nc1665, nc1666, nc1667, nc1668, nc1669, nc1670, nc1671, nc1672, nc1673, nc1674, nc1675, nc1676, nc1677, nc1678, nc1679, nc1680, nc1681, nc1682, nc1683, nc1684, nc1685, nc1686, nc1687, nc1688, nc1689, nc1690, nc1691, nc1692, nc1693, nc1694, nc1695, nc1696, dw[15], dw[14], dw[13], dw[12], dw[11], dw[10], dw[9], dw[8], dw[7], dw[6], dw[5], dw[4], dw[3], dw[2], dw[1], dw[0]}),
+		.dipa (),
+		.dipb (),
+		.cea (cer),
+		.ceb (cew),
+		.regcea (vcc_net),
+		.regceb (),
+		.regsra (rstnr),
+		.regsrb (),
+		.wea ({gnd_net, gnd_net, gnd_net, gnd_net}),
+		.web ({vcc_net, vcc_net, vcc_net, vcc_net}),
+		.eccoutdberr (),
+		.eccoutsberr (),
+		.eccreadaddr (),
+		.eccindberr (gnd_net),
+		.eccinsberr (gnd_net)
+	);
+EMB18K #(
+		.clka_inv (1'b0),
+		.clkb_inv (1'b0),
+		.eccreaden (1'b0),
+		.eccwriteen (1'b0),
+		.emb5k_1_init_file (""),
+		.emb5k_2_init_file (""),
+		.emb5k_3_init_file (""),
+		.emb5k_4_init_file (""),
+		.extension_mode ("power"),
+		.init_file ("none"),
+		.outreg_a (1'b0),
+		.outreg_b (1'b0),
+		.rammode ("sdp"),
+		.use_parity (1'b0),
+		.width_a (18),
+		.width_b (18),
+		.writemode_a ("write_first"),
+		.writemode_b ("write_first")
+	)
+	emb_4 (
+		.doa ({nc1697, nc1698, nc1699, nc1700, nc1701, nc1702, nc1703, nc1704, nc1705, nc1706, nc1707, nc1708, nc1709, nc1710, nc1711, nc1712, nc1713, nc1714, nc1715, nc1716, nc1717, nc1718, nc1719, nc1720, nc1721, nc1722, nc1723, nc1724, nc1725, nc1726, nc1727, nc1728, nc1729, nc1730, nc1731, nc1732, nc1733, nc1734, nc1735, nc1736, nc1737, nc1738, nc1739, nc1740, nc1741, nc1742, nc1743, nc1744, qr[31], qr[30], qr[29], qr[28], qr[27], qr[26], qr[25], qr[24], qr[23], qr[22], qr[21], qr[20], qr[19], qr[18], qr[17], qr[16]}),
+		.dob (),
+		.dopa (),
+		.dopb (),
+		.addra ({gnd_net, gnd_net, gnd_net, gnd_net, ar[9], ar[8], ar[7], ar[6], ar[5], ar[4], ar[3], ar[2], ar[1], ar[0]}),
+		.addrb ({gnd_net, gnd_net, gnd_net, gnd_net, aw[9], aw[8], aw[7], aw[6], aw[5], aw[4], aw[3], aw[2], aw[1], aw[0]}),
+		.clka (clkr),
+		.clkb (clkw),
+		.dia (),
+		.dib ({nc1745, nc1746, nc1747, nc1748, nc1749, nc1750, nc1751, nc1752, nc1753, nc1754, nc1755, nc1756, nc1757, nc1758, nc1759, nc1760, nc1761, nc1762, nc1763, nc1764, nc1765, nc1766, nc1767, nc1768, nc1769, nc1770, nc1771, nc1772, nc1773, nc1774, nc1775, nc1776, nc1777, nc1778, nc1779, nc1780, nc1781, nc1782, nc1783, nc1784, nc1785, nc1786, nc1787, nc1788, nc1789, nc1790, nc1791, nc1792, dw[31], dw[30], dw[29], dw[28], dw[27], dw[26], dw[25], dw[24], dw[23], dw[22], dw[21], dw[20], dw[19], dw[18], dw[17], dw[16]}),
+		.dipa (),
+		.dipb (),
+		.cea (cer),
+		.ceb (cew),
+		.regcea (vcc_net),
+		.regceb (),
+		.regsra (rstnr),
+		.regsrb (),
+		.wea ({gnd_net, gnd_net, gnd_net, gnd_net}),
+		.web ({vcc_net, vcc_net, vcc_net, vcc_net}),
+		.eccoutdberr (),
+		.eccoutsberr (),
+		.eccreadaddr (),
+		.eccindberr (gnd_net),
+		.eccinsberr (gnd_net)
+	);
+
+endmodule

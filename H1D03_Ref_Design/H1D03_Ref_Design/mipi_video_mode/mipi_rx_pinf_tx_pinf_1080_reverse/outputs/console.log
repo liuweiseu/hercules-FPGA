@@ -1,0 +1,568 @@
+==============================Synthesis start at: 2023-12-06 22:53:59===============================
+command: cst "-tcl" "scripts/cst_option.tcl"
+-----------------------------------------------------------------------------
+Fuxi CST Tool Version fx2023.1 win64 Build 20230827-19:06:13
+Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/emif2apb.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/glue.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mcu_v1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_rx_pinf_tx_pinf_1080.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_v1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/packet_asm.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/pll_v1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/psram_wrap.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/debugware_v2_1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mcu_arbiter.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_pdata.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_pdata_emb_v1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/gbuf_v1_1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/delaybuf_x32.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/delaybuf_v1_1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_mipi_tx.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_mipi_tx_emb_v1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_sync.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_data_process.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_rx_hsync.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_rx_vsync.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_tx_fifo_readen_gen.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_tx_packet_gen.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_tx_timing_gen.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/rx_packet_tx_packet_video.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/mipi_byteclk_delay.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/dataReadBack.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_tx_sync.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_tx_sync_emb_v1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/emb1.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/sram_v2.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/sync_delay.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/MIPI_SC_Timing.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/fifo_32_1k.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/hard_fifo_18x10.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/h6_mac.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file src/enc_scaler_v2.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file ip_core/dwip_v2_1/src/dwip.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file ip_core/fifo_v2/src/syn_fifo.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file ip_core/fifo_v2/src/asyn_fifo.v
+INFO: [Synthesis VERI-1482]: Parsing library file C:/Software/Fuxi/data/lib/cst_lib_h6.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file C:/Software/Fuxi/data/lib/cst_lib_h6.v
+INFO: [Synthesis VERI-1489]: Resolving module h6_r8051xc2
+INFO: [Synthesis VERI-1489]: Resolving module OSCV1
+INFO: [Synthesis VERI-1489]: Resolving module MIPI_PLL
+INFO: [Synthesis VERI-1489]: Resolving module MIPI_TOP
+INFO: [Synthesis VERI-1489]: Resolving module PLLV2
+INFO: [Synthesis VERI-1489]: Resolving module SPRAM_16Kx32
+INFO: [Synthesis VERI-1489]: Resolving module GBUF
+INFO: [Synthesis VERI-1489]: Resolving module FIFO9K
+INFO: [Synthesis VERI-1489]: Resolving module EMB9K
+INFO: [Synthesis VERI-1489]: Resolving module DELAY_BUF
+INFO: [Synthesis VERI-1489]: Resolving module EMB18K
+INFO: [Synthesis VERI-1489]: Resolving module FIFO5K
+INFO: [Synthesis VERI-1489]: Resolving module SPRAM_2Kx32
+INFO: [Synthesis VERI-1489]: Resolving module FIFO18K
+INFO: [Synthesis VERI-1489]: Resolving module H6_MAC
+INFO: [Synthesis VERI-1489]: Resolving module JTAG_DBWV1
+INFO: [Synthesis VERI-1489]: Resolving module EMB5K
+INFO: [Synthesis VERI-1482]: Parsing library file C:/Software/Fuxi/data/lib/cst_lib_h6.v
+INFO: [Synthesis VERI-1482]: Analyzing Verilog file C:/Software/Fuxi/data/lib/cst_lib_h6.v
+WARNING: [Synthesis VERI-1927]: src/mipi_rx_pinf_tx_pinf_1080.v:259: port fifo_empty remains unconnected for this instance
+WARNING: [Synthesis VERI-1927]: src/mipi_rx_pinf_tx_pinf_1080.v:497: port mipi1_RxSyncHS remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/mipi_rx_pinf_tx_pinf_1080.v:23: compiling module mipi_rx_pinf_tx_pinf_1080
+INFO: [Synthesis VERI-1018]: src/mipi_byteclk_delay.v:21: compiling module mipi_byteclk_delay(DLY_LEVEL=4)
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:390: compiling module DELAY_BUF
+INFO: [Synthesis VERI-1018]: src/gbuf_v1_1.v:14: compiling module gbuf_v1_1
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:335: compiling module GBUF
+WARNING: [Synthesis VERI-1927]: src/glue.v:223: port empty remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/glue.v:1: compiling module glue
+WARNING: [Synthesis VERI-1927]: src/rx_packet_tx_packet_video.v:277: port almost_empty remains unconnected for this instance
+WARNING: [Synthesis VERI-1927]: src/rx_packet_tx_packet_video.v:423: port tx_blight_out remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/rx_packet_tx_packet_video.v:21: compiling module rx_packet_tx_packet_video
+WARNING: [Synthesis VERI-1927]: src/fifo_sync.v:64: port doutp remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/fifo_sync.v:14: compiling module fifo_sync
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:698: compiling module FIFO5K(almostemptyth=1'b0,almostfullth=1'b0,writewidth=4,readwidth=4,outreg=1'b0)
+WARNING: [Synthesis VERI-1330]: src/fifo_sync.v:51: actual bit length 4 differs from formal bit length 16 for port dout
+WARNING: [Synthesis VERI-1330]: src/fifo_sync.v:52: actual bit length 4 differs from formal bit length 16 for port din
+WARNING: [Synthesis VERI-1330]: src/fifo_sync.v:62: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [Synthesis VERI-1330]: src/fifo_sync.v:63: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [Synthesis VDB-1013]: src/fifo_sync.v:64: input port dinp[1] is not connected on this instance
+INFO: [Synthesis VERI-1018]: src/enc_scaler_v2.v:5: compiling module sc_1080_720
+INFO: [Synthesis VERI-1018]: src/emb1.v:5: compiling module emb1
+INFO: [Synthesis VERI-1018]: src/sram_v2.v:14: compiling module sram_v2
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:3357: compiling module SPRAM_2Kx32(init_file="src/emb_2160_1080_to_1440_720.dat")
+INFO: [Synthesis VERI-1018]: src/enc_scaler_v2.v:0: compiling module t40
+INFO: [Synthesis VERI-1018]: src/enc_scaler_v2.v:0: compiling module MAC_block
+WARNING: [Synthesis VERI-1229]: src/enc_scaler_v2.v:0: module instantiation should have an instance name
+WARNING: [Synthesis VERI-1927]: src/h6_mac.v:82: port dsp_en remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/h6_mac.v:14: compiling module h6_mac
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:2206: compiling module H6_MAC_renamed_due_excessive_length_1
+WARNING: [Synthesis VDB-1013]: src/h6_mac.v:82: input port b_acc_en is not connected on this instance
+INFO: [Synthesis VERI-1018]: src/enc_scaler_v2.v:0: compiling module SimpleDualPortRAM_generic(AddrWidth=10,DataWidth=32)
+INFO: [Synthesis VERI-1018]: src/enc_scaler_v2.v:0: compiling module t51_0
+INFO: [Synthesis VERI-1018]: src/enc_scaler_v2.v:0: compiling module t51_1
+INFO: [Synthesis VERI-1018]: src/fifo_32_1k.v:24: compiling module fifo_32_1k
+WARNING: [Synthesis VERI-1927]: src/hard_fifo_18x10.v:69: port almostfull remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/hard_fifo_18x10.v:14: compiling module hard_fifo_18x10
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:759: compiling module FIFO18K(almostemptyth=10'b1000000000,almostfullth=10'b1111011100,writewidth=18,readwidth=18,outreg=1'b1,peek=1'b1,use_parity=1'b0)
+WARNING: [Synthesis VERI-1330]: src/hard_fifo_18x10.v:52: actual bit length 16 differs from formal bit length 64 for port dout
+WARNING: [Synthesis VERI-1330]: src/hard_fifo_18x10.v:54: actual bit length 16 differs from formal bit length 64 for port din
+WARNING: [Synthesis VERI-1330]: src/hard_fifo_18x10.v:55: actual bit length 2 differs from formal bit length 8 for port dinp
+WARNING: [Synthesis VERI-1330]: src/hard_fifo_18x10.v:64: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [Synthesis VERI-1330]: src/hard_fifo_18x10.v:65: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [Synthesis VERI-1330]: src/hard_fifo_18x10.v:67: actual bit length 32 differs from formal bit length 1 for port eccindberr
+WARNING: [Synthesis VERI-1330]: src/hard_fifo_18x10.v:68: actual bit length 32 differs from formal bit length 1 for port eccinsberr
+INFO: [Synthesis VERI-1018]: src/MIPI_SC_Timing.v:2: compiling module MIPI_SC_Timing
+WARNING: [Synthesis VERI-1209]: src/MIPI_SC_Timing.v:33: expression size 13 truncated to fit in target size 12
+WARNING: [Synthesis VERI-1209]: src/MIPI_SC_Timing.v:53: expression size 13 truncated to fit in target size 12
+WARNING: [Synthesis VERI-1209]: src/MIPI_SC_Timing.v:80: expression size 13 truncated to fit in target size 12
+INFO: [Synthesis VERI-1018]: src/sync_delay.v:4: compiling module sync_delay
+WARNING: [Synthesis VERI-1209]: src/sync_delay.v:36: expression size 9 truncated to fit in target size 8
+INFO: [Synthesis VERI-1018]: src/mipi_data_process.v:3: compiling module mipi_data_process
+WARNING: [Synthesis VERI-1927]: src/mipi_tx_packet_gen.v:81: port fifo_readen remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/mipi_tx_packet_gen.v:3: compiling module MIPI_Tx_Packet_Generator
+INFO: [Synthesis VERI-1018]: src/mipi_tx_timing_gen.v:2: compiling module MIPI_TX_Timing_Generator
+WARNING: [Synthesis VERI-1209]: src/mipi_tx_timing_gen.v:166: expression size 13 truncated to fit in target size 12
+WARNING: [Synthesis VERI-1209]: src/mipi_tx_timing_gen.v:178: expression size 8 truncated to fit in target size 6
+INFO: [Synthesis VERI-1018]: src/mipi_tx_fifo_readen_gen.v:2: compiling module MIPI_TX_Fifo_Readen_Generator
+WARNING: [Synthesis VDB-1013]: src/rx_packet_tx_packet_video.v:307: input port tx_fifo_req is not connected on this instance
+WARNING: [Synthesis VDB-1013]: src/rx_packet_tx_packet_video.v:423: input port tx_blight_out is not connected on this instance
+INFO: [Synthesis VERI-1018]: src/packet_asm.v:23: compiling module packet_asm
+WARNING: [Synthesis VDB-1013]: src/glue.v:223: input port empty is not connected on this instance
+WARNING: [Synthesis VERI-1927]: src/pll_v1.v:120: port PSCK remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/pll_v1.v:14: compiling module pll_v1
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:3151: compiling module PLLV2_renamed_due_excessive_length_2
+WARNING: [Synthesis VDB-1013]: src/pll_v1.v:120: input port FBIN is not connected on this instance
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:3139: compiling module OSCV1
+INFO: [Synthesis VERI-1018]: src/mcu_arbiter.v:1: compiling module mcu_arbiter
+INFO: [Synthesis VERI-1018]: src/emif2apb.v:3: compiling module emif2apb
+INFO: [Synthesis VERI-1018]: src/delaybuf_x32.v:21: compiling module delaybuf_x32
+INFO: [Synthesis VERI-1018]: src/delaybuf_v1_1.v:14: compiling module delaybuf_v1_1
+INFO: [Synthesis VERI-1018]: src/psram_wrap.v:1: compiling module psram_wrap
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:3336: compiling module SPRAM_16Kx32
+WARNING: [Synthesis VERI-1927]: src/fifo_pdata.v:60: port regce remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/fifo_pdata.v:14: compiling module fifo_pdata
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:728: compiling module FIFO9K(almostemptyth=6'b000110,almostfullth=8'b00001000,writewidth=9,readwidth=36,outreg=1'b0)
+WARNING: [Synthesis VERI-1330]: src/fifo_pdata.v:49: actual bit length 8 differs from formal bit length 32 for port din
+WARNING: [Synthesis VERI-1330]: src/fifo_pdata.v:50: actual bit length 1 differs from formal bit length 4 for port dinp
+WARNING: [Synthesis VERI-1330]: src/fifo_pdata.v:58: actual bit length 32 differs from formal bit length 1 for port writesave
+WARNING: [Synthesis VERI-1330]: src/fifo_pdata.v:59: actual bit length 32 differs from formal bit length 1 for port writedrop
+WARNING: [Synthesis VDB-1013]: src/fifo_pdata.v:60: input port regce is not connected on this instance
+WARNING: [Synthesis VDB-1013]: src/mcu_arbiter.v:126: input port interrupt is not connected on this instance
+INFO: [Synthesis VERI-1018]: src/mcu_v1.v:14: compiling module mcu_v1
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:3428: compiling module h6_r8051xc2(program_file="../51_rx_pinf_tx_pinf_1080_reverse/Objects/mipi_rx_pinf_tx_pinf_1080.hex")
+WARNING: [Synthesis VERI-1927]: src/mipi_v1.v:250: port CLKEXT remains unconnected for this instance
+WARNING: [Synthesis VERI-1927]: src/mipi_v1.v:324: port CN remains unconnected for this instance
+WARNING: [Synthesis VERI-1927]: src/mipi_v1.v:396: port clk_periph remains unconnected for this instance
+INFO: [Synthesis VERI-1018]: src/mipi_v1.v:14: compiling module mipi_v1
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:2469: compiling module MIPI_PLL(TST=4'b1001)
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:2496: compiling module MIPI_TOP(mipi_sel="0",DSI_CSI=1'b1,CLK_DLY=5'b00000)
+WARNING: [Synthesis VERI-1330]: src/mipi_v1.v:322: actual bit length 1 differs from formal bit length 6 for port TEST_ENBL
+INFO: [Synthesis VERI-1018]: C:/Software/Fuxi/data/lib/cst_lib_h6.v:2496: compiling module MIPI_TOP(mipi_sel="1",DSI_CSI=1'b1,CLK_DLY=5'b00001)
+WARNING: [Synthesis VERI-1330]: src/mipi_v1.v:394: actual bit length 1 differs from formal bit length 6 for port TEST_ENBL
+WARNING: [Synthesis VDB-1013]: src/mipi_v1.v:250: input port CLKEXT is not connected on this instance
+WARNING: [Synthesis VDB-1013]: src/mipi_v1.v:324: input port dpi_pclk is not connected on this instance
+WARNING: [Synthesis VDB-1013]: src/mipi_v1.v:396: input port clk_periph is not connected on this instance
+WARNING: [Synthesis VERI-1330]: src/mipi_rx_pinf_tx_pinf_1080.v:467: actual bit length 1 differs from formal bit length 2 for port mipi1_periph_tx_cmd_vc
+INFO: [Synthesis VERI-1018]: src/dataReadBack.v:21: compiling module dataReadBack
+WARNING: [Synthesis VERI-1330]: src/mipi_rx_pinf_tx_pinf_1080.v:513: actual bit length 1 differs from formal bit length 2 for port mipi_periph_tx_cmd_vc
+WARNING: [Synthesis VDB-1013]: src/mipi_rx_pinf_tx_pinf_1080.v:384: input port scli is not connected on this instance
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_rx_pinf_tx_pinf_1080()
+INFO: [Synthesis CMD-2018]: timing before optimization : 4 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 4 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_byteclk_delay(DLY_LEVEL=4)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist DELAY_BUF()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist gbuf_v1_1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist GBUF()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist glue()
+INFO: [Synthesis CMD-2018]: timing before optimization : 2 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 2 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist rx_packet_tx_packet_video()
+INFO: [Synthesis CMD-2018]: timing before optimization : 4 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 3 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist fifo_sync()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist FIFO5K(almostemptyth=1'b0,almostfullth=1'b0,writewidth=4,readwidth=4,outreg=1'b0)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist sc_1080_720()
+INFO: [Synthesis CMD-2018]: timing before optimization : 6 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 6 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist emb1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist sram_v2()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist SPRAM_2Kx32(init_file="src/emb_2160_1080_to_1440_720.dat")()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist t40()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MAC_block()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist h6_mac()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist H6_MAC_renamed_due_excessive_length_1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist SimpleDualPortRAM_generic(AddrWidth=10,DataWidth=32)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist t51_0()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist t51_1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 2 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 2 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist fifo_32_1k()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist hard_fifo_18x10()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist FIFO18K(almostemptyth=10'b1000000000,almostfullth=10'b1111011100,writewidth=18,readwidth=18,outreg=1'b1,peek=1'b1,use_parity=1'b0)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_SC_Timing()
+INFO: [Synthesis CMD-2018]: timing before optimization : 4 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 4 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist sync_delay()
+INFO: [Synthesis CMD-2018]: timing before optimization : 3 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 3 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_data_process()
+INFO: [Synthesis CMD-2018]: timing before optimization : 4 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 4 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_Tx_Packet_Generator()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TX_Timing_Generator()
+INFO: [Synthesis CMD-2018]: timing before optimization : 6 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 6 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TX_Fifo_Readen_Generator()
+INFO: [Synthesis CMD-2018]: timing before optimization : 3 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 3 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist packet_asm()
+INFO: [Synthesis CMD-2018]: timing before optimization : 4 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 4 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist pll_v1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist PLLV2_renamed_due_excessive_length_2()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist OSCV1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mcu_arbiter()
+INFO: [Synthesis CMD-2018]: timing before optimization : 5 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 5 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist emif2apb()
+INFO: [Synthesis CMD-2018]: timing before optimization : 8 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 7 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist delaybuf_x32()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist delaybuf_v1_1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist psram_wrap()
+INFO: [Synthesis CMD-2018]: timing before optimization : 3 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 3 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist SPRAM_16Kx32()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist fifo_pdata()
+INFO: [Synthesis CMD-2018]: timing before optimization : 1 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 1 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist FIFO9K(almostemptyth=6'b000110,almostfullth=8'b00001000,writewidth=9,readwidth=36,outreg=1'b0)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mcu_v1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist h6_r8051xc2(program_file="../51_rx_pinf_tx_pinf_1080_reverse/Objects/mipi_rx_pinf_tx_pinf_1080.hex")()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_v1()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_PLL(TST=4'b1001)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TOP(mipi_sel="0",DSI_CSI=1'b1,CLK_DLY=5'b00000)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TOP(mipi_sel="1",DSI_CSI=1'b1,CLK_DLY=5'b00001)()
+INFO: [Synthesis CMD-2018]: timing before optimization : 0 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 0 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist dataReadBack()
+INFO: [Synthesis CMD-2018]: timing before optimization : 5 levels
+INFO: [Synthesis CMD-2019]: timing after optimization : 5 levels
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_rx_pinf_tx_pinf_1080()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_byteclk_delay(DLY_LEVEL=4)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist DELAY_BUF()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist gbuf_v1_1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist GBUF()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist glue()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist rx_packet_tx_packet_video()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist fifo_sync()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist FIFO5K(almostemptyth=1'b0,almostfullth=1'b0,writewidth=4,readwidth=4,outreg=1'b0)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist sc_1080_720()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist emb1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist sram_v2()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist SPRAM_2Kx32(init_file="src/emb_2160_1080_to_1440_720.dat")()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist t40()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MAC_block()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist h6_mac()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist H6_MAC_renamed_due_excessive_length_1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist SimpleDualPortRAM_generic(AddrWidth=10,DataWidth=32)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist t51_0()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist t51_1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist fifo_32_1k()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist hard_fifo_18x10()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist FIFO18K(almostemptyth=10'b1000000000,almostfullth=10'b1111011100,writewidth=18,readwidth=18,outreg=1'b1,peek=1'b1,use_parity=1'b0)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_SC_Timing()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist sync_delay()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_data_process()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_Tx_Packet_Generator()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TX_Timing_Generator()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TX_Fifo_Readen_Generator()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist packet_asm()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist pll_v1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist PLLV2_renamed_due_excessive_length_2()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist OSCV1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mcu_arbiter()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist emif2apb()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist delaybuf_x32()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist delaybuf_v1_1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist psram_wrap()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist SPRAM_16Kx32()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist fifo_pdata()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist FIFO9K(almostemptyth=6'b000110,almostfullth=8'b00001000,writewidth=9,readwidth=36,outreg=1'b0)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mcu_v1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist h6_r8051xc2(program_file="../51_rx_pinf_tx_pinf_1080_reverse/Objects/mipi_rx_pinf_tx_pinf_1080.hex")()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist mipi_v1()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_PLL(TST=4'b1001)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TOP(mipi_sel="0",DSI_CSI=1'b1,CLK_DLY=5'b00000)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist MIPI_TOP(mipi_sel="1",DSI_CSI=1'b1,CLK_DLY=5'b00001)()
+INFO: [Synthesis CMD-2015]: optimize: optimizing netlist dataReadBack()
+INFO: [Synthesis S10001]: Reading technology library file C:/Software/Fuxi\data\lib\agate_lib_h6.v...
+INFO: [Synthesis S10101]: Set top-level entity name: mipi_rx_pinf_tx_pinf_1080.
+INFO: [Synthesis S10002]: Reading AOC file outputs/mipi_rx_pinf_tx_pinf_1080_ast.aoc...
+INFO: [Synthesis S10001]: Reading technology library file C:/Software/Fuxi\data\lib\generic.v...
+INFO: [Synthesis S10001]: Reading technology library file C:/Software/Fuxi\data\lib\h6_macro.v...
+INFO: [Synthesis S10001]: Reading technology library file C:/Software/Fuxi\data\lib\cfe_map_lib.v...
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:port0o[2] and i13_mux:D1 while net is u_8051_u_h6_8051|port0o[2]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[2] and mcu_arbiter_u_psram_u_psram:addr[0] while net is u_8051_u_h6_8051|memaddr_comb[2]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[3] and mcu_arbiter_u_psram_u_psram:addr[1] while net is u_8051_u_h6_8051|memaddr_comb[3]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[4] and mcu_arbiter_u_psram_u_psram:addr[2] while net is u_8051_u_h6_8051|memaddr_comb[4]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[5] and mcu_arbiter_u_psram_u_psram:addr[3] while net is u_8051_u_h6_8051|memaddr_comb[5]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[6] and mcu_arbiter_u_psram_u_psram:addr[4] while net is u_8051_u_h6_8051|memaddr_comb[6]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[7] and mcu_arbiter_u_psram_u_psram:addr[5] while net is u_8051_u_h6_8051|memaddr_comb[7]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[8] and mcu_arbiter_u_psram_u_psram:addr[6] while net is u_8051_u_h6_8051|memaddr_comb[8]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[9] and mcu_arbiter_u_psram_u_psram:addr[7] while net is u_8051_u_h6_8051|memaddr_comb[9]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[10] and mcu_arbiter_u_psram_u_psram:addr[8] while net is u_8051_u_h6_8051|memaddr_comb[10]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[11] and mcu_arbiter_u_psram_u_psram:addr[9] while net is u_8051_u_h6_8051|memaddr_comb[11]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[12] and mcu_arbiter_u_psram_u_psram:addr[10] while net is u_8051_u_h6_8051|memaddr_comb[12]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[13] and mcu_arbiter_u_psram_u_psram:addr[11] while net is u_8051_u_h6_8051|memaddr_comb[13]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[14] and mcu_arbiter_u_psram_u_psram:addr[12] while net is u_8051_u_h6_8051|memaddr_comb[14]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[0] and mcu_arbiter_u_psram_u_psram:datai[0] while net is u_8051_u_h6_8051|memdatao_comb[0]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[1] and mcu_arbiter_u_psram_u_psram:datai[1] while net is u_8051_u_h6_8051|memdatao_comb[1]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[2] and mcu_arbiter_u_psram_u_psram:datai[2] while net is u_8051_u_h6_8051|memdatao_comb[2]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[3] and mcu_arbiter_u_psram_u_psram:datai[3] while net is u_8051_u_h6_8051|memdatao_comb[3]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[4] and mcu_arbiter_u_psram_u_psram:datai[4] while net is u_8051_u_h6_8051|memdatao_comb[4]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[5] and mcu_arbiter_u_psram_u_psram:datai[5] while net is u_8051_u_h6_8051|memdatao_comb[5]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[6] and mcu_arbiter_u_psram_u_psram:datai[6] while net is u_8051_u_h6_8051|memdatao_comb[6]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[7] and mcu_arbiter_u_psram_u_psram:datai[7] while net is u_8051_u_h6_8051|memdatao_comb[7]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[0] and mcu_arbiter_u_psram_u_psram:datai[8] while net is u_8051_u_h6_8051_memdatao_comb_0__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[1] and mcu_arbiter_u_psram_u_psram:datai[9] while net is u_8051_u_h6_8051_memdatao_comb_1__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[2] and mcu_arbiter_u_psram_u_psram:datai[10] while net is u_8051_u_h6_8051_memdatao_comb_2__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[3] and mcu_arbiter_u_psram_u_psram:datai[11] while net is u_8051_u_h6_8051_memdatao_comb_3__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[4] and mcu_arbiter_u_psram_u_psram:datai[12] while net is u_8051_u_h6_8051_memdatao_comb_4__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[5] and mcu_arbiter_u_psram_u_psram:datai[13] while net is u_8051_u_h6_8051_memdatao_comb_5__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[6] and mcu_arbiter_u_psram_u_psram:datai[14] while net is u_8051_u_h6_8051_memdatao_comb_6__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[7] and mcu_arbiter_u_psram_u_psram:datai[15] while net is u_8051_u_h6_8051_memdatao_comb_7__breakloop_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[0] and mcu_arbiter_u_psram_u_psram:datai[16] while net is u_8051_u_h6_8051_memdatao_comb_0__breakloop_0__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[1] and mcu_arbiter_u_psram_u_psram:datai[17] while net is u_8051_u_h6_8051_memdatao_comb_1__breakloop_1__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[2] and mcu_arbiter_u_psram_u_psram:datai[18] while net is u_8051_u_h6_8051_memdatao_comb_2__breakloop_2__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[3] and mcu_arbiter_u_psram_u_psram:datai[19] while net is u_8051_u_h6_8051_memdatao_comb_3__breakloop_3__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[4] and mcu_arbiter_u_psram_u_psram:datai[20] while net is u_8051_u_h6_8051_memdatao_comb_4__breakloop_4__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[5] and mcu_arbiter_u_psram_u_psram:datai[21] while net is u_8051_u_h6_8051_memdatao_comb_5__breakloop_5__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[6] and mcu_arbiter_u_psram_u_psram:datai[22] while net is u_8051_u_h6_8051_memdatao_comb_6__breakloop_6__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[7] and mcu_arbiter_u_psram_u_psram:datai[23] while net is u_8051_u_h6_8051_memdatao_comb_7__breakloop_7__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[0] and mcu_arbiter_u_psram_u_psram:datai[24] while net is u_8051_u_h6_8051_memdatao_comb_0__breakloop_8__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[1] and mcu_arbiter_u_psram_u_psram:datai[25] while net is u_8051_u_h6_8051_memdatao_comb_1__breakloop_9__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[2] and mcu_arbiter_u_psram_u_psram:datai[26] while net is u_8051_u_h6_8051_memdatao_comb_2__breakloop_2__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[3] and mcu_arbiter_u_psram_u_psram:datai[27] while net is u_8051_u_h6_8051_memdatao_comb_3__breakloop_3__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[4] and mcu_arbiter_u_psram_u_psram:datai[28] while net is u_8051_u_h6_8051_memdatao_comb_4__breakloop_4__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[5] and mcu_arbiter_u_psram_u_psram:datai[29] while net is u_8051_u_h6_8051_memdatao_comb_5__breakloop_5__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[6] and mcu_arbiter_u_psram_u_psram:datai[30] while net is u_8051_u_h6_8051_memdatao_comb_6__breakloop_6__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memdatao_comb[7] and mcu_arbiter_u_psram_u_psram:datai[31] while net is u_8051_u_h6_8051_memdatao_comb_7__breakloop_7__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:mempswr_comb and mcu_arbiter_i145_or2:I0 while net is u_8051_u_h6_8051|mempswr_comb_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memwr_comb and mcu_arbiter_i143_and2:I1 while net is u_8051_u_h6_8051|memwr_comb_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[17] and mcu_arbiter_i140_inv:IN while net is u_8051_u_h6_8051|memaddr_comb[17]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[21] and mcu_arbiter_u_psram_reduce_or_60_i5_or2:I0 while net is u_8051_u_h6_8051|memaddr_comb[21]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[22] and mcu_arbiter_u_psram_reduce_or_60_i5_or2:I1 while net is u_8051_u_h6_8051|memaddr_comb[22]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[19] and mcu_arbiter_u_psram_reduce_or_60_i4_or2:I0 while net is u_8051_u_h6_8051|memaddr_comb[19]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[20] and mcu_arbiter_u_psram_reduce_or_60_i4_or2:I1 while net is u_8051_u_h6_8051|memaddr_comb[20]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[17] and mcu_arbiter_u_psram_reduce_or_60_i2_or2:I0 while net is u_8051_u_h6_8051_memaddr_comb_17__breakloop_3189_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[18] and mcu_arbiter_u_psram_reduce_or_60_i2_or2:I1 while net is u_8051_u_h6_8051|memaddr_comb[18]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[15] and mcu_arbiter_u_psram_reduce_or_60_i1_or2:I0 while net is u_8051_u_h6_8051|memaddr_comb[15]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[16] and mcu_arbiter_u_psram_reduce_or_60_i1_or2:I1 while net is u_8051_u_h6_8051|memaddr_comb[16]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[0] and mcu_arbiter_u_psram_reduce_nor_46_i1_or2:I0 while net is u_8051_u_h6_8051|memaddr_comb[0]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[1] and mcu_arbiter_u_psram_reduce_nor_46_i1_or2:I1 while net is u_8051_u_h6_8051|memaddr_comb[1]_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[1] and mcu_arbiter_u_psram_reduce_nor_48_i1_or2:I1 while net is u_8051_u_h6_8051_memaddr_comb_1__breakloop_3910_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[0] and mcu_arbiter_u_psram_i48_inv:IN while net is u_8051_u_h6_8051_memaddr_comb_0__breakloop_4024_net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[0] and mcu_arbiter_u_psram_reduce_nor_50_i1_or2:I0 while net is u_8051_u_h6_8051_memaddr_comb_0__breakloop_37__net.
+WARNING: [Synthesis Broken combinational loop between u_8051_u_h6_8051]:memaddr_comb[1] and mcu_arbiter_u_psram_i50_inv:IN while net is u_8051_u_h6_8051_memaddr_comb_1__breakloop_35__net.
+INFO: [Synthesis S10304]: magic: 2.2760 second(s), total 2.2760 second(s). Peak memory 122 MB.
+WARNING: [Synthesis S20119]: Block 'SOC_MASTER_BUS(soc_inst)' is floating, removed.
+INFO: [Synthesis S10204]: Generating synthesis design report...
+INFO: [Synthesis S10004]: Output AMV file: outputs/mipi_rx_pinf_tx_pinf_1080.amv.
+INFO: [Synthesis S10005]: Output AMA file: outputs/mipi_rx_pinf_tx_pinf_1080.ama.
+Fuxi fx2023.1 win64 CST was successful!
+116 warning(s), 0 error(s).
+CPU Time: 2.633 seconds, Peak Memory: 122 MB
+command: agv2aoc "-v" "outputs/mipi_rx_pinf_tx_pinf_1080.amv" "-o" "mipi_rx_pinf_tx_pinf_1080.aoc" "-dev" "H1D03N3W72C7" "-io" "-top" "mipi_rx_pinf_tx_pinf_1080"
+-----------------------------------------------------------------------------
+Fuxi agv2aoc Tool Version fx2023.1 win64 Build 20230827-19:04:31
+Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+Fuxi fx2023.1 win64 agv2aoc was successful!
+0 warning(s), 0 error(s).
+CPU Time: 0.188 seconds, Peak Memory: 14 MB
+Synthesis started at: 2023-12-06 22:53:59, Synthesis finished at: 2023-12-06 22:54:02, Synthesis total runtime:3.435s
+======================= Synthesis was successful. 116 warning(s), 0 error(s) =======================
+================================Placer start at: 2023-12-06 22:54:07================================
+command: cstoolc "scripts/syn_gen_db.tcl"
+command: cstoolc "scripts/fplan.tcl"
+INFO: [Placer 01000]: Andara Placement Tool Version fx2023.1 win64 Build, Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
+INFO: [Placer 01001]: Start to place IOs, fixed cells, and some cells except LUT/REG/EMB/MAC!!
+INFO: [Placer 01007]: Placement Initial internal structure!!!
+INFO: [Placer 08046]: Loaded Device : H1D03N3W72C7.
+INFO: [Placer 01003]: Placement handle AOC file!!
+INFO: [Placer 01004]: Placement handle clock related cells!!!
+INFO: [Placer 01002]: Placement IOs and some cells except LUT/REG/EMB/MAC finish successfully!!
+INFO: [Placer 07061]: Exporting cell mipi_rx_pinf_tx_pinf_1080 to verilog file: netlist/chip_fplan.v
+command: cstoolc "scripts/assigner_cstool.tcl"
+INFO: [Placer 03001]: Start Find Macros
+INFO: [Placer 03002]: Find Macros Ends
+INFO: [Placer 03001]: Start Global Placement
+INFO: [Placer 03001]: Start First Expansion
+INFO: [Placer 03002]: First Expansion Ends
+INFO: [Placer 03001]: Start EMB/MAC Legalization
+INFO: [Placer 03002]: EMB/MAC Legalization Ends
+INFO: [Placer 03003]: LOG_GENERAL::Global Placement Successful
+INFO: [Placer 03002]: Global Placement Ends
+INFO: [Placer 07061]: Exporting cell mipi_rx_pinf_tx_pinf_1080 to verilog file: netlist/chip_assigner.v
+command: cstoolc "scripts/refiner_new.tcl"
+INFO: [Placer 08046]: Loaded Device : H1D03N3W72C7.
+INFO: [Placer 05012]: Fuxi fx2023.1 win64 Placement was successful!
+INFO: [Placer 07061]: Exporting cell mipi_rx_pinf_tx_pinf_1080 to verilog file: netlist/chip_refiner.v
+INFO: [Placer 08048]: In plc_dump_apa_data...In file outputs/mipi_rx_pinf_tx_pinf_1080.apx.
+INFO: [Placer 05011]: Generating outputs/mipi_rx_pinf_tx_pinf_1080.apx file...
+INFO: [Placer 08047]: Dumping .apv format output data Succeeded.
+Placer completed successfully. See outputs/placer.log for detailed information
+Placer started at: 2023-12-06 22:54:07, Placer finished at: 2023-12-06 22:54:19, Placer total runtime:12.643s
+================================Router start at: 2023-12-06 22:54:19================================
+command: cstoolc "scripts/fixer.tcl"
+command: cstoolc "scripts/fixer_drc.tcl"
+command: cstoolc "scripts/pack.tcl"
+INFO: [Router 07036]: Preprocess db...
+INFO: [Router 07056]: Pack successful
+INFO: [Router 07060]: Writing db file to db/chip_pack.db
+command: cstoolc "scripts/route.tcl"
+INFO: [Router 08046]: Loaded Device : H1D03N3W72C7.
+INFO: [Router 08032]: Best solution till now. Storing trace.
+INFO: [Router 08030]: SORTING TRACE
+INFO: [Router 08031]: PLB-route successful!
+INFO: [Router 07060]: Writing db file to db/chip_rte.db
+INFO: [Router 08033]: Dumping .ara format output data Succeeded.
+INFO: [Router 08047]: Dumping .apv format output data Succeeded.
+INFO: [Router 08048]: In plc_dump_apa_data...In file outputs/mipi_rx_pinf_tx_pinf_1080.apa.
+INFO: [Router 05011]: Generating outputs/mipi_rx_pinf_tx_pinf_1080.apa file...
+INFO: [Router 08034]: Dumping .rpt format output data Succeeded.
+Router completed successfully. See outputs/router.log for detailed information
+Router started at: 2023-12-06 22:54:19, Router finished at: 2023-12-06 22:54:48, Router total runtime:28.741s
+================================Bitgen start at: 2023-12-06 22:54:48================================
+command: abcgen "-p" "outputs/mipi_rx_pinf_tx_pinf_1080.apa" "-r" "outputs/mipi_rx_pinf_tx_pinf_1080.ara" "-aoc" "mipi_rx_pinf_tx_pinf_1080.aoc" "-abc" "outputs/mipi_rx_pinf_tx_pinf_1080.abc" "-iostatus" "x"
+Emb data split: started at: 2023-12-06 22:54:49
+Emb data split: finished at: 2023-12-06 22:54:49
+-----------------------------------------------------------------------------
+Fuxi abcgen Tool Version fx2023.1 win64 Build 20230827-19:04:31
+Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+Run started on Wednesday, 06 December 23, at 22:54:49
+INFO: [Bitgen 00053]: Input APA file: outputs/mipi_rx_pinf_tx_pinf_1080.apa.
+INFO: [Bitgen 00054]: Input ARA file: outputs/mipi_rx_pinf_tx_pinf_1080.ara.
+INFO: [Bitgen 00055]: Input AOC file: mipi_rx_pinf_tx_pinf_1080.aoc.
+INFO: [Bitgen 00056]: Load Netlist file: outputs/mipi_rx_pinf_tx_pinf_1080.arv.
+INFO: [Bitgen 00059]: Load user library: C:/Software/Fuxi/data/catalog/H6/primitive_lib.v.
+Load CFG file: 'C:/Software/Fuxi/data/catalog/H6/H6.cfg
+INFO: [Bitgen 00025]: Loading DeviceDB ...
+INFO: [Bitgen 00026]: Loading DeviceDB finished.
+INFO: [Bitgen 00039]: Processing placed cells ...
+INFO: [Bitgen 00041]: Processing placed cells finished.
+INFO: [Bitgen 00045]: Processing routed nets ...
+INFO: [Bitgen 00046]: Processing routed nets finished.
+INFO: [Bitgen 00047]: Processing IO constraintion ...
+INFO: [Bitgen 00090]: The parameter 'NDR_0' of signal 'rx_decode_hsync(CVLVDS)' is configed to 4'b1000 according IO settings '2.5V|8ma'.
+INFO: [Bitgen 00090]: The parameter 'PDR_0' of signal 'rx_decode_hsync(CVLVDS)' is configed to 4'b1000 according IO settings '2.5V|8ma'.
+INFO: [Bitgen 00090]: The parameter 'NDR_1' of signal 'rx_decode_vsync(CVLVDS)' is configed to 4'b1000 according IO settings '2.5V|8ma'.
+INFO: [Bitgen 00090]: The parameter 'PDR_1' of signal 'rx_decode_vsync(CVLVDS)' is configed to 4'b1000 according IO settings '2.5V|8ma'.
+INFO: [Bitgen 00090]: The parameter 'NDR_0' of signal 'swire(CVLVDS)' is configed to 4'b1000 according IO settings '2.5V|8ma'.
+INFO: [Bitgen 00090]: The parameter 'PDR_0' of signal 'swire(CVLVDS)' is configed to 4'b1000 according IO settings '2.5V|8ma'.
+INFO: [Bitgen 00050]: Processing IO constraintion finished.
+INFO: [Bitgen 00052]: Output ABC file to: outputs/mipi_rx_pinf_tx_pinf_1080.abc.
+Fuxi fx2023.1 win64 abcgen was successful!
+0 warning(s), 0 error(s).
+CPU Time: 1.031 seconds, Peak Memory: 96 MB
+command: acfgen "-iostatus" "x" "-abc" "outputs/mipi_rx_pinf_tx_pinf_1080.abc" "-sf" "outputs/mipi_rx_pinf_tx_pinf_1080_spi.acf" "-bin" "outputs/mipi_rx_pinf_tx_pinf_1080_bin.acf" "-parallel" "2" "-lines" "2" "-ipcmd" "" "-fcfg" "1"
+-----------------------------------------------------------------------------
+Fuxi acfgen Tool Version fx2023.1 win64 Build 20230827-19:04:31
+Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+Run started on Wednesday, 06 December 23, at 22:54:50
+INFO: [Bitgen 00069]: Parsing ABC file:outputs/mipi_rx_pinf_tx_pinf_1080.abc ...
+INFO: [Bitgen 00070]: Device name: H1D03N3W72C7.
+INFO: [Bitgen 00071]: Parsing ABC file finished.
+INFO: [Bitgen 00025]: Loading DeviceDB ...
+INFO: [Bitgen 00026]: Loading DeviceDB finished.
+INFO: [Bitgen 00082]: Loading memory map C:/Software/Fuxi/data/catalog/H6/H6.mmp ...
+INFO: [Bitgen 00083]: Loading memory map finished.
+INFO: [Bitgen 00076]: Loading initialization data file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
+INFO: [Bitgen 00072]: Parsing HEX file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
+INFO: [Bitgen 00074]: Parsing HEX file finished.
+INFO: [Bitgen 00077]: Loading initialization data file finished.
+INFO: [Bitgen 00076]: Loading initialization data file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\mipi_rx_pinf_tx_pinf_1080_reverse\src\emb_2160_1080_to_1440_720.dat.
+INFO: [Bitgen 00079]: The initialization data width: 32.
+total line: 2049
+INFO: [Bitgen 00077]: Loading initialization data file finished.
+EMB-INIT 0, size=18432, emb index=0
+EMB-INIT 1, size=18433, emb index=1
+EMB-INIT 2, size=18434, emb index=2
+EMB-INIT 3, size=18435, emb index=3
+EMB-INIT 4, size=18436, emb index=4
+EMB-INIT 5, size=18437, emb index=5
+EMB-INIT 6, size=18438, emb index=6
+EMB-INIT 7, size=18439, emb index=7
+INFO: [Bitgen 00089]: Change flash mode to Dual SPI mode according to option -lines 2.
+INFO: [Bitgen 00065]: Output ACF file to: outputs/mipi_rx_pinf_tx_pinf_1080_bin.acf.
+INFO: [Bitgen 00089]: Change flash mode to Dual SPI mode according to option -lines 2.
+INFO: [Bitgen 00063]: Output SPI bitstream file to: outputs/mipi_rx_pinf_tx_pinf_1080_spi.acf.
+Fuxi fx2023.1 win64 acfgen was successful!
+0 warning(s), 0 error(s).
+CPU Time: 1.344 seconds, Peak Memory: 82 MB
+Bitgen started at: 2023-12-06 22:54:48, Bitgen finished at: 2023-12-06 22:54:52, Bitgen total runtime:3.447s
+================== Bitstream generation was successful. 0 warning(s), 0 error(s) ===================

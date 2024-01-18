@@ -1,0 +1,322 @@
+module fifo_psram_lbuf_rd_emb_v1 (clkr, clkw, cer, cew, rstnr, ar, aw, dw, qr);
+input clkr;
+input clkw;
+input cer;
+input cew;
+input rstnr;
+input [9:0] ar;
+input [10:0] aw;
+input [15:0] dw;
+output [31:0] qr;
+
+wire vcc_net;
+wire gnd_net;
+wire net_50;
+wire net_51;
+wire nc353;
+wire nc354;
+wire nc355;
+wire nc356;
+wire nc357;
+wire nc358;
+wire nc359;
+wire nc360;
+wire nc361;
+wire nc362;
+wire nc363;
+wire nc364;
+wire nc365;
+wire nc366;
+wire nc367;
+wire nc368;
+wire nc369;
+wire nc370;
+wire nc371;
+wire nc372;
+wire nc373;
+wire nc374;
+wire nc375;
+wire nc376;
+wire nc377;
+wire nc378;
+wire nc379;
+wire nc380;
+wire nc381;
+wire nc382;
+wire nc383;
+wire nc384;
+wire nc385;
+wire nc386;
+wire nc387;
+wire nc388;
+wire nc389;
+wire nc390;
+wire nc391;
+wire nc392;
+wire nc393;
+wire nc394;
+wire nc395;
+wire nc396;
+wire nc397;
+wire nc398;
+wire nc399;
+wire nc400;
+wire nc401;
+wire nc402;
+wire nc403;
+wire nc404;
+wire nc405;
+wire nc406;
+wire nc407;
+wire nc408;
+wire nc409;
+wire nc410;
+wire nc411;
+wire nc412;
+wire nc413;
+wire nc414;
+wire nc415;
+wire nc416;
+wire nc417;
+wire nc418;
+wire nc419;
+wire nc420;
+wire nc421;
+wire nc422;
+wire nc423;
+wire nc424;
+wire nc425;
+wire nc426;
+wire nc427;
+wire nc428;
+wire nc429;
+wire nc430;
+wire nc431;
+wire nc432;
+wire nc433;
+wire nc434;
+wire nc435;
+wire nc436;
+wire nc437;
+wire nc438;
+wire nc439;
+wire nc440;
+wire nc441;
+wire nc442;
+wire nc443;
+wire nc444;
+wire nc445;
+wire nc446;
+wire nc447;
+wire nc448;
+wire nc449;
+wire nc450;
+wire nc451;
+wire nc452;
+wire nc453;
+wire nc454;
+wire nc455;
+wire nc456;
+wire nc457;
+wire nc458;
+wire nc459;
+wire nc460;
+wire nc461;
+wire nc462;
+wire nc463;
+wire nc464;
+wire nc465;
+wire nc466;
+wire nc467;
+wire nc468;
+wire nc469;
+wire nc470;
+wire nc471;
+wire nc472;
+wire nc473;
+wire nc474;
+wire nc475;
+wire nc476;
+wire nc477;
+wire nc478;
+wire nc479;
+wire nc480;
+wire nc481;
+wire nc482;
+wire nc483;
+wire nc484;
+wire nc485;
+wire nc486;
+wire nc487;
+wire nc488;
+wire nc489;
+wire nc490;
+wire nc491;
+wire nc492;
+wire nc493;
+wire nc494;
+wire nc495;
+wire nc496;
+wire nc497;
+wire nc498;
+wire nc499;
+wire nc500;
+wire nc501;
+wire nc502;
+wire nc503;
+wire nc504;
+wire nc505;
+wire nc506;
+wire nc507;
+wire nc508;
+wire nc509;
+wire nc510;
+wire nc511;
+wire nc512;
+wire nc513;
+wire nc514;
+wire nc515;
+wire nc516;
+wire nc517;
+wire nc518;
+wire nc519;
+wire nc520;
+wire nc521;
+wire nc522;
+wire nc523;
+wire nc524;
+wire nc525;
+wire nc526;
+wire nc527;
+wire nc528;
+wire nc529;
+wire nc530;
+wire nc531;
+wire nc532;
+wire nc533;
+wire nc534;
+wire nc535;
+wire nc536;
+wire nc537;
+wire nc538;
+wire nc539;
+wire nc540;
+wire nc541;
+wire nc542;
+wire nc543;
+wire nc544;
+wire nc545;
+wire nc546;
+wire nc547;
+wire nc548;
+wire nc549;
+wire nc550;
+wire nc551;
+wire nc552;
+wire nc553;
+wire nc554;
+wire nc555;
+wire nc556;
+wire nc557;
+wire nc558;
+wire nc559;
+wire nc560;
+
+assign vcc_net = 1;
+assign gnd_net = 0;
+EMB18K #(
+		.emb5k_1_init_file (""),
+		.emb5k_2_init_file (""),
+		.emb5k_3_init_file (""),
+		.emb5k_4_init_file (""),
+		.init_file ("none"),
+		.clka_inv (1'b0),
+		.clkb_inv (1'b0),
+		.eccreaden (1'b0),
+		.eccwriteen (1'b0),
+		.extension_mode ("power"),
+		.outreg_a (1'b0),
+		.outreg_b (1'b0),
+		.rammode ("sdp"),
+		.use_parity (1'b0),
+		.width_a (18),
+		.width_b (9),
+		.writemode_a ("write_first"),
+		.writemode_b ("write_first")
+	)
+	emb_0 (
+		.doa ({nc353, nc354, nc355, nc356, nc357, nc358, nc359, nc360, nc361, nc362, nc363, nc364, nc365, nc366, nc367, nc368, nc369, nc370, nc371, nc372, nc373, nc374, nc375, nc376, nc377, nc378, nc379, nc380, nc381, nc382, nc383, nc384, nc385, nc386, nc387, nc388, nc389, nc390, nc391, nc392, nc393, nc394, nc395, nc396, nc397, nc398, nc399, nc400, qr[23], qr[22], qr[21], qr[20], qr[19], qr[18], qr[17], qr[16], qr[7], qr[6], qr[5], qr[4], qr[3], qr[2], qr[1], qr[0]}),
+		.dob (),
+		.dopa (),
+		.dopb (),
+		.addra ({gnd_net, gnd_net, gnd_net, gnd_net, ar[9], ar[8], ar[7], ar[6], ar[5], ar[4], ar[3], ar[2], ar[1], ar[0]}),
+		.addrb ({gnd_net, gnd_net, gnd_net, aw[10], aw[9], aw[8], aw[7], aw[6], aw[5], aw[4], aw[3], aw[2], aw[1], aw[0]}),
+		.clka (clkr),
+		.clkb (clkw),
+		.dia (),
+		.dib ({nc401, nc402, nc403, nc404, nc405, nc406, nc407, nc408, nc409, nc410, nc411, nc412, nc413, nc414, nc415, nc416, nc417, nc418, nc419, nc420, nc421, nc422, nc423, nc424, nc425, nc426, nc427, nc428, nc429, nc430, nc431, nc432, nc433, nc434, nc435, nc436, nc437, nc438, nc439, nc440, nc441, nc442, nc443, nc444, nc445, nc446, nc447, nc448, nc449, nc450, nc451, nc452, nc453, nc454, nc455, nc456, dw[7], dw[6], dw[5], dw[4], dw[3], dw[2], dw[1], dw[0]}),
+		.dipa (),
+		.dipb (),
+		.cea (cer),
+		.ceb (cew),
+		.regcea (vcc_net),
+		.regceb (),
+		.regsra (rstnr),
+		.regsrb (),
+		.wea ({gnd_net, gnd_net, gnd_net, gnd_net}),
+		.web ({vcc_net, vcc_net, vcc_net, vcc_net}),
+		.eccoutdberr (),
+		.eccoutsberr (),
+		.eccreadaddr (),
+		.eccindberr (gnd_net),
+		.eccinsberr (gnd_net)
+	);
+EMB18K #(
+		.emb5k_1_init_file (""),
+		.emb5k_2_init_file (""),
+		.emb5k_3_init_file (""),
+		.emb5k_4_init_file (""),
+		.init_file ("none"),
+		.clka_inv (1'b0),
+		.clkb_inv (1'b0),
+		.eccreaden (1'b0),
+		.eccwriteen (1'b0),
+		.extension_mode ("power"),
+		.outreg_a (1'b0),
+		.outreg_b (1'b0),
+		.rammode ("sdp"),
+		.use_parity (1'b0),
+		.width_a (18),
+		.width_b (9),
+		.writemode_a ("write_first"),
+		.writemode_b ("write_first")
+	)
+	emb_4 (
+		.doa ({nc457, nc458, nc459, nc460, nc461, nc462, nc463, nc464, nc465, nc466, nc467, nc468, nc469, nc470, nc471, nc472, nc473, nc474, nc475, nc476, nc477, nc478, nc479, nc480, nc481, nc482, nc483, nc484, nc485, nc486, nc487, nc488, nc489, nc490, nc491, nc492, nc493, nc494, nc495, nc496, nc497, nc498, nc499, nc500, nc501, nc502, nc503, nc504, qr[31], qr[30], qr[29], qr[28], qr[27], qr[26], qr[25], qr[24], qr[15], qr[14], qr[13], qr[12], qr[11], qr[10], qr[9], qr[8]}),
+		.dob (),
+		.dopa (),
+		.dopb (),
+		.addra ({gnd_net, gnd_net, gnd_net, gnd_net, ar[9], ar[8], ar[7], ar[6], ar[5], ar[4], ar[3], ar[2], ar[1], ar[0]}),
+		.addrb ({gnd_net, gnd_net, gnd_net, aw[10], aw[9], aw[8], aw[7], aw[6], aw[5], aw[4], aw[3], aw[2], aw[1], aw[0]}),
+		.clka (clkr),
+		.clkb (clkw),
+		.dia (),
+		.dib ({nc505, nc506, nc507, nc508, nc509, nc510, nc511, nc512, nc513, nc514, nc515, nc516, nc517, nc518, nc519, nc520, nc521, nc522, nc523, nc524, nc525, nc526, nc527, nc528, nc529, nc530, nc531, nc532, nc533, nc534, nc535, nc536, nc537, nc538, nc539, nc540, nc541, nc542, nc543, nc544, nc545, nc546, nc547, nc548, nc549, nc550, nc551, nc552, nc553, nc554, nc555, nc556, nc557, nc558, nc559, nc560, dw[15], dw[14], dw[13], dw[12], dw[11], dw[10], dw[9], dw[8]}),
+		.dipa (),
+		.dipb (),
+		.cea (cer),
+		.ceb (cew),
+		.regcea (vcc_net),
+		.regceb (),
+		.regsra (rstnr),
+		.regsrb (),
+		.wea ({gnd_net, gnd_net, gnd_net, gnd_net}),
+		.web ({vcc_net, vcc_net, vcc_net, vcc_net}),
+		.eccoutdberr (),
+		.eccoutsberr (),
+		.eccreadaddr (),
+		.eccindberr (gnd_net),
+		.eccinsberr (gnd_net)
+	);
+
+endmodule

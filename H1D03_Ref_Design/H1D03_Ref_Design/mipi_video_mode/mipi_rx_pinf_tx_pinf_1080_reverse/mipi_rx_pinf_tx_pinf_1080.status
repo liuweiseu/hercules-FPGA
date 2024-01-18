@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project_status>
+    <project_file_status size="2800" time_stamp="1573790412540" checksum="31b971f93a682f4028f81121ad3c2ba7"/>
+    <file_signature size="1264" time_stamp="1701932049149" checksum="fbb127d75cd65160dfe917b2ea7459ad" name="constraint/mipi_rx_pinf_tx_pinf_1080.sdc"/>
+    <file_signature size="0" time_stamp="0" checksum="" name="debug/Default/mipi_rx_pinf_tx_pinf_1080.aoc"/>
+    <file_signature size="1313" time_stamp="1701932042429" checksum="b3975667409eef0ca2e499f3f9e82697" name="mipi_rx_pinf_tx_pinf_1080.aoc"/>
+    <file_signature size="2144" time_stamp="1573790484822" checksum="de791ae497e99feef1bb25d632ab1f6a" name="src/MIPI_SC_Timing.v"/>
+    <file_signature size="8645" time_stamp="1566209579798" checksum="9e9a86f48941254b5a704f9f95d57fa4" name="src/dataReadBack.v"/>
+    <file_signature size="2818" time_stamp="1566209579799" checksum="3e36cdb48245f0f329bb1829859047d9" name="src/debugware_v2_1.v"/>
+    <file_signature size="929" time_stamp="1566209579800" checksum="21f2746224cc3b3401ff11e27730f601" name="src/delaybuf_v1_1.v"/>
+    <file_signature size="1340" time_stamp="1566209579802" checksum="ec171c5a2c0940d29fa0aac6e728b8c7" name="src/delaybuf_x32.v"/>
+    <file_signature size="661" time_stamp="1566209579805" checksum="e6ab41073aae09f8908f1bcd7a610cac" name="src/emb1.v"/>
+    <file_signature size="0" time_stamp="0" checksum="" name="src/emb_2280_1080_to_1520_720.dat"/>
+    <file_signature size="4227" time_stamp="1566209579809" checksum="bb79779d6dd97436d8f8765bef77acf1" name="src/emif2apb.v"/>
+    <file_signature size="48516" time_stamp="1572223597600" checksum="7e2830b3265dc6a0cd4814703e5ba48c" name="src/enc_scaler_v2.v"/>
+    <file_signature size="1988" time_stamp="1569465075894" checksum="045de34cf57366919c9000f02e1c47b9" name="src/fifo_32_1k.v"/>
+    <file_signature size="4109" time_stamp="1566209579810" checksum="edfa50433bca4b4878a33fc8de1a10a3" name="src/fifo_mipi_tx.v"/>
+    <file_signature size="6749" time_stamp="1566209579811" checksum="7af58ced4f95e37ff4d99091e5e5c5f1" name="src/fifo_mipi_tx_emb_v1.v"/>
+    <file_signature size="2505" time_stamp="1567060306835" checksum="8eaf4ae9977948f3b5b2b0801ad4acf0" name="src/fifo_pdata.v"/>
+    <file_signature size="1937" time_stamp="1566209579813" checksum="b0bd8ad3faa34e41000fbf3b886e3fa9" name="src/fifo_pdata_emb_v1.v"/>
+    <file_signature size="2440" time_stamp="1566209579814" checksum="9c0fc43d361ceda959cb103c5ec4f493" name="src/fifo_sync.v"/>
+    <file_signature size="4059" time_stamp="1566209579815" checksum="2789f4d59347034dd577be438f7e993e" name="src/fifo_tx_sync.v"/>
+    <file_signature size="7349" time_stamp="1566209579816" checksum="bf2b03178d93300741b3cc9ec4888bfd" name="src/fifo_tx_sync_emb_v1.v"/>
+    <file_signature size="887" time_stamp="1566209579817" checksum="c8d81a9a0e040a9f39640a7eca0a5ff2" name="src/gbuf_v1_1.v"/>
+    <file_signature size="6790" time_stamp="1567248100456" checksum="16b412f70fc761ad4b20bffa17f51cef" name="src/glue.v"/>
+    <file_signature size="3053" time_stamp="1567664150316" checksum="949b3849385c0cff8d9ee99530b80e03" name="src/h6_mac.v"/>
+    <file_signature size="2718" time_stamp="1567070007445" checksum="d4f8e210f42c75f9249be3f5a349a0b7" name="src/hard_fifo_18x10.v"/>
+    <file_signature size="5964" time_stamp="1567151875905" checksum="2d59cfae3b564ad0c08b5cdc811f15c7" name="src/mcu_arbiter.v"/>
+    <file_signature size="3997" time_stamp="1566209579821" checksum="989e444636080fdc7ed68a08aed59f2a" name="src/mcu_v1.v"/>
+    <file_signature size="844" time_stamp="1566209579822" checksum="cf4861c04e3293a70f31253572acaf05" name="src/mipi_byteclk_delay.v"/>
+    <file_signature size="2120" time_stamp="1566209579823" checksum="ff7251e597be2f91701d8f3fd75954bd" name="src/mipi_data_process.v"/>
+    <file_signature size="924" time_stamp="1566209579824" checksum="5ea61a291018898768d34ca731c24012" name="src/mipi_rx_hsync.v"/>
+    <file_signature size="15813" time_stamp="1567409027475" checksum="f803c408f9e3967d70ec1521b9fd7ba3" name="src/mipi_rx_pinf_tx_pinf_1080.v"/>
+    <file_signature size="786" time_stamp="1566209579826" checksum="71b9208d4915eac8681bd9c868bcc960" name="src/mipi_rx_vsync.v"/>
+    <file_signature size="2098" time_stamp="1566209579828" checksum="d5a4d4496eb760d57170ecbc43ab55e8" name="src/mipi_tx_fifo_readen_gen.v"/>
+    <file_signature size="2575" time_stamp="1567410943971" checksum="f2bc3ee9415b1d16686b1beca8c0e7c2" name="src/mipi_tx_packet_gen.v"/>
+    <file_signature size="5692" time_stamp="1573790472631" checksum="75c4b39d3084806c92df3a4a22cf8c41" name="src/mipi_tx_timing_gen.v"/>
+    <file_signature size="13947" time_stamp="1566209579833" checksum="40bdaf3d3434688f571bae3bf247665f" name="src/mipi_v1.v"/>
+    <file_signature size="1698" time_stamp="1566209579834" checksum="ea3d0289f0abc8d295a686902519bb21" name="src/packet_asm.v"/>
+    <file_signature size="5115" time_stamp="1567412903848" checksum="7ca569da30079c76e35e6ee681ddcabc" name="src/pll_v1.v"/>
+    <file_signature size="1745" time_stamp="1566209579839" checksum="83bbbc042ffe85e13b8fb8da2abf5b7b" name="src/psram_wrap.v"/>
+    <file_signature size="11058" time_stamp="1569461911521" checksum="84a07c67dce63190962b0dc4f8c105d8" name="src/rx_packet_tx_packet_video.v"/>
+    <file_signature size="1232" time_stamp="1573790456893" checksum="ce2ed0b8bee366b33928227a7d8b9551" name="src/sram_v2.v"/>
+    <file_signature size="4046" time_stamp="1566209579850" checksum="f7a33dcda0507de72f06e74b7c574e7e" name="src/sync_delay.v"/>
+    <flow_status>
+        <status status="Complete" error_count="0" end="2023-12-06 22:54:02" run_time="3" start="2023-12-06 22:53:59" flow="synthesis" warning_count="116"/>
+        <status status="Complete" error_count="0" end="2023-12-06 22:54:19" run_time="13" start="2023-12-06 22:54:07" flow="placer" warning_count="0"/>
+        <status status="Complete" error_count="0" end="2023-12-06 22:54:48" run_time="29" start="2023-12-06 22:54:19" flow="router" warning_count="0"/>
+        <status status="Complete" error_count="0" end="2023-12-06 22:54:52" run_time="3" start="2023-12-06 22:54:48" flow="bitgen" warning_count="0"/>
+        <status status="NeedRun" error_count="0" end="" run_time="0" start="" flow="timer" warning_count="0"/>
+        <status status="NeedRun" flow="ixplorer"/>
+        <status profile="Default" status="NeedRun" flow="signal_monitor"/>
+    </flow_status>
+    <io_editor_enabled value="true"/>
+    <io_editor_outdated value="false"/>
+    <sdc_editor_outdated value="false"/>
+    <ixplorer clock="" count="-1" msecs="-1" scan_high="-1" scan_low="-1" target_fmax="-1"/>
+    <pin_alias/>
+    <opened_file>
+        <file name="$(PRJ_DIR)/src/mipi_rx_pinf_tx_pinf_1080.v"/>
+        <file name="$(PRJ_DIR)/src/delaybuf_x32.v"/>
+        <file name="$(PRJ_DIR)/src/mipi_rx_hsync.v"/>
+        <file name="$(PRJ_DIR)/src/fifo_tx_sync.v"/>
+        <file name="$(PRJ_DIR)/src/mipi_v1.v"/>
+    </opened_file>
+    <tools/>
+    <platform value="win64"/>
+</project_status>

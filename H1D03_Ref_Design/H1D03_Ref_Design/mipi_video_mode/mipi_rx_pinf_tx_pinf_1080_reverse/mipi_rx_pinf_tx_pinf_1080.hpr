@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AgateProject version="3.2">
+    <name>mipi_rx_pinf_tx_pinf_1080</name>
+    <device>H1D03N3W72C7</device>
+    <topModule>mipi_rx_pinf_tx_pinf_1080</topModule>
+    <MonitorSignal>Default|Default</MonitorSignal>
+    <project-parameters>
+        <param name="timing_analysis_corner">worst</param>
+    </project-parameters>
+    <command-args toolName="bg">
+        <argument name="format_bin">1</argument>
+        <argument name="format_spi">1</argument>
+    </command-args>
+    <command-args toolName="synthesis">
+        <argument name="col_add">6</argument>
+        <argument name="col_con_add">0</argument>
+        <argument name="keep_hierarchy_en">1</argument>
+        <argument name="min_ce_fanout">4</argument>
+    </command-args>
+    <files>
+        <file>$(PRJ_DIR)/src/emif2apb.v</file>
+        <file>$(PRJ_DIR)/src/glue.v</file>
+        <file>$(PRJ_DIR)/src/mcu_v1.v</file>
+        <file>$(PRJ_DIR)/src/mipi_rx_pinf_tx_pinf_1080.v</file>
+        <file>$(PRJ_DIR)/src/mipi_v1.v</file>
+        <file>$(PRJ_DIR)/src/packet_asm.v</file>
+        <file>$(PRJ_DIR)/src/pll_v1.v</file>
+        <file>$(PRJ_DIR)/src/psram_wrap.v</file>
+        <file>$(PRJ_DIR)/constraint/mipi_rx_pinf_tx_pinf_1080.sdc</file>
+        <file>$(PRJ_DIR)/src/debugware_v2_1.v</file>
+        <file>$(PRJ_DIR)/src/mcu_arbiter.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pdata.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pdata_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/gbuf_v1_1.v</file>
+        <file>$(PRJ_DIR)/src/delaybuf_x32.v</file>
+        <file>$(PRJ_DIR)/src/delaybuf_v1_1.v</file>
+        <file>$(PRJ_DIR)/src/fifo_mipi_tx.v</file>
+        <file>$(PRJ_DIR)/src/fifo_mipi_tx_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/fifo_sync.v</file>
+        <file>$(PRJ_DIR)/src/mipi_data_process.v</file>
+        <file>$(PRJ_DIR)/src/mipi_rx_hsync.v</file>
+        <file>$(PRJ_DIR)/src/mipi_rx_vsync.v</file>
+        <file>$(PRJ_DIR)/src/mipi_tx_fifo_readen_gen.v</file>
+        <file>$(PRJ_DIR)/src/mipi_tx_packet_gen.v</file>
+        <file>$(PRJ_DIR)/src/mipi_tx_timing_gen.v</file>
+        <file>$(PRJ_DIR)/src/rx_packet_tx_packet_video.v</file>
+        <file>$(PRJ_DIR)/src/mipi_byteclk_delay.v</file>
+        <file>$(PRJ_DIR)/src/dataReadBack.v</file>
+        <file>$(PRJ_DIR)/src/fifo_tx_sync.v</file>
+        <file>$(PRJ_DIR)/src/fifo_tx_sync_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/emb1.v</file>
+        <file>$(PRJ_DIR)/src/sram_v2.v</file>
+        <file>$(PRJ_DIR)/src/sync_delay.v</file>
+        <file>$(PRJ_DIR)/src/MIPI_SC_Timing.v</file>
+        <file>$(PRJ_DIR)/src/fifo_32_1k.v</file>
+        <file>$(PRJ_DIR)/src/hard_fifo_18x10.v</file>
+        <file>$(PRJ_DIR)/src/h6_mac.v</file>
+        <file>$(PRJ_DIR)/src/enc_scaler_v2.v</file>
+    </files>
+</AgateProject>

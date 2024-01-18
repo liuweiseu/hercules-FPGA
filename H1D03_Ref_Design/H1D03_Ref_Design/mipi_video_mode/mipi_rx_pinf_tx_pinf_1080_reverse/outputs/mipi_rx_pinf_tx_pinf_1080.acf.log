@@ -1,0 +1,26 @@
+-----------------------------------------------------------------------------
+Fuxi acfgen Tool Version fx2023.1 win64 Build 20230827-19:04:31
+Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
+-----------------------------------------------------------------------------
+Run started on Wednesday, 06 December 23, at 22:54:50
+INFO: 00069: Parsing ABC file:outputs/mipi_rx_pinf_tx_pinf_1080.abc ...
+INFO: 00070: Device name: H1D03N3W72C7.
+INFO: 00071: Parsing ABC file finished.
+INFO: 00025: Loading DeviceDB ... 
+INFO: 00026: Loading DeviceDB finished. 
+INFO: 00082: Loading memory map C:/Software/Fuxi/data/catalog/H6/H6.mmp ...
+INFO: 00083: Loading memory map finished.
+INFO: 00076: Loading initialization data file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
+INFO: 00072: Parsing HEX file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
+INFO: 00074: Parsing HEX file finished.
+INFO: 00077: Loading initialization data file finished.
+INFO: 00076: Loading initialization data file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\mipi_rx_pinf_tx_pinf_1080_reverse\src\emb_2160_1080_to_1440_720.dat.
+INFO: 00079: The initialization data width: 32.
+INFO: 00077: Loading initialization data file finished.
+INFO: 00089: Change flash mode to Dual SPI mode according to option -lines 2.
+INFO: 00065: Output ACF file to: outputs/mipi_rx_pinf_tx_pinf_1080_bin.acf.
+INFO: 00089: Change flash mode to Dual SPI mode according to option -lines 2.
+INFO: 00063: Output SPI bitstream file to: outputs/mipi_rx_pinf_tx_pinf_1080_spi.acf.
+Fuxi fx2023.1 win64 acfgen was successful!
+0 warning(s), 0 error(s).
+CPU Time: 1.344 seconds, Peak Memory: 82 MB

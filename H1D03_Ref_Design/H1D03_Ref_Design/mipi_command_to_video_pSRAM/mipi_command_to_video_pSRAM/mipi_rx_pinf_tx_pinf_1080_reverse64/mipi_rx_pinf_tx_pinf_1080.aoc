@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aoc version="2.3" device="H1M03N3W68C7">
+	<ioConstraint>
+		<IO signal_name="lcd_rstn" location="IO_05N_1" inst_name="io_lcd_rstn_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="panel_rst" location="IO_06P_1" inst_name="io_panel_rst_inst" direction="output" operation_mode="normal" driving_strength="12ma"/>
+		<IO signal_name="psram_rst_n0" location="psram0_resetn" inst_name="io_psram_rst_n0_inst" direction="output" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="psram_rst_n1" location="psram1_resetn" inst_name="io_psram_rst_n1_inst" direction="output" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_ck0" location="psram0_clk" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_U_ck_u_inst_u_io" direction="output" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_ck1" location="psram1_clk" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_U_ck_u_inst_u_io" direction="output" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_ckn0" location="psram0_clkn" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_U_ckn_u_inst_u_io" direction="output" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_ckn1" location="psram1_clkn" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_U_ckn_u_inst_u_io" direction="output" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_csn0" location="psram0_csn" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_U_cs_n_u_inst_u_io" direction="output" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_csn1" location="psram1_csn" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_U_cs_n_u_inst_u_io" direction="output" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq0_0_" location="psram0_dq0" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_0__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_dq0_1_" location="psram0_dq1" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_1__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_dq0_2_" location="psram0_dq2" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_2__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_dq0_3_" location="psram0_dq3" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_3__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_dq0_4_" location="psram0_dq4" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_4__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_dq0_5_" location="psram0_dq5" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_5__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_dq0_6_" location="psram0_dq6" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_6__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_dq0_7_" location="psram0_dq7" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_mipi_io_7__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="slow"/>
+		<IO signal_name="ram_dq1_0_" location="psram1_dq0" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_0__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq1_1_" location="psram1_dq1" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_1__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq1_2_" location="psram1_dq2" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_2__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq1_3_" location="psram1_dq3" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_3__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq1_4_" location="psram1_dq4" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_4__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq1_5_" location="psram1_dq5" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_5__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq1_6_" location="psram1_dq6" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_6__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_dq1_7_" location="psram1_dq7" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_mipi_io_7__U_dq_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="ram_rwds0" location="psram0_rwds" inst_name="u_psram_fb_top_u_psram_ctrl_top0_u_psram_ctrl_ddrio_u_psram_io_U_rwds_u_inst_u_io" direction="inout" operation_mode="external_psram" io_standard="1.8V" slew_rate="fast"/>
+		<IO signal_name="ram_rwds1" location="psram1_rwds" inst_name="u_psram_fb_top_u_psram_ctrl_top1_u_psram_ctrl_ddrio_lvds_u_psram_io_U_rwds_u_inst_u_io" direction="inout" operation_mode="external_psram" driving_strength="12ma" io_standard="1.8V"/>
+		<IO signal_name="swire" location="IO_05P_1" inst_name="io_swire_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="te" location="IO_07P_1" inst_name="io_te_inst" direction="output" operation_mode="normal" driving_strength="12ma"/>
+		<IO signal_name="tt_0_" location="io4_tck_4" inst_name="io_tt_0__inst" direction="output" operation_mode="normal" io_standard="1.8V"/>
+		<IO signal_name="tt_1_" location="io7_tdo_4" inst_name="io_tt_1__inst" direction="output" operation_mode="normal" io_standard="1.8V"/>
+		<IO signal_name="tt_2_" location="io5_tms_4" inst_name="io_tt_2__inst" direction="output" operation_mode="normal" io_standard="1.8V"/>
+		<IO signal_name="tt_3_" location="io6_tdi_4" inst_name="io_tt_3__inst" direction="output" operation_mode="normal" io_standard="1.8V"/>
+	</ioConstraint>
+</aoc>
+

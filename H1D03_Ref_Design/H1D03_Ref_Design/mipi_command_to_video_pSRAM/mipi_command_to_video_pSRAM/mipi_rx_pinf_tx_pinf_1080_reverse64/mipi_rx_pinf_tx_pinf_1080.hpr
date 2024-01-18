@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AgateProject version="3.2">
+    <name>mipi_rx_pinf_tx_pinf_1080</name>
+    <device>H1M03N3W68C7</device>
+    <topModule>mipi_rx_pinf_tx_pinf_1080</topModule>
+    <MonitorSignal>test0|profile_1|test0</MonitorSignal>
+    <project-parameters>
+        <param name="timing_analysis_corner">worst</param>
+    </project-parameters>
+    <command-args toolName="bg">
+        <argument name="format_spi">0</argument>
+    </command-args>
+    <command-args toolName="synthesis">
+        <argument name="col_add">6</argument>
+        <argument name="col_con_add">1</argument>
+        <argument name="keep_hierarchy_en">1</argument>
+        <argument name="mem_inf_en">1</argument>
+        <argument name="min_ce_fanout">4</argument>
+        <argument name="mode">best_timing</argument>
+        <argument name="reg_opt">1</argument>
+        <argument name="use_dsp">yes</argument>
+    </command-args>
+    <files>
+        <file>$(PRJ_DIR)/src/emif2apb.v</file>
+        <file>$(PRJ_DIR)/src/glue.v</file>
+        <file>$(PRJ_DIR)/src/mcu_v1.v</file>
+        <file>$(PRJ_DIR)/src/mipi_rx_pinf_tx_pinf_1080.v</file>
+        <file>$(PRJ_DIR)/src/mipi_v1.v</file>
+        <file>$(PRJ_DIR)/src/packet_asm.v</file>
+        <file>$(PRJ_DIR)/src/pll_v1.v</file>
+        <file>$(PRJ_DIR)/src/psram_wrap.v</file>
+        <file>$(PRJ_DIR)/constraint/mipi_rx_pinf_tx_pinf_1080.sdc</file>
+        <file>$(PRJ_DIR)/src/debugware_v2_1.v</file>
+        <file>$(PRJ_DIR)/src/mcu_arbiter.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pdata_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/sram_v2.v</file>
+        <file>$(PRJ_DIR)/src/delaybuf.v</file>
+        <file>$(PRJ_DIR)/src/por_v1_1.v</file>
+        <file>$(PRJ_DIR)/src/te_gen.v</file>
+        <file>$(PRJ_DIR)/src/delaybuf_v1_1.v</file>
+        <file>$(PRJ_DIR)/src/fifo_32_1k.v</file>
+        <file>$(PRJ_DIR)/src/hard_fifo_18x10.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pdata_hard.v</file>
+        <file>$(PRJ_DIR)/src/pattern_gen.v</file>
+        <file>$(PRJ_DIR)/src/fifo_psram_io_rd.v</file>
+        <file>$(PRJ_DIR)/src/fifo_psram_io_rd_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/fifo_psram_lbuf.v</file>
+        <file>$(PRJ_DIR)/src/fifo_psram_lbuf_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/fifo_psram_lbuf_rd.v</file>
+        <file>$(PRJ_DIR)/src/fifo_psram_lbuf_rd_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/ddr_io.v</file>
+        <file>$(PRJ_DIR)/src/clkctrlswitch_0.v</file>
+        <file>$(PRJ_DIR)/src/clkctrlswitch_6.v</file>
+        <file>$(PRJ_DIR)/src/ddrio_lvds.v</file>
+        <file>$(PRJ_DIR)/src/clkctrlswitch_5.v</file>
+        <file>$(PRJ_DIR)/src/pattern_gen_test.v</file>
+        <file>$(PRJ_DIR)/src/ddrio_v1.v</file>
+        <file>$(PRJ_DIR)/src/rx_packet_cmd_mode_dpi.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pwr_half.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pram_wr_top.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pwr_quarter.v</file>
+        <file>$(PRJ_DIR)/src/fifo_pram_wr_top_quarter.v</file>
+        <file>$(PRJ_DIR)/src/fifo_mcu_wr_ram.v</file>
+        <file>$(PRJ_DIR)/src/fifo_mcu_wr_ram_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/fifo_mcu_rd_ram.v</file>
+        <file>$(PRJ_DIR)/src/fifo_mcu_rd_ram_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/gbuf_v1_1.v</file>
+        <file>$(PRJ_DIR)/src/fifo_mipi_rx.v</file>
+        <file>$(PRJ_DIR)/src/clkctrlswitch_2.v</file>
+        <file>$(PRJ_DIR)/src/clkctrlswitch_3.v</file>
+        <file>$(PRJ_DIR)/src/clkctrlswitch_1.v</file>
+        <file>$(PRJ_DIR)/src/spiInterface_v1.v</file>
+        <file>$(PRJ_DIR)/src/dataReadBack.v</file>
+        <file>$(PRJ_DIR)/src/h6_mac.v</file>
+        <file>$(PRJ_DIR)/src/mac_psram.v</file>
+        <file>$(PRJ_DIR)/src/sdpram.v</file>
+        <file>$(PRJ_DIR)/src/psram_io_ddr.v</file>
+        <file>$(PRJ_DIR)/src/dataReadBack_fifo.v</file>
+        <file>$(PRJ_DIR)/src/h1mac_v2.v</file>
+        <file>$(PRJ_DIR)/src/tsc_fifo_v2.v</file>
+        <file>$(PRJ_DIR)/src/tsc_fifo_v2_emb_v1.v</file>
+        <file>$(PRJ_DIR)/src/enc_sc_down_top_all_ok.v</file>
+        <file>$(PRJ_DIR)/src/scc2v/fifo_32s_1k.v</file>
+        <file>$(PRJ_DIR)/src/scc2v/hard_fifos_18x10.v</file>
+        <file>$(PRJ_DIR)/src/enc_psram_fb_top_all.v</file>
+        <file>$(PRJ_DIR)/src/emb1.v</file>
+    </files>
+</AgateProject>

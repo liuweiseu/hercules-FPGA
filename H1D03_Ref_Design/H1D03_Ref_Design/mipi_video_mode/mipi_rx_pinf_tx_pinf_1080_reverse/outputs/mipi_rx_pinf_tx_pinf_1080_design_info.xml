@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<designInfo>
+<topModule moduleFile="src/mipi_rx_pinf_tx_pinf_1080.v" moduleLineNo="23" moduleName="mipi_rx_pinf_tx_pinf_1080" isTop="yes" type = "0">
+<inst instName="u0_mipi1_clkdly" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="197" moduleName="mipi_byteclk_delay" moduleFile="src/mipi_byteclk_delay.v" moduleLineNo="21" isTop="no" type = "1">
+  <inst instName="genblk1[3].u_mipi_clkdly" instFile="src/mipi_byteclk_delay.v" instLineNo="42" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+  <inst instName="genblk1[2].u_mipi_clkdly" instFile="src/mipi_byteclk_delay.v" instLineNo="42" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+  <inst instName="genblk1[1].u_mipi_clkdly" instFile="src/mipi_byteclk_delay.v" instLineNo="42" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+  <inst instName="genblk1[0].u_mipi_clkdly" instFile="src/mipi_byteclk_delay.v" instLineNo="42" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="u_gbuf" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="204" moduleName="gbuf_v1_1" moduleFile="src/gbuf_v1_1.v" moduleLineNo="14" isTop="no" type = "1">
+  <inst instName="u_gbuf" instFile="src/gbuf_v1_1.v" instLineNo="25" moduleName="GBUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="335" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="glue" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="259" moduleName="glue" moduleFile="src/glue.v" moduleLineNo="1" isTop="no" type = "1">
+  <inst instName="rx_packet_tx_packet" instFile="src/glue.v" instLineNo="206" moduleName="rx_packet_tx_packet_video" moduleFile="src/rx_packet_tx_packet_video.v" moduleLineNo="21" isTop="no" type = "1">
+    <inst instName="fifo_sync_inst" instFile="src/rx_packet_tx_packet_video.v" instLineNo="190" moduleName="fifo_sync" moduleFile="src/fifo_sync.v" moduleLineNo="14" isTop="no" type = "1">
+      <inst instName="u_inst" instFile="src/fifo_sync.v" instLineNo="64" moduleName="FIFO5K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="698" isTop="no" type = "1"></inst>
+    </inst>
+    <inst instName="u_scaler" instFile="src/rx_packet_tx_packet_video.v" instLineNo="232" moduleName="sc_1080_720" moduleFile="src/enc_scaler_v2.v" moduleLineNo="5" isTop="no" type = "1">
+    </inst>
+    <inst instName="from_sc_fifo" instFile="src/rx_packet_tx_packet_video.v" instLineNo="277" moduleName="fifo_32_1k" moduleFile="src/fifo_32_1k.v" moduleLineNo="24" isTop="no" type = "1">
+      <inst instName="u0_hardfifo" instFile="src/fifo_32_1k.v" instLineNo="75" moduleName="hard_fifo_18x10" moduleFile="src/hard_fifo_18x10.v" moduleLineNo="14" isTop="no" type = "1">
+        <inst instName="u_inst" instFile="src/hard_fifo_18x10.v" instLineNo="69" moduleName="FIFO18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="759" isTop="no" type = "1"></inst>
+      </inst>
+      <inst instName="u1_hardfifo" instFile="src/fifo_32_1k.v" instLineNo="89" moduleName="hard_fifo_18x10" moduleFile="src/hard_fifo_18x10.v" moduleLineNo="14" isTop="no" type = "1">
+        <inst instName="u_inst" instFile="src/hard_fifo_18x10.v" instLineNo="69" moduleName="FIFO18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="759" isTop="no" type = "1"></inst>
+      </inst>
+    </inst>
+    <inst instName="sc1" instFile="src/rx_packet_tx_packet_video.v" instLineNo="307" moduleName="MIPI_SC_Timing" moduleFile="src/MIPI_SC_Timing.v" moduleLineNo="2" isTop="no" type = "1"></inst>
+    <inst instName="u_sync_delay" instFile="src/rx_packet_tx_packet_video.v" instLineNo="316" moduleName="sync_delay" moduleFile="src/sync_delay.v" moduleLineNo="4" isTop="no" type = "1"></inst>
+    <inst instName="u_data_process" instFile="src/rx_packet_tx_packet_video.v" instLineNo="345" moduleName="mipi_data_process" moduleFile="src/mipi_data_process.v" moduleLineNo="3" isTop="no" type = "1"></inst>
+    <inst instName="to_sc_fifo" instFile="src/rx_packet_tx_packet_video.v" instLineNo="366" moduleName="fifo_32_1k" moduleFile="src/fifo_32_1k.v" moduleLineNo="24" isTop="no" type = "1">
+      <inst instName="u0_hardfifo" instFile="src/fifo_32_1k.v" instLineNo="75" moduleName="hard_fifo_18x10" moduleFile="src/hard_fifo_18x10.v" moduleLineNo="14" isTop="no" type = "1">
+        <inst instName="u_inst" instFile="src/hard_fifo_18x10.v" instLineNo="69" moduleName="FIFO18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="759" isTop="no" type = "1"></inst>
+      </inst>
+      <inst instName="u1_hardfifo" instFile="src/fifo_32_1k.v" instLineNo="89" moduleName="hard_fifo_18x10" moduleFile="src/hard_fifo_18x10.v" moduleLineNo="14" isTop="no" type = "1">
+        <inst instName="u_inst" instFile="src/hard_fifo_18x10.v" instLineNo="69" moduleName="FIFO18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="759" isTop="no" type = "1"></inst>
+      </inst>
+    </inst>
+    <inst instName="mipi_tx_packet_generator" instFile="src/rx_packet_tx_packet_video.v" instLineNo="423" moduleName="MIPI_Tx_Packet_Generator" moduleFile="src/mipi_tx_packet_gen.v" moduleLineNo="3" isTop="no" type = "1">
+      <inst instName="mipi_tx_timing_generator_inst" instFile="src/mipi_tx_packet_gen.v" instLineNo="81" moduleName="MIPI_TX_Timing_Generator" moduleFile="src/mipi_tx_timing_gen.v" moduleLineNo="2" isTop="no" type = "1"></inst>
+      <inst instName="mipi_tx_fifo_readen_generator_inst" instFile="src/mipi_tx_packet_gen.v" instLineNo="95" moduleName="MIPI_TX_Fifo_Readen_Generator" moduleFile="src/mipi_tx_fifo_readen_gen.v" moduleLineNo="2" isTop="no" type = "1"></inst>
+    </inst>
+  </inst>
+  <inst instName="pasm" instFile="src/glue.v" instLineNo="223" moduleName="packet_asm" moduleFile="src/packet_asm.v" moduleLineNo="23" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="u_pll" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="281" moduleName="pll_v1" moduleFile="src/pll_v1.v" moduleLineNo="14" isTop="no" type = "1">
+  <inst instName="pll_u0" instFile="src/pll_v1.v" instLineNo="120" moduleName="PLLV2" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="3151" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="u_osc" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="288" moduleName="OSCV1" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="3139" isTop="no" type = "1"></inst>
+<inst instName="mcu_arbiter" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="333" moduleName="mcu_arbiter" moduleFile="src/mcu_arbiter.v" moduleLineNo="1" isTop="no" type = "1">
+  <inst instName="u_emif2apb" instFile="src/mcu_arbiter.v" instLineNo="126" moduleName="emif2apb" moduleFile="src/emif2apb.v" moduleLineNo="3" isTop="no" type = "1">
+    <inst instName="u0_dx32" instFile="src/emif2apb.v" instLineNo="42" moduleName="delaybuf_x32" moduleFile="src/delaybuf_x32.v" moduleLineNo="21" isTop="no" type = "1">
+      <inst instName="genblk1[0].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[1].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[2].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[3].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[4].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[5].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[6].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[7].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[8].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[9].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[10].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[11].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[12].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[13].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[14].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[15].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[16].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[17].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[18].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[19].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[20].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[21].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[22].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[23].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[24].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[25].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[26].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[27].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[28].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[29].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[30].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+      <inst instName="genblk1[31].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="35" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+    </inst>
+    <inst instName="u0_dbuf" instFile="src/emif2apb.v" instLineNo="43" moduleName="delaybuf_v1_1" moduleFile="src/delaybuf_v1_1.v" moduleLineNo="14" isTop="no" type = "1">
+      <inst instName="u_delaybuf" instFile="src/delaybuf_v1_1.v" instLineNo="25" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+    </inst>
+  </inst>
+  <inst instName="u_psram" instFile="src/mcu_arbiter.v" instLineNo="206" moduleName="psram_wrap" moduleFile="src/psram_wrap.v" moduleLineNo="1" isTop="no" type = "1">
+    <inst instName="u_psram" instFile="src/psram_wrap.v" instLineNo="85" moduleName="SPRAM_16Kx32" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="3336" isTop="no" type = "1"></inst>
+  </inst>
+  <inst instName="u_pfifo" instFile="src/mcu_arbiter.v" instLineNo="269" moduleName="fifo_pdata" moduleFile="src/fifo_pdata.v" moduleLineNo="14" isTop="no" type = "1">
+    <inst instName="u_inst" instFile="src/fifo_pdata.v" instLineNo="60" moduleName="FIFO9K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="728" isTop="no" type = "1"></inst>
+  </inst>
+</inst>
+<inst instName="u_8051" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="384" moduleName="mcu_v1" moduleFile="src/mcu_v1.v" moduleLineNo="14" isTop="no" type = "1">
+  <inst instName="u_h6_8051" instFile="src/mcu_v1.v" instLineNo="164" moduleName="h6_r8051xc2" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="3428" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="mipi_inst" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="497" moduleName="mipi_v1" moduleFile="src/mipi_v1.v" moduleLineNo="14" isTop="no" type = "1">
+  <inst instName="u_mipi_pll" instFile="src/mipi_v1.v" instLineNo="250" moduleName="MIPI_PLL" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="2469" isTop="no" type = "1"></inst>
+  <inst instName="u_mipi1" instFile="src/mipi_v1.v" instLineNo="324" moduleName="MIPI_TOP" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="2496" isTop="no" type = "1"></inst>
+  <inst instName="u_mipi2" instFile="src/mipi_v1.v" instLineNo="396" moduleName="MIPI_TOP" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="2496" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="uut_dataReadBack" instFile="src/mipi_rx_pinf_tx_pinf_1080.v" instLineNo="518" moduleName="dataReadBack" moduleFile="src/dataReadBack.v" moduleLineNo="21" isTop="no" type = "1"></inst>
+</topModule>
+<topModule moduleFile="src/debugware_v2_1.v" moduleLineNo="14" moduleName="debugware_v2_1" isTop="no" type = "0">
+<inst instName="u_tap" instFile="src/debugware_v2_1.v" instLineNo="40" moduleName="tap" moduleFile="ip_core/dwip_v2_1/src/dwip.v" moduleLineNo="0" isTop="no" type = "1">
+</inst>
+<inst instName="u_gbuf_update" instFile="src/debugware_v2_1.v" instLineNo="45" moduleName="GBUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="335" isTop="no" type = "1"></inst>
+<inst instName="u_la_manager" instFile="src/debugware_v2_1.v" instLineNo="70" moduleName="la_manager" moduleFile="ip_core/dwip_v2_1/src/dwip.v" moduleLineNo="0" isTop="no" type = "1">
+</inst>
+<inst instName="u_la_core_0" instFile="src/debugware_v2_1.v" instLineNo="94" moduleName="la_core" moduleFile="ip_core/dwip_v2_1/src/dwip.v" moduleLineNo="0" isTop="no" type = "1">
+</inst>
+</topModule>
+<topModule moduleFile="src/fifo_pdata_emb_v1.v" moduleLineNo="1" moduleName="fifo_pdata_emb_v1" isTop="no" type = "0">
+<inst instName="emb_0" instFile="src/fifo_pdata_emb_v1.v" instLineNo="79" moduleName="EMB9K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="502" isTop="no" type = "1"></inst>
+</topModule>
+<topModule moduleFile="src/delaybuf_x32.v" moduleLineNo="41" moduleName="delaybuf_x6" isTop="no" type = "0">
+<inst instName="genblk1[0].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="55" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[1].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="55" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[2].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="55" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[3].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="55" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[4].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="55" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[5].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="55" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+</topModule>
+<topModule moduleFile="src/delaybuf_x32.v" moduleLineNo="62" moduleName="delaybuf_x9" isTop="no" type = "0">
+<inst instName="genblk1[0].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[1].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[2].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[3].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[4].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[5].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[6].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[7].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[8].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="76" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+</topModule>
+<topModule moduleFile="src/delaybuf_x32.v" moduleLineNo="82" moduleName="delaybuf_x15" isTop="no" type = "0">
+<inst instName="genblk1[0].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[1].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[2].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[3].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[4].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[5].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[6].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[7].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[8].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[9].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[10].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[11].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[12].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[13].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+<inst instName="genblk1[14].u_delaybuf" instFile="src/delaybuf_x32.v" instLineNo="96" moduleName="DELAY_BUF" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="390" isTop="no" type = "1"></inst>
+</topModule>
+<topModule moduleFile="src/fifo_mipi_tx.v" moduleLineNo="14" moduleName="fifo_mipi_tx" isTop="no" type = "0">
+<inst instName="u_inst" instFile="src/fifo_mipi_tx.v" instLineNo="63" moduleName="fifo_mipi_tx_emb_v1" moduleFile="src/fifo_mipi_tx_emb_v1.v" moduleLineNo="1" isTop="no" type = "1">
+  <inst instName="emb_0" instFile="src/fifo_mipi_tx_emb_v1.v" instLineNo="257" moduleName="EMB18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="579" isTop="no" type = "1"></inst>
+  <inst instName="emb_4" instFile="src/fifo_mipi_tx_emb_v1.v" instLineNo="304" moduleName="EMB18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="579" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="u_asyn_fifo" instFile="src/fifo_mipi_tx.v" instLineNo="130" moduleName="cme_ip_asyn_fifo_v2" moduleFile="ip_core/fifo_v2/src/asyn_fifo.v" moduleLineNo="25" isTop="no" type = "1"></inst>
+</topModule>
+<topModule moduleFile="src/mipi_rx_hsync.v" moduleLineNo="3" moduleName="MIPI_Rx_Hsync" isTop="no" type = "0">
+</topModule>
+<topModule moduleFile="src/mipi_rx_vsync.v" moduleLineNo="3" moduleName="MIPI_Rx_Vsync" isTop="no" type = "0">
+</topModule>
+<topModule moduleFile="src/fifo_tx_sync.v" moduleLineNo="14" moduleName="fifo_tx_sync" isTop="no" type = "0">
+<inst instName="u_inst" instFile="src/fifo_tx_sync.v" instLineNo="61" moduleName="fifo_tx_sync_emb_v1" moduleFile="src/fifo_tx_sync_emb_v1.v" moduleLineNo="1" isTop="no" type = "1">
+  <inst instName="emb_0" instFile="src/fifo_tx_sync_emb_v1.v" instLineNo="257" moduleName="EMB18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="579" isTop="no" type = "1"></inst>
+  <inst instName="emb_4" instFile="src/fifo_tx_sync_emb_v1.v" instLineNo="304" moduleName="EMB18K" moduleFile="C:/Software/Fuxi/data/lib/cst_lib_h6.v" moduleLineNo="579" isTop="no" type = "1"></inst>
+</inst>
+<inst instName="u_asyn_fifo" instFile="src/fifo_tx_sync.v" instLineNo="128" moduleName="cme_ip_asyn_fifo_v2" moduleFile="ip_core/fifo_v2/src/asyn_fifo.v" moduleLineNo="25" isTop="no" type = "1"></inst>
+</topModule>
+<topModule moduleFile="ip_core/fifo_v2/src/syn_fifo.v" moduleLineNo="26" moduleName="cme_ip_syn_fifo_v2" isTop="no" type = "0">
+</topModule>
+</designInfo>

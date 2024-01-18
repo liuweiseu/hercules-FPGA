@@ -1,0 +1,6 @@
+".\Objects\STARTUP_M5.obj",
+".\Objects\main.obj" 
+TO ".\Objects\mipi_rx_pinf_tx_pinf_1080" 
+PRINT(".\Listings\mipi_rx_pinf_tx_pinf_1080.m51") RAMSIZE(256) 
+CODE( 0X0000-0X5FFF )
+XDATA( 0X6000-0X7FFF )

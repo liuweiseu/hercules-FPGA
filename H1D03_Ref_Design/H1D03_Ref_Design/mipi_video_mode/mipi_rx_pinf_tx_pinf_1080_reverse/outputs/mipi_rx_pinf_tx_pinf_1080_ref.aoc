@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aoc version="2.3" device="H1D03N3W72C7">
+	<ioConstraint>
+		<IO signal_name="phone_rst" pad_name="PAD_6N" location="IO_06N_1" pin_no="H1" inst_name="io_phone_rst_inst" direction="input" operation_mode="normal"/>
+		<IO signal_name="rx_decode_hsync" pad_name="PAD_9P" location="IO_09P_2" pin_no="G1" inst_name="io_rx_decode_hsync_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="rx_decode_vsync" pad_name="PAD_9N" location="IO_09N_2" pin_no="F1" inst_name="io_rx_decode_vsync_inst" direction="output" operation_mode="normal"/>
+		<IO signal_name="swire" pad_name="PAD_3P" location="IO_03P_1" pin_no="J2" inst_name="io_swire_inst" direction="output" operation_mode="normal"/>
+	</ioConstraint>
+	<placeConstraint>
+		<annotation version="2.3" device="H1D03N3W72C7">
+		</annotation>
+	</placeConstraint>
+</aoc>
+
+
