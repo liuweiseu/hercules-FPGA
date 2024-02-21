@@ -1,10 +1,10 @@
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 1   
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 1   
 
 
-C51 COMPILER V9.54, COMPILATION OF MODULE MAIN
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
 OBJECT MODULE PLACED IN .\Objects\main.obj
-COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE main.c LARGE OPTIMIZE(7,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listing
-                    -s\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+COMPILER INVOKED BY: C:\Software\Keil\8051\C51\BIN\C51.EXE main.c LARGE OPTIMIZE(7,SPEED) BROWSE DEBUG OBJECTEXTEND PRIN
+                    -T(.\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52          #define DSI_HOST_BTA_H_TO_COUNT         0
   53          #define DSI_HOST_TWAKEUP                200
   54          #define DSI_HOST_PIXEL_PAYLOAD_SIZE     DSI_HOST_X_RESOLUTION    //
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 2   
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 2   
 
   55          #define DSI_HOST_PIXEL_FIFO_SEND_LEVEL  240
   56          #define DSI_HOST_INTERFACE_COLOR_CODING 5   //DPI:0:16bit RGB cfg1 1:16bit RGB cfg2 2:18bit RGB cfg3 //3:1
@@ -120,737 +120,630 @@ line level    source
  103          U8 cfg_data8[  3]  = {0xBC,0x37,0x32};
  104          U8 cfg_data9[  3]  = {0xBD,0x64,0x32};
  105          U8 cfg_data10[ 2]  = {0xBE,0x04};
- 106          U8 cfg_data11[ 2]  = {0xC0,0x00};
- 107          U8 cfg_data12[46]  = {0xC1,0x04,0x48,0x00,0x00,0x26,0x15,0x19,0x0B,0x63,0xD2,0xD9,0x9A,0x73,0xEF,0xBD,0xE7
-             -,0x5C,0x6B,0x93,0x4D,0x22,0x18,0x8B,0x2A,0x41,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x40,0x02,0x22,0x1B,0x06,0x03
-             -,0x00,0x07,0xFF,0x00,0x01};
- 108          U8 cfg_data13[24] = {0xC2,0x01,0xF8,0x70,0x09,0x6F,0x12,0x0C,0x10,0x00,0x08,0x30,0x00,0x00,0x00,0x00,0x00,
-             -0x00,0x20,0x02,0x43,0x00,0x00,0x00};
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 3   
+ 106          
+ 107          /************************************************************/
+ 108          U8 cfg_data_2a[5]  = {0x2A,0x00,0x00,0x04,0x37}; 
+ 109          U8 cfg_data_2b[5]  = {0x2B,0x00,0x00,0x08,0x6F};
+ 110          U8 cmd05_cfg_0x11[2]={0x11,0x00};
+ 111          U8 cmd05_cfg_0x29[2]={0x29,0x00};
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 3   
 
- 109          U8 cfg_data14[63]  = {0xC3,0x87,0xD8,0x7D,0x87,0xD0,0x00,0x00,0x00,0x00,0x00,0x43,0xA4,0x3A,0x00,0x00,0x44
-             -,0x44,0x44,0x00,0x00,0x01,0x01,0x03,0x28,0x00,0x01,0x00,0x01,0x00,0x00,0x19,0x00,0x19,0x00,0x00,0x00,0x00,0x00,0x00,0x00
-             -,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x32,0x00,0x32,0x00,0x5A,0x02,0x32,0x00,0x32,0x00,0x5A,0x02,0x40,0x00};
- 110          U8 cfg_data15[21]  = {0xC4,0x70,0x00,0x00,0x00,0x11,0x11,0x00,0x00,0x00,0x02,0x02,0x31,0x01,0x00,0x00,0x00
-             -,0x02,0x01,0x01,0x01};
- 111          U8 cfg_data16[ 8]  = {0xC5,0x08,0x00,0x00,0x00,0x00,0x70,0x00};
- 112          U8 cfg_data17[64]  = {0xC6,0x5F,0x2D,0x2D,0x07,0x54,0x07,0x54,0x01,0x02,0x01,0x02,0x07,0x07,0x00,0x00,0x07
-             -,0x07,0x0F,0x11,0x07,0x5B,0x00,0x5B,0x5B,0xC2,0xC2,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
-             -,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
- 113          U8 cfg_data18[39]  = {0xC7,0x00,0x1F,0x30,0x43,0x52,0x5C,0x72,0x80,0x8B,0x95,0x45,0x4F,0x5C,0x70,0x79,0x85
-             -,0x90,0x93,0x97,0x00,0x1F,0x30,0x43,0x52,0x5C,0x72,0x80,0x8B,0x95,0x45,0x4F,0x5C,0x70,0x79,0x85,0x90,0x93,0x97};
- 114          U8 cfg_data19[56]  = {0xC8,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00
-             -,0x00,0xFC,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00
-             -,0x00,0xFC,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00,0x00,0xFC,0x00};
- 115          U8 cfg_data20[20]  = {0xC9,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00,0x00,0xFC,0x00,0x00,0x00,0x00
-             -,0x00,0xFC,0x00};
- 116          U8 cfg_data21[44]  = {0xCA,0x1C,0xFC,0xFC,0xFC,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
-             -,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
-             -,0x00,0x00,0x00};
- 117          U8 cfg_data22[28]  = {0xCB,0xFF,0xFF,0xFF,0xFF,0x0F,0x00,0x08,0x00,0x01,0x00,0x31,0xF0,0x40,0x08,0x00,0x00
-             -,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
- 118          U8 cfg_data23[ 2]  = {0xCC,0x02};
- 119          U8 cfg_data24[39]  = {0xCD,0x10,0x80,0x37,0xC0,0x37,0xC0,0x5C,0x02,0x19,0x19,0x11,0x11,0xD8,0xD8,0xD8,0xD8
-             -,0x01,0x00,0x00,0x00,0x32,0x00,0x32,0x00,0x5D,0x02,0x32,0x32,0x01,0x33,0x00,0x33,0x00,0x5E,0x02,0x32,0x32,0xAF};
- 120          U8 cfg_data25[26]  = {0xCE,0x5D,0x40,0x49,0x53,0x59,0x5E,0x63,0x68,0x6E,0x74,0x7E,0x8A,0x98,0xA8,0xBB,0xD0
-             -,0xFF,0x04,0x00,0x04,0x04,0x42,0x00,0x69,0x5A};
- 121          U8 cfg_data26[ 3]  = {0xCF,0x4A,0x1D};
- 122          U8 cfg_data27[18]  = {0xD0,0x33,0x57,0xD4,0x31,0x01,0x10,0x10,0x10,0x19,0x19,0x00,0x00,0x00,0x00,0x00,0x00
-             -,0x00};
- 123          U8 cfg_data28[ 2]  = {0xD1,0x00};
- 124          U8 cfg_data29[32]  = {0xD2,0x10,0x00,0x00,0x10,0x75,0x0F,0x03,0x25,0x20,0x00,0x00,0x00,0x00,0x00,0x00,0x00
-             -,0x00,0x04,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
- 125          U8 cfg_data30[23]  = {0xD3,0x1B,0x3B,0xBB,0x77,0x77,0x77,0xBB,0xB3,0x33,0x00,0x00,0x6D,0x6E,0xC7,0xC7,0x33
-             -,0xBB,0xF2,0xFD,0xC6,0x0B,0x07};
- 126          U8 cfg_data31[ 8]  = {0xD4,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
- 127          U8 cfg_data32[ 8]  = {0xD5,0x03,0x00,0x00,0x02,0x2B,0x02,0x2B};
- 128          U8 cfg_data33[ 2]  = {0xD6,0xC1};
- 129          U8 cfg_data34[34]  = {0xD7,0xF6,0xFF,0x03,0x05,0x41,0x24,0x80,0x1F,0xC7,0x1F,0x1B,0x00,0x0C,0x07,0x20,0x00
-             -,0x00,0x00,0x00,0x00,0x0C,0x00,0x1F,0x00,0xFC,0x00,0x00,0xAA,0x67,0x7E,0x5D,0x06,0x00};
- 130          U8 cfg_data35[ 3]  = {0xD9,0x20,0x14};
- 131          U8 cfg_data36[ 5]  = {0xDD,0x30,0x06,0x23,0x65};
- 132          U8 cfg_data37[ 5]  = {0xDE,0x00,0x3F,0xFF,0x90};
- 133          U8 cfg_data38[ 6]  = {0xE7,0x00,0x00,0x00,0x46,0x61};
- 134          U8 cfg_data39[ 2]  = {0xEA,0x1F};
- 135          U8 cfg_data40[ 4]  = {0xEE,0x41,0x51,0x00};
- 136          U8 cfg_data41[ 3]  = {0xF1,0x00,0x00};
- 137          U8 cfg_data42[ 5]  = {0x2B,0x00,0x00,0x08,0x6F};
- 138          U8 cfg_data43[ 2]  = {0xB0,0x03};
- 139          U8 cfg_data44[ 2]  = {0xD6,0x01}; 
- 140          U8 cfg_data45[ 2]  = {0xB0,0x03}; 
- 141          U8 cfg_data46[ 2]  = {0x53,0x28}; 
- 142          U8 cfg_data47[ 2]  = {0x55,0x00};  
- 143          U8 cfg_data49[ 5]  = {0x30,0x00,0x00,0x02,0xA7};
- 144          
- 145          /************************************************************/
- 146          U8 cfg_data_2a[5]  = {0x2A,0x00,0x00,0x04,0x37}; 
- 147          U8 cfg_data_2b[5]  = {0x2B,0x00,0x00,0x08,0x6F};
- 148          U8 cmd05_cfg_0x11[2]={0x11,0x00};
- 149          U8 cmd05_cfg_0x29[2]={0x29,0x00};
- 150          /************************************************************/
- 151          
- 152          
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 4   
+ 112          /************************************************************/
+ 113          
+ 114          
+ 115          
+ 116          
+ 117          
+ 118          
+ 119          
+ 120          //8051 to tx mipi apb
+ 121          U32 xdata host_num_lanes  _at_ 0x8000;
+ 122          U32 xdata host_noctn_clk  _at_ 0x8004;
+ 123          U32 xdata host_t_pre    _at_ 0x8008;
+ 124          U32 xdata host_t_post   _at_ 0x800c;
+ 125          U32 xdata host_tx_gap   _at_ 0x8010;
+ 126          U32 xdata host_auto_eotp  _at_ 0x8014;
+ 127          U32 xdata host_ext_cmd    _at_ 0x8018;
+ 128          U32 xdata host_hstx_timer _at_ 0x801c;
+ 129          U32 xdata host_lpdt_timer _at_ 0x8020;
+ 130          U32 xdata host_bta_timer  _at_ 0x8024;
+ 131          U32 xdata host_twakeup    _at_ 0x8028;
+ 132          U32 xdata host_status_ro  _at_ 0x802c;
+ 133          U32 xdata host_error_ro   _at_ 0x8030;
+ 134          U32 xdata host_line_size  _at_ 0x8200;
+ 135          U32 xdata host_fifo_level _at_ 0x8204;
+ 136          U32 xdata host_color_code _at_ 0x8208;
+ 137          U32 xdata host_rbg_fmt    _at_ 0x820c;
+ 138          U32 xdata host_vs_pol   _at_ 0x8210;
+ 139          U32 xdata host_hs_pol   _at_ 0x8214;
+ 140          U32 xdata host_video_mode _at_ 0x8218;
+ 141          U32 xdata host_hfp      _at_ 0x821c;
+ 142          U32 xdata host_hbp      _at_ 0x8220;
+ 143          U32 xdata host_hsa      _at_ 0x8224;
+ 144          U32 xdata host_en_mult_pkts _at_ 0x8228;
+ 145          U32 xdata host_vbp      _at_ 0x822c;
+ 146          U32 xdata host_vfp      _at_ 0x8230;
+ 147          U32 xdata host_bllp_mode  _at_ 0x8234;
+ 148          U32 xdata host_en_null_pkt  _at_ 0x8238;
+ 149          U32 xdata host_vactive    _at_ 0x823c;
+ 150          U32 xdata host_vc     _at_ 0x8240;
+ 151          U32 xdata host_phy_d_pre  _at_ 0x8300;
+ 152          U32 xdata host_phy_clk_pre  _at_ 0x8304;
+ 153          U32 xdata host_phy_d_zero _at_ 0x8308;
+ 154          U32 xdata host_phy_clk_zero _at_ 0x830c;
+ 155          U32 xdata host_phy_d_trail  _at_ 0x8310;
+ 156          U32 xdata host_phy_clk_trail  _at_ 0x8314;
+ 157          U32 xdata host_pll_cn   _at_ 0x8318;
+ 158          U32 xdata host_pll_cm   _at_ 0x831c;
+ 159          U32 xdata host_pll_co   _at_ 0x8320;
+ 160          
+ 161          //8051 to rx mipi apb
+ 162          U32 xdata periph_lanes        _at_ 0x8400;
+ 163          U32 xdata periph_vc         _at_ 0x8404;
+ 164          U32 xdata periph_vc_check     _at_ 0x8408;
+ 165          U32 xdata periph_ecc_err        _at_ 0x840c;
+ 166          U32 xdata periph_hrx          _at_ 0x8410;
+ 167          U32 xdata periph_ltx          _at_ 0x8414;
+ 168          U32 xdata periph_bta          _at_ 0x8418;
+ 169          U32 xdata periph_crc_err        _at_ 0x841c;
+ 170          U32 xdata periph_bta_err        _at_ 0x8420;
+ 171          U32 xdata periph_dis_rlpdt      _at_ 0x8424;
+ 172          U32 xdata periph_dis_eotp     _at_ 0x8428;
+ 173          U32 xdata periph_clr_status     _at_ 0x842c;
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 4   
 
- 153          
- 154          
- 155          
- 156          
- 157          
- 158          //8051 to tx mipi apb
- 159          U32 xdata host_num_lanes  _at_ 0x8000;
- 160          U32 xdata host_noctn_clk  _at_ 0x8004;
- 161          U32 xdata host_t_pre    _at_ 0x8008;
- 162          U32 xdata host_t_post   _at_ 0x800c;
- 163          U32 xdata host_tx_gap   _at_ 0x8010;
- 164          U32 xdata host_auto_eotp  _at_ 0x8014;
- 165          U32 xdata host_ext_cmd    _at_ 0x8018;
- 166          U32 xdata host_hstx_timer _at_ 0x801c;
- 167          U32 xdata host_lpdt_timer _at_ 0x8020;
- 168          U32 xdata host_bta_timer  _at_ 0x8024;
- 169          U32 xdata host_twakeup    _at_ 0x8028;
- 170          U32 xdata host_status_ro  _at_ 0x802c;
- 171          U32 xdata host_error_ro   _at_ 0x8030;
- 172          U32 xdata host_line_size  _at_ 0x8200;
- 173          U32 xdata host_fifo_level _at_ 0x8204;
- 174          U32 xdata host_color_code _at_ 0x8208;
- 175          U32 xdata host_rbg_fmt    _at_ 0x820c;
- 176          U32 xdata host_vs_pol   _at_ 0x8210;
- 177          U32 xdata host_hs_pol   _at_ 0x8214;
- 178          U32 xdata host_video_mode _at_ 0x8218;
- 179          U32 xdata host_hfp      _at_ 0x821c;
- 180          U32 xdata host_hbp      _at_ 0x8220;
- 181          U32 xdata host_hsa      _at_ 0x8224;
- 182          U32 xdata host_en_mult_pkts _at_ 0x8228;
- 183          U32 xdata host_vbp      _at_ 0x822c;
- 184          U32 xdata host_vfp      _at_ 0x8230;
- 185          U32 xdata host_bllp_mode  _at_ 0x8234;
- 186          U32 xdata host_en_null_pkt  _at_ 0x8238;
- 187          U32 xdata host_vactive    _at_ 0x823c;
- 188          U32 xdata host_vc     _at_ 0x8240;
- 189          U32 xdata host_phy_d_pre  _at_ 0x8300;
- 190          U32 xdata host_phy_clk_pre  _at_ 0x8304;
- 191          U32 xdata host_phy_d_zero _at_ 0x8308;
- 192          U32 xdata host_phy_clk_zero _at_ 0x830c;
- 193          U32 xdata host_phy_d_trail  _at_ 0x8310;
- 194          U32 xdata host_phy_clk_trail  _at_ 0x8314;
- 195          U32 xdata host_pll_cn   _at_ 0x8318;
- 196          U32 xdata host_pll_cm   _at_ 0x831c;
- 197          U32 xdata host_pll_co   _at_ 0x8320;
- 198          
- 199          //8051 to rx mipi apb
- 200          U32 xdata periph_lanes        _at_ 0x8400;
- 201          U32 xdata periph_vc         _at_ 0x8404;
- 202          U32 xdata periph_vc_check     _at_ 0x8408;
- 203          U32 xdata periph_ecc_err        _at_ 0x840c;
- 204          U32 xdata periph_hrx          _at_ 0x8410;
- 205          U32 xdata periph_ltx          _at_ 0x8414;
- 206          U32 xdata periph_bta          _at_ 0x8418;
- 207          U32 xdata periph_crc_err        _at_ 0x841c;
- 208          U32 xdata periph_bta_err        _at_ 0x8420;
- 209          U32 xdata periph_dis_rlpdt      _at_ 0x8424;
- 210          U32 xdata periph_dis_eotp     _at_ 0x8428;
- 211          U32 xdata periph_clr_status     _at_ 0x842c;
- 212          U32 xdata periph_m_settle     _at_ 0x8680;
- 213          U32 xdata periph_mc_settle      _at_ 0x8684;
- 214          
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 5   
+ 174          U32 xdata periph_m_settle     _at_ 0x8680;
+ 175          U32 xdata periph_mc_settle      _at_ 0x8684;
+ 176          
+ 177          //extended fp reg  
+ 178          volatile U8 xdata cmd_fifo      _at_ 0x8800;  
+ 179          volatile U8 xdata mipi_sel      _at_ 0x8801;
+ 180          volatile U8 xdata func_set      _at_ 0x8802;
+ 181          
+ 182          volatile U8 xdata wd_rdy      _at_ 0x8803;
+ 183          volatile U8 xdata wd_2a_dats_l      _at_ 0x8804;
+ 184          volatile U8 xdata wd_2a_dats_h      _at_ 0x8805;
+ 185          volatile U8 xdata wd_2a_date_l      _at_ 0x8806;
+ 186          volatile U8 xdata wd_2a_date_h      _at_ 0x8807;
+ 187          volatile U8 xdata wd_2b_dats_l      _at_ 0x8808;
+ 188          volatile U8 xdata wd_2b_dats_h      _at_ 0x8809;
+ 189          volatile U8 xdata wd_2b_date_l      _at_ 0x880a;
+ 190          volatile U8 xdata wd_2b_date_h      _at_ 0x880b;
+ 191          volatile U8 xdata busy              _at_ 0x880c;
+ 192          /****************************ID******************************/
+ 193          
+ 194          /************************************************************/
+ 195          /************************ESD CHECK***************************/
+ 196          
+ 197          /***********************************************************/
+ 198          /************************TX DATA****************************/
+ 199          
+ 200          /**********************************************************/
+ 201          static void mipi_cfg_set( U32 *reg, U32 dat)
+ 202          { 
+ 203   1        *reg= dat;
+ 204   1        return;
+ 205   1      }
+ 206          
+ 207          //static void pinf_cfg_set( U8 *reg, U8 dat)
+ 208          //{ 
+ 209          //    *reg= dat;
+ 210          //    return;
+ 211          //}
+ 212          
+ 213          static void mydelay(U32 delay)
+ 214          {
+ 215   1        U32 i;
+ 216   1        for(i=0;i<delay;i++);
+ 217   1      }
+ 218          
+ 219          static void delay_1ms(U32 delay)
+ 220          {
+ 221   1        U32 i,j;
+ 222   1        for(i=0;i<delay;i++)
+ 223   1          for(j=0;j<167;j++);
+ 224   1      }
+ 225          
+ 226          static void fiforst(void)
+ 227          {
+ 228   1        U8 tmp;
+ 229   1        tmp=func_set;
+ 230   1        tmp= tmp&0xfb;
+ 231   1        func_set = tmp;
+ 232   1        mydelay(1);
+ 233   1        tmp= tmp |0x4;
+ 234   1        func_set=tmp;
+ 235   1        mydelay(1);
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 5   
 
- 215          //extended fp reg  
- 216          volatile U8 xdata cmd_fifo      _at_ 0x8800;  
- 217          volatile U8 xdata mipi_sel      _at_ 0x8801;
- 218          volatile U8 xdata func_set      _at_ 0x8802;
- 219          
- 220          volatile U8 xdata wd_rdy      _at_ 0x8803;
- 221          volatile U8 xdata wd_2a_dats_l      _at_ 0x8804;
- 222          volatile U8 xdata wd_2a_dats_h      _at_ 0x8805;
- 223          volatile U8 xdata wd_2a_date_l      _at_ 0x8806;
- 224          volatile U8 xdata wd_2a_date_h      _at_ 0x8807;
- 225          volatile U8 xdata wd_2b_dats_l      _at_ 0x8808;
- 226          volatile U8 xdata wd_2b_dats_h      _at_ 0x8809;
- 227          volatile U8 xdata wd_2b_date_l      _at_ 0x880a;
- 228          volatile U8 xdata wd_2b_date_h      _at_ 0x880b;
- 229          volatile U8 xdata busy              _at_ 0x880c;
- 230          /****************************ID******************************/
- 231          
- 232          /************************************************************/
- 233          /************************ESD CHECK***************************/
- 234          
- 235          /***********************************************************/
- 236          /************************TX DATA****************************/
+ 236   1      }
  237          
- 238          /**********************************************************/
- 239          static void mipi_cfg_set( U32 *reg, U32 dat)
- 240          { 
- 241   1        *reg= dat;
- 242   1        return;
- 243   1      }
- 244          
- 245          //static void pinf_cfg_set( U8 *reg, U8 dat)
- 246          //{ 
- 247          //    *reg= dat;
- 248          //    return;
- 249          //}
- 250          
- 251          static void mydelay(U32 delay)
- 252          {
- 253   1        U32 i;
- 254   1        for(i=0;i<delay;i++);
- 255   1      }
- 256          
- 257          static void delay_1ms(U32 delay)
- 258          {
- 259   1        U32 i,j;
- 260   1        for(i=0;i<delay;i++)
- 261   1          for(j=0;j<167;j++);
- 262   1      }
- 263          
- 264          static void fiforst(void)
- 265          {
- 266   1        U8 tmp;
- 267   1        tmp=func_set;
- 268   1        tmp= tmp&0xfb;
- 269   1        func_set = tmp;
- 270   1        mydelay(1);
- 271   1        tmp= tmp |0x4;
- 272   1        func_set=tmp;
- 273   1        mydelay(1);
- 274   1      }
- 275          
- 276          static void fifowr(void)
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 6   
+ 238          static void fifowr(void)
+ 239          {
+ 240   1        U8 tmp;
+ 241   1        tmp=func_set;
+ 242   1        tmp= tmp&0xf7;
+ 243   1        func_set = tmp;
+ 244   1        //mydelay(1);
+ 245   1        tmp= tmp |0x8;
+ 246   1        func_set=tmp;
+ 247   1      }
+ 248          
+ 249          static void datawr(void)
+ 250          {
+ 251   1        U8 tmp;
+ 252   1        tmp=func_set;
+ 253   1        tmp= tmp&0xEF;
+ 254   1        func_set = tmp;
+ 255   1        //mydelay(1);
+ 256   1        tmp= tmp |0x10;
+ 257   1        func_set=tmp;
+ 258   1      }
+ 259           
+ 260          static void hs_enter(U8 flag)
+ 261          {
+ 262   1        U8 tmp;
+ 263   1        tmp=func_set;
+ 264   1        if(flag)
+ 265   1        {
+ 266   2          tmp= tmp|0x2;   
+ 267   2        }
+ 268   1        else
+ 269   1        {
+ 270   2          tmp= tmp&0xfd;
+ 271   2        }
+ 272   1            func_set = tmp;
+ 273   1      }
+ 274          void mipi_lp_cmd_send(U8 cmd_set,UINT16 cmd_length , U8 *buf , U8 long_cmd)
+ 275          {
+ 276   1        UINT16 u16i,u16j;
+ 277   1        U8 tmp;
+ 278   1      //  hs_enter(0);
+ 279   1        fiforst();
+ 280   1        //cmd=cmd_set;
+ 281   1        cmd_fifo=cmd_set;
+ 282   1        if(long_cmd)
+ 283   1        {
+ 284   2            tmp=cmd_length&0xff;
+ 285   2            //dnum_l=tmp;
+ 286   2                  cmd_fifo = tmp;
+ 287   2            tmp=(cmd_length>>8)&0xff;
+ 288   2            //dnum_h=tmp;
+ 289   2                  cmd_fifo = tmp;
+ 290   2                  cmd_fifo = 0x00; //extra 1 byte
+ 291   2            //datawr();
+ 292   2          
+ 293   2            //fiforst();
+ 294   2            for(u16j=0;u16j<cmd_length;u16j++)
+ 295   2              {
+ 296   3                  //dset= *(buf+u16j);
+ 297   3                              cmd_fifo = *(buf+u16j);
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 6   
 
- 277          {
- 278   1        U8 tmp;
- 279   1        tmp=func_set;
- 280   1        tmp= tmp&0xf7;
- 281   1        func_set = tmp;
- 282   1        //mydelay(1);
- 283   1        tmp= tmp |0x8;
- 284   1        func_set=tmp;
- 285   1      }
- 286          
- 287          static void datawr(void)
- 288          {
- 289   1        U8 tmp;
- 290   1        tmp=func_set;
- 291   1        tmp= tmp&0xEF;
- 292   1        func_set = tmp;
- 293   1        //mydelay(1);
- 294   1        tmp= tmp |0x10;
- 295   1        func_set=tmp;
- 296   1      }
- 297           
- 298          static void hs_enter(U8 flag)
- 299          {
- 300   1        U8 tmp;
- 301   1        tmp=func_set;
- 302   1        if(flag)
- 303   1        {
- 304   2          tmp= tmp|0x2;   
- 305   2        }
- 306   1        else
- 307   1        {
- 308   2          tmp= tmp&0xfd;
- 309   2        }
- 310   1            func_set = tmp;
- 311   1      }
- 312          void mipi_lp_cmd_send(U8 cmd_set,UINT16 cmd_length , U8 *buf , U8 long_cmd)
- 313          {
- 314   1        UINT16 u16i,u16j;
- 315   1        U8 tmp;
- 316   1      //  hs_enter(0);
- 317   1        fiforst();
- 318   1        //cmd=cmd_set;
- 319   1        cmd_fifo=cmd_set;
- 320   1        if(long_cmd)
- 321   1        {
- 322   2            tmp=cmd_length&0xff;
- 323   2            //dnum_l=tmp;
- 324   2                  cmd_fifo = tmp;
- 325   2            tmp=(cmd_length>>8)&0xff;
- 326   2            //dnum_h=tmp;
- 327   2                  cmd_fifo = tmp;
- 328   2                  cmd_fifo = 0x00; //extra 1 byte
- 329   2            //datawr();
- 330   2          
- 331   2            //fiforst();
- 332   2            for(u16j=0;u16j<cmd_length;u16j++)
- 333   2              {
- 334   3                  //dset= *(buf+u16j);
- 335   3                              cmd_fifo = *(buf+u16j);
- 336   3                  //fifowr();
- 337   3              }
- 338   2                      cmd_fifo = 0x00;
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 7   
+ 298   3                  //fifowr();
+ 299   3              }
+ 300   2                      cmd_fifo = 0x00;
+ 301   2                      cmd_fifo = 0x00;
+ 302   2                      cmd_fifo = 0x00;
+ 303   2                      cmd_fifo = 0x00;
+ 304   2                //fifowr();
+ 305   2                //fifowr();
+ 306   2                //fifowr();
+ 307   2                //fifowr();
+ 308   2                
+ 309   2            pstart=1;
+ 310   2            while(!packet_finish);
+ 311   2            pstart=0; 
+ 312   2                //fiforst();
+ 313   2        }
+ 314   1        else
+ 315   1        {       
+ 316   2              //dnum_l=*(buf);
+ 317   2                      cmd_fifo=*(buf);
+ 318   2              if(cmd_length==2)
+ 319   2                //dnum_h=*(buf+1);
+ 320   2                          cmd_fifo=*(buf+1);
+ 321   2                      cmd_fifo = 0x00;
+ 322   2                      cmd_fifo = 0x00;
+ 323   2              //datawr();
+ 324   2              pstart=1;
+ 325   2              while(!packet_finish);
+ 326   2              pstart=0;   
+ 327   2              //fiforst();
+ 328   2        }
+ 329   1      
+ 330   1       
+ 331   1      }
+*** WARNING C280 IN LINE 276 OF main.c: 'u16i': unreferenced local variable
+ 332          
+ 333          void cmd_fill_frame(void)
+ 334          {
+ 335   1        UINT16 u16i,u16j;
+ 336   1        UINT16 len;
+ 337   1        U8 tmp;
+ 338   1        U8 flag=0;
+ 339   1        U8 r,g,b;
+ 340   1        UINT16 data_len;
+ 341   1        hs_enter(1);
+ 342   1        fiforst();
+ 343   1      
+ 344   1        
+ 345   1        data_len = DSI_HOST_X_RESOLUTION*3;
+ 346   1          len = data_len + 1;
+ 347   1          for(u16i=0;u16i<DSI_HOST_Y_RESOLUTION;u16i+=1)  //2line
+ 348   1          {
+ 349   2              if(u16i<540)
+ 350   2              {
+ 351   3                  r=0;
+ 352   3                  b=0xff;
+ 353   3                  g=0;
+ 354   3              }
+ 355   2              else if(u16i<1080)
+ 356   2              {
+ 357   3                  r=0;
+ 358   3                  b=0;
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 7   
 
- 339   2                      cmd_fifo = 0x00;
- 340   2                      cmd_fifo = 0x00;
- 341   2                      cmd_fifo = 0x00;
- 342   2                //fifowr();
- 343   2                //fifowr();
- 344   2                //fifowr();
- 345   2                //fifowr();
- 346   2                
- 347   2            pstart=1;
- 348   2            while(!packet_finish);
- 349   2            pstart=0; 
- 350   2                //fiforst();
- 351   2        }
- 352   1        else
- 353   1        {       
- 354   2              //dnum_l=*(buf);
- 355   2                      cmd_fifo=*(buf);
- 356   2              if(cmd_length==2)
- 357   2                //dnum_h=*(buf+1);
- 358   2                          cmd_fifo=*(buf+1);
- 359   2                      cmd_fifo = 0x00;
- 360   2                      cmd_fifo = 0x00;
- 361   2              //datawr();
- 362   2              pstart=1;
- 363   2              while(!packet_finish);
- 364   2              pstart=0;   
- 365   2              //fiforst();
- 366   2        }
- 367   1      
- 368   1       
- 369   1      }
-*** WARNING C280 IN LINE 314 OF main.c: 'u16i': unreferenced local variable
- 370          
- 371          void cmd_fill_frame(void)
- 372          {
- 373   1        UINT16 u16i,u16j;
- 374   1        UINT16 len;
- 375   1        U8 tmp;
- 376   1        U8 flag=0;
- 377   1        U8 r,g,b;
- 378   1        UINT16 data_len;
- 379   1        hs_enter(1);
- 380   1        fiforst();
- 381   1      
- 382   1        
- 383   1        data_len = DSI_HOST_X_RESOLUTION*3;
- 384   1          len = data_len + 1;
- 385   1          for(u16i=0;u16i<DSI_HOST_Y_RESOLUTION;u16i+=1)  //2line
- 386   1          {
- 387   2              if(u16i<540)
- 388   2              {
- 389   3                  r=0;
- 390   3                  b=0xff;
- 391   3                  g=0;
+ 359   3                  g=0xff;
+ 360   3              }
+ 361   2              else if(u16i<1620)
+ 362   2              {
+ 363   3                  r=0xff;
+ 364   3                  b=0xff;
+ 365   3                  g=0xff;
+ 366   3              }
+ 367   2              else
+ 368   2              {
+ 369   3                  r=0xff;
+ 370   3                  b=0;
+ 371   3                  g=0;
+ 372   3              }
+ 373   2          
+ 374   2              fiforst();
+ 375   2              cmd_fifo=0x39;
+ 376   2              tmp=len&0xff;
+ 377   2              cmd_fifo=tmp;
+ 378   2              tmp=(len>>8)&0xff;
+ 379   2              cmd_fifo=tmp;
+ 380   2              cmd_fifo=0x00;
+ 381   2      
+ 382   2              //fiforst();
+ 383   2              if(flag)
+ 384   2                  //dset=0x3c;
+ 385   2                  cmd_fifo=0x3c;
+ 386   2              else
+ 387   2              {
+ 388   3                  //dset=0x2c;
+ 389   3                  //cmd_fifo=0x2c;
+ 390   3                  cmd_fifo=0x2c;
+ 391   3                  flag=1;
  392   3              }
- 393   2              else if(u16i<1080)
- 394   2              {
- 395   3                  r=0;
- 396   3                  b=0;
- 397   3                  g=0xff;
- 398   3              }
- 399   2              else if(u16i<1620)
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 8   
+ 393   2              //fifowr(); //write cmd
+ 394   2      
+ 395   2              for(u16j=0;u16j<data_len;u16j+=3)
+ 396   2              {
+ 397   3      
+ 398   3                  //dset= r;
+ 399   3                  //fifowr();
+ 400   3                  //dset= g;
+ 401   3                  //fifowr();
+ 402   3                  //dset= b;
+ 403   3                  //fifowr();
+ 404   3                if(u16j<1000)
+ 405   3                {
+ 406   4                  cmd_fifo = r;
+ 407   4                  cmd_fifo = g;
+ 408   4                  cmd_fifo = b;
+ 409   4                }
+ 410   3                else if(u16j<2222)
+ 411   3                {
+ 412   4                  cmd_fifo = g;
+ 413   4                  cmd_fifo = b;
+ 414   4                  cmd_fifo = r;
+ 415   4                }
+ 416   3                else 
+ 417   3                {
+ 418   4                  cmd_fifo = b;
+ 419   4                  cmd_fifo = r;
+ 420   4                  cmd_fifo = g;
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 8   
 
- 400   2              {
- 401   3                  r=0xff;
- 402   3                  b=0xff;
- 403   3                  g=0xff;
- 404   3              }
- 405   2              else
- 406   2              {
- 407   3                  r=0xff;
- 408   3                  b=0;
- 409   3                  g=0;
- 410   3              }
- 411   2          
- 412   2              fiforst();
- 413   2              cmd_fifo=0x39;
- 414   2              tmp=len&0xff;
- 415   2              cmd_fifo=tmp;
- 416   2              tmp=(len>>8)&0xff;
- 417   2              cmd_fifo=tmp;
- 418   2              cmd_fifo=0x00;
- 419   2      
- 420   2              //fiforst();
- 421   2              if(flag)
- 422   2                  //dset=0x3c;
- 423   2                  cmd_fifo=0x3c;
- 424   2              else
- 425   2              {
- 426   3                  //dset=0x2c;
- 427   3                  //cmd_fifo=0x2c;
- 428   3                  cmd_fifo=0x2c;
- 429   3                  flag=1;
- 430   3              }
- 431   2              //fifowr(); //write cmd
- 432   2      
- 433   2              for(u16j=0;u16j<data_len;u16j+=3)
- 434   2              {
- 435   3      
- 436   3                  //dset= r;
- 437   3                  //fifowr();
- 438   3                  //dset= g;
- 439   3                  //fifowr();
- 440   3                  //dset= b;
- 441   3                  //fifowr();
- 442   3                if(u16j<1000)
- 443   3                {
- 444   4                  cmd_fifo = r;
- 445   4                  cmd_fifo = g;
- 446   4                  cmd_fifo = b;
- 447   4                }
- 448   3                else if(u16j<2222)
- 449   3                {
- 450   4                  cmd_fifo = g;
- 451   4                  cmd_fifo = b;
- 452   4                  cmd_fifo = r;
- 453   4                }
- 454   3                else 
- 455   3                {
- 456   4                  cmd_fifo = b;
- 457   4                  cmd_fifo = r;
- 458   4                  cmd_fifo = g;
- 459   4                }
- 460   3              }
- 461   2              cmd_fifo = 0x00;
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 9   
-
- 462   2              cmd_fifo = 0x00;
- 463   2              cmd_fifo = 0x00;
- 464   2              cmd_fifo = 0x00;
- 465   2              //fifowr();
- 466   2              //fifowr();
- 467   2              //fifowr();
- 468   2              //fifowr();
- 469   2      
- 470   2              pstart=1;
- 471   2              while(!packet_finish);
- 472   2              pstart=0;
- 473   2              fiforst();
- 474   2      
- 475   2              //mydelay(1); // 15us delay
- 476   2          }
- 477   1      }
+ 421   4                }
+ 422   3              }
+ 423   2              cmd_fifo = 0x00;
+ 424   2              cmd_fifo = 0x00;
+ 425   2              cmd_fifo = 0x00;
+ 426   2              cmd_fifo = 0x00;
+ 427   2              //fifowr();
+ 428   2              //fifowr();
+ 429   2              //fifowr();
+ 430   2              //fifowr();
+ 431   2      
+ 432   2              pstart=1;
+ 433   2              while(!packet_finish);
+ 434   2              pstart=0;
+ 435   2              fiforst();
+ 436   2      
+ 437   2              //mydelay(1); // 15us delay
+ 438   2          }
+ 439   1      }
+ 440          
+ 441          
+ 442          static void panel_init(void)
+ 443          {
+ 444   1      /**************************************************/
+ 445   1          mipi_lp_cmd_send(0x29,  2,cfg_data0 , 1);
+ 446   1          mipi_lp_cmd_send(0x29,  4,cfg_data1 , 1);
+ 447   1          mipi_lp_cmd_send(0x29,  2,cfg_data2 , 1);
+ 448   1          mipi_lp_cmd_send(0x29,  6,cfg_data3 , 1);
+ 449   1          mipi_lp_cmd_send(0x29,  8,cfg_data4 , 1);
+ 450   1          mipi_lp_cmd_send(0x29,  8,cfg_data5 , 1);
+ 451   1          
+ 452   1      /**********************************************************************************/
+ 453   1          mipi_lp_cmd_send(0x39,  5,cfg_data_2a , 1);
+ 454   1          mipi_lp_cmd_send(0x39,  5,cfg_data_2b , 1);
+ 455   1          mipi_lp_cmd_send(0x05,sizeof(cmd05_cfg_0x11)/sizeof(U8),cmd05_cfg_0x11,0);
+ 456   1          mipi_lp_cmd_send(0x05,sizeof(cmd05_cfg_0x29)/sizeof(U8),cmd05_cfg_0x29,0);  
+ 457   1      /********************************************************************************/
+ 458   1          
+ 459   1      }
+ 460          
+ 461          
+ 462          /*****************************************************/
+ 463          static U32 GET_CO_FACTOR(void){
+ 464   1        
+ 465   1        U8 co_factor = 0;
+ 466   1        U8 i;
+ 467   1        for(i<=0;i<4;i++)
+ 468   1        {
+ 469   2          if(((16*OSC)/(3*DSI_HOST_MIPI_RATE))<=TX_PLL_CO[i])
+ 470   2          {
+ 471   3            co_factor = i;
+ 472   3            break;
+ 473   3          } 
+ 474   2        }
+ 475   1        return (U32)co_factor;
+ 476   1      }
+ 477          
  478          
- 479          
- 480          static void panel_init(void)
- 481          {
- 482   1      /**************************************************/
- 483   1          mipi_lp_cmd_send(0x29,  2,cfg_data0 , 1);
- 484   1          mipi_lp_cmd_send(0x29,  4,cfg_data1 , 1);
- 485   1          mipi_lp_cmd_send(0x29,  2,cfg_data2 , 1);
- 486   1          mipi_lp_cmd_send(0x29,  6,cfg_data3 , 1);
- 487   1          mipi_lp_cmd_send(0x29,  8,cfg_data4 , 1);
- 488   1          mipi_lp_cmd_send(0x29,  8,cfg_data5 , 1);
- 489   1          mipi_lp_cmd_send(0x29,  8,cfg_data6 , 1);
- 490   1          mipi_lp_cmd_send(0x29,  3,cfg_data7 , 1);
- 491   1          mipi_lp_cmd_send(0x29,  3,cfg_data8 , 1);
- 492   1          mipi_lp_cmd_send(0x29,  3,cfg_data9 , 1);
- 493   1          mipi_lp_cmd_send(0x29,  2,cfg_data10 , 1);
- 494   1          mipi_lp_cmd_send(0x29,  2,cfg_data11 , 1);
- 495   1          mipi_lp_cmd_send(0x29, 46,cfg_data12 , 1);
- 496   1          mipi_lp_cmd_send(0x29, 24,cfg_data13 , 1);
- 497   1          mipi_lp_cmd_send(0x29, 63,cfg_data14 , 1);
- 498   1          mipi_lp_cmd_send(0x29, 21,cfg_data15 , 1);
- 499   1          mipi_lp_cmd_send(0x29,  8,cfg_data16 , 1);
- 500   1          mipi_lp_cmd_send(0x29, 64,cfg_data17 , 1);
- 501   1          mipi_lp_cmd_send(0x29, 39,cfg_data18 , 1);
- 502   1          mipi_lp_cmd_send(0x29, 56,cfg_data19 , 1);
- 503   1          mipi_lp_cmd_send(0x29, 20,cfg_data20 , 1);
- 504   1          mipi_lp_cmd_send(0x29, 44,cfg_data21 , 1);
- 505   1          mipi_lp_cmd_send(0x29, 28,cfg_data22 , 1);
- 506   1          mipi_lp_cmd_send(0x29,  2,cfg_data23 , 1);
- 507   1          mipi_lp_cmd_send(0x29, 39,cfg_data24 , 1);
- 508   1          mipi_lp_cmd_send(0x29, 26,cfg_data25 , 1);
- 509   1          mipi_lp_cmd_send(0x29,  3,cfg_data26 , 1);
- 510   1          mipi_lp_cmd_send(0x29, 18,cfg_data27 , 1);
- 511   1          mipi_lp_cmd_send(0x29,  2,cfg_data28 , 1);
- 512   1          mipi_lp_cmd_send(0x29, 32,cfg_data29 , 1);
- 513   1          mipi_lp_cmd_send(0x29, 23,cfg_data30 , 1);
- 514   1          mipi_lp_cmd_send(0x29,  8,cfg_data31 , 1);
- 515   1          mipi_lp_cmd_send(0x29,  8,cfg_data32 , 1);
- 516   1          mipi_lp_cmd_send(0x29,  2,cfg_data33 , 1);
- 517   1          mipi_lp_cmd_send(0x29, 34,cfg_data34 , 1);
- 518   1          mipi_lp_cmd_send(0x29,  3,cfg_data35 , 1);
- 519   1          mipi_lp_cmd_send(0x29,  5,cfg_data36 , 1);
- 520   1          mipi_lp_cmd_send(0x29,  5,cfg_data37 , 1);
- 521   1          mipi_lp_cmd_send(0x29,  6,cfg_data38 , 1);
- 522   1          mipi_lp_cmd_send(0x29,  2,cfg_data39 , 1);
- 523   1          mipi_lp_cmd_send(0x29,  4,cfg_data40 , 1);
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 10  
+ 479          static U32 GET_CN_FACTOR(void){
+ 480   1        return TX_PLL_CN[2];     //CN = 3   ????
+ 481   1      }
+ 482          
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 9   
 
- 524   1          mipi_lp_cmd_send(0x29,  3,cfg_data41 , 1);
- 525   1          mipi_lp_cmd_send(0x29,  5,cfg_data42 , 1);
- 526   1          mipi_lp_cmd_send(0x29,  2,cfg_data43 , 1);
- 527   1          mipi_lp_cmd_send(0x29,  2,cfg_data44 , 1);
- 528   1          mipi_lp_cmd_send(0x29,  2,cfg_data45 , 1);
- 529   1         
- 530   1          mipi_lp_cmd_send(0x39,  2,cfg_data46 , 1);
- 531   1          mipi_lp_cmd_send(0x39,  2,cfg_data47 , 1);
- 532   1          mipi_lp_cmd_send(0x39,  5,cfg_data49 , 1);
- 533   1          
- 534   1      /**********************************************************************************/
- 535   1          mipi_lp_cmd_send(0x39,  5,cfg_data_2a , 1);
- 536   1          mipi_lp_cmd_send(0x39,  5,cfg_data_2b , 1);
- 537   1          mipi_lp_cmd_send(0x05,sizeof(cmd05_cfg_0x11)/sizeof(U8),cmd05_cfg_0x11,0);
- 538   1          mipi_lp_cmd_send(0x05,sizeof(cmd05_cfg_0x29)/sizeof(U8),cmd05_cfg_0x29,0);  
- 539   1      /********************************************************************************/
- 540   1          
- 541   1      }
- 542          
- 543          
- 544          /*****************************************************/
- 545          static U32 GET_CO_FACTOR(void){
- 546   1        
- 547   1        U8 co_factor = 0;
- 548   1        U8 i;
- 549   1        for(i<=0;i<4;i++)
- 550   1        {
- 551   2          if(((16*OSC)/(3*DSI_HOST_MIPI_RATE))<=TX_PLL_CO[i])
- 552   2          {
- 553   3            co_factor = i;
- 554   3            break;
- 555   3          } 
- 556   2        }
- 557   1        return (U32)co_factor;
- 558   1      }
- 559          
- 560          
- 561          static U32 GET_CN_FACTOR(void){
- 562   1        return TX_PLL_CN[2];     //CN = 3   ????
+ 483          static U32 GET_CM_FACTOR(void){
+ 484   1        U16 cm_factor;
+ 485   1        
+ 486   1        cm_factor = (U16)((3*DSI_HOST_MIPI_RATE*TX_PLL_CO[GET_CO_FACTOR()])/OSC);
+ 487   1        return TX_PLL_CM[cm_factor-16];
+ 488   1      }
+ 489          /****************************************************************/
+ 490          
+ 491          /****************************************************************/
+ 492          void wd_2a_set(U8 dats_h,U8 dats_l,U8 date_h,U8 date_l)
+ 493          {
+ 494   1        U16 dat_s,dat_e;
+ 495   1        dat_s = (((U16)dats_h)<<8)+(U16)dats_l;
+ 496   1        dat_e = (((U16)date_h)<<8)+(U16)date_l;
+ 497   1        if((DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION)==0)
+ 498   1        {
+ 499   2          cfg_data_2a[1] = dats_h;
+ 500   2          cfg_data_2a[2] = dats_l;
+ 501   2          cfg_data_2a[3] = date_h;
+ 502   2          cfg_data_2a[4] = date_l;
+ 503   2        }
+ 504   1        else if((DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION)>0)
+ 505   1        {
+ 506   2          dat_s = dat_s - dat_s/(DSI_PERIPH_X_RESOLUTION/(DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION));
+*** WARNING C222 IN LINE 506 OF main.c: div by zero
+ 507   2          dat_e = dat_e - dat_e/(DSI_PERIPH_X_RESOLUTION/(DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION));
+*** WARNING C222 IN LINE 507 OF main.c: div by zero
+ 508   2          
+ 509   2          cfg_data_2a[1] = (U8)(dat_s>>8);
+ 510   2          cfg_data_2a[2] = (U8)dat_s;
+ 511   2          cfg_data_2a[3] = (U8)(dat_e>>8);
+ 512   2          cfg_data_2a[4] = (U8)dat_e;
+ 513   2        }
+ 514   1        else if((DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION)<0)
+ 515   1        {
+ 516   2          dat_s = dat_s + dat_s/(DSI_HOST_X_RESOLUTION/(DSI_HOST_X_RESOLUTION-DSI_PERIPH_X_RESOLUTION));
+*** WARNING C222 IN LINE 516 OF main.c: div by zero
+ 517   2          dat_e = dat_e + dat_e/(DSI_HOST_X_RESOLUTION/(DSI_HOST_X_RESOLUTION-DSI_PERIPH_X_RESOLUTION));
+*** WARNING C222 IN LINE 517 OF main.c: div by zero
+ 518   2          
+ 519   2          cfg_data_2a[1] = (U8)(dat_s>>8);
+ 520   2          cfg_data_2a[2] = (U8)dat_s;
+ 521   2          cfg_data_2a[3] = (U8)(dat_e>>8);
+ 522   2          cfg_data_2a[4] = (U8)dat_e;
+ 523   2        }
+ 524   1          
+ 525   1      }
+ 526          
+ 527          
+ 528          
+ 529          
+ 530          void wd_2b_set(U8 dats_h,U8 dats_l,U8 date_h,U8 date_l)
+ 531          {
+ 532   1        U16 dat_s,dat_e;
+ 533   1        dat_s = (((U16)dats_h)<<8)+(U16)dats_l;
+ 534   1        dat_e = (((U16)date_h)<<8)+(U16)date_l;
+ 535   1        if((DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION)==0)
+ 536   1        {
+ 537   2          cfg_data_2b[1] = dats_h;
+ 538   2          cfg_data_2b[2] = dats_l;
+ 539   2          cfg_data_2b[3] = date_h;
+ 540   2          cfg_data_2b[4] = date_l;
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 10  
+
+ 541   2        }
+ 542   1        else if((DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION)>0)
+ 543   1        {
+ 544   2          dat_s = dat_s - dat_s/(DSI_PERIPH_Y_RESOLUTION/(DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION));
+ 545   2          dat_e = dat_e - dat_e/(DSI_PERIPH_Y_RESOLUTION/(DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION));
+ 546   2          
+ 547   2          cfg_data_2b[1] = (U8)(dat_s>>8);
+ 548   2          cfg_data_2b[2] = (U8)dat_s;
+ 549   2          cfg_data_2b[3] = (U8)(dat_e>>8);
+ 550   2          cfg_data_2b[4] = (U8)dat_e;
+ 551   2        }
+ 552   1        else if((DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION)<0)
+ 553   1        {
+ 554   2          dat_s = dat_s + dat_s/(DSI_HOST_Y_RESOLUTION/(DSI_HOST_Y_RESOLUTION-DSI_PERIPH_Y_RESOLUTION));
+ 555   2          dat_e = dat_e + dat_e/(DSI_HOST_Y_RESOLUTION/(DSI_HOST_Y_RESOLUTION-DSI_PERIPH_Y_RESOLUTION));
+ 556   2          
+ 557   2          cfg_data_2b[1] = (U8)(dat_s>>8);
+ 558   2          cfg_data_2b[2] = (U8)dat_s;
+ 559   2          cfg_data_2b[3] = (U8)(dat_e>>8);
+ 560   2          cfg_data_2b[4] = (U8)dat_e;
+ 561   2        }
+ 562   1          
  563   1      }
- 564          
- 565          static U32 GET_CM_FACTOR(void){
- 566   1        U16 cm_factor;
- 567   1        
- 568   1        cm_factor = (U16)((3*DSI_HOST_MIPI_RATE*TX_PLL_CO[GET_CO_FACTOR()])/OSC);
- 569   1        return TX_PLL_CM[cm_factor-16];
- 570   1      }
- 571          /****************************************************************/
- 572          
- 573          /****************************************************************/
- 574          void wd_2a_set(U8 dats_h,U8 dats_l,U8 date_h,U8 date_l)
- 575          {
- 576   1        U16 dat_s,dat_e;
- 577   1        dat_s = (((U16)dats_h)<<8)+(U16)dats_l;
- 578   1        dat_e = (((U16)date_h)<<8)+(U16)date_l;
- 579   1        if((DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION)==0)
- 580   1        {
- 581   2          cfg_data_2a[1] = dats_h;
- 582   2          cfg_data_2a[2] = dats_l;
- 583   2          cfg_data_2a[3] = date_h;
- 584   2          cfg_data_2a[4] = date_l;
- 585   2        }
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 11  
+ 564          /***************************************************************/
+ 565          
+ 566          void main(void)
+ 567          
+ 568          { 
+ 569   1          U32 a;
+ 570   1          U8 b=0;
+ 571   1          U8 cmd_d[8];
+ 572   1          UINT16 u16i;
+ 573   1          CKCON=0x55;
+ 574   1          D_PAGESEL= 0x04;
+ 575   1      
+ 576   1          busy=0;
+ 577   1          wd_rdy=0;
+ 578   1          EAL=1;
+ 579   1          EX0=0;
+ 580   1          EX1=0;
+ 581   1          P1=0;
+ 582   1          P0_5 = 1;
+ 583   1          pstart=0;
+ 584   1          reset_dpi_n=0;
+ 585   1          rstn_mipi=0;
+ 586   1          //rstn_lcd=1;
+ 587   1          rstn_lcd=0;
+ 588   1          mipi_sel=0; //mipi2
+ 589   1          mipi_cfg_set( &host_num_lanes       ,DSI_HOST_NUM_LANES-1);
+ 590   1          mipi_cfg_set( &host_noctn_clk       ,DSI_HOST_NONCONTINUOUS_CLK);
+ 591   1          mipi_cfg_set( &host_t_pre           ,DSI_HOST_T_PRE);
+ 592   1          mipi_cfg_set( &host_t_post          ,DSI_HOST_T_POST);
+ 593   1          mipi_cfg_set( &host_tx_gap          ,DSI_HOST_TX_GAP);
+ 594   1          mipi_cfg_set( &host_auto_eotp       ,DSI_HOST_AUTOINSERT_EOTP);
+ 595   1          mipi_cfg_set( &host_ext_cmd         ,DSI_HOST_EXTRA_CMDS_AFTER_EOTP);
+ 596   1          mipi_cfg_set( &host_hstx_timer      ,DSI_HOST_HTX_TO_COUNT);
+ 597   1          mipi_cfg_set( &host_lpdt_timer      ,DSI_HOST_LRX_H_TO_COUNT);
+ 598   1          mipi_cfg_set( &host_bta_timer       ,DSI_HOST_BTA_H_TO_COUNT);
+ 599   1          mipi_cfg_set( &host_twakeup         ,DSI_HOST_TWAKEUP);
+ 600   1          mipi_cfg_set( &host_line_size       ,DSI_HOST_PIXEL_PAYLOAD_SIZE);
+ 601   1          mipi_cfg_set( &host_fifo_level      ,DSI_HOST_PIXEL_FIFO_SEND_LEVEL);
+ 602   1          mipi_cfg_set( &host_color_code      ,DSI_HOST_INTERFACE_COLOR_CODING);
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 11  
 
- 586   1        else if((DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION)>0)
- 587   1        {
- 588   2          dat_s = dat_s - dat_s/(DSI_PERIPH_X_RESOLUTION/(DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION));
-*** WARNING C222 IN LINE 588 OF main.c: div by zero
- 589   2          dat_e = dat_e - dat_e/(DSI_PERIPH_X_RESOLUTION/(DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION));
-*** WARNING C222 IN LINE 589 OF main.c: div by zero
- 590   2          
- 591   2          cfg_data_2a[1] = (U8)(dat_s>>8);
- 592   2          cfg_data_2a[2] = (U8)dat_s;
- 593   2          cfg_data_2a[3] = (U8)(dat_e>>8);
- 594   2          cfg_data_2a[4] = (U8)dat_e;
- 595   2        }
- 596   1        else if((DSI_PERIPH_X_RESOLUTION-DSI_HOST_X_RESOLUTION)<0)
- 597   1        {
- 598   2          dat_s = dat_s + dat_s/(DSI_HOST_X_RESOLUTION/(DSI_HOST_X_RESOLUTION-DSI_PERIPH_X_RESOLUTION));
-*** WARNING C222 IN LINE 598 OF main.c: div by zero
- 599   2          dat_e = dat_e + dat_e/(DSI_HOST_X_RESOLUTION/(DSI_HOST_X_RESOLUTION-DSI_PERIPH_X_RESOLUTION));
-*** WARNING C222 IN LINE 599 OF main.c: div by zero
- 600   2          
- 601   2          cfg_data_2a[1] = (U8)(dat_s>>8);
- 602   2          cfg_data_2a[2] = (U8)dat_s;
- 603   2          cfg_data_2a[3] = (U8)(dat_e>>8);
- 604   2          cfg_data_2a[4] = (U8)dat_e;
- 605   2        }
- 606   1          
- 607   1      }
- 608          
- 609          
- 610          
- 611          
- 612          void wd_2b_set(U8 dats_h,U8 dats_l,U8 date_h,U8 date_l)
- 613          {
- 614   1        U16 dat_s,dat_e;
- 615   1        dat_s = (((U16)dats_h)<<8)+(U16)dats_l;
- 616   1        dat_e = (((U16)date_h)<<8)+(U16)date_l;
- 617   1        if((DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION)==0)
- 618   1        {
- 619   2          cfg_data_2b[1] = dats_h;
- 620   2          cfg_data_2b[2] = dats_l;
- 621   2          cfg_data_2b[3] = date_h;
- 622   2          cfg_data_2b[4] = date_l;
- 623   2        }
- 624   1        else if((DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION)>0)
- 625   1        {
- 626   2          dat_s = dat_s - dat_s/(DSI_PERIPH_Y_RESOLUTION/(DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION));
- 627   2          dat_e = dat_e - dat_e/(DSI_PERIPH_Y_RESOLUTION/(DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION));
- 628   2          
- 629   2          cfg_data_2b[1] = (U8)(dat_s>>8);
- 630   2          cfg_data_2b[2] = (U8)dat_s;
- 631   2          cfg_data_2b[3] = (U8)(dat_e>>8);
- 632   2          cfg_data_2b[4] = (U8)dat_e;
- 633   2        }
- 634   1        else if((DSI_PERIPH_Y_RESOLUTION-DSI_HOST_Y_RESOLUTION)<0)
- 635   1        {
- 636   2          dat_s = dat_s + dat_s/(DSI_HOST_Y_RESOLUTION/(DSI_HOST_Y_RESOLUTION-DSI_PERIPH_Y_RESOLUTION));
- 637   2          dat_e = dat_e + dat_e/(DSI_HOST_Y_RESOLUTION/(DSI_HOST_Y_RESOLUTION-DSI_PERIPH_Y_RESOLUTION));
- 638   2          
- 639   2          cfg_data_2b[1] = (U8)(dat_s>>8);
- 640   2          cfg_data_2b[2] = (U8)dat_s;
- 641   2          cfg_data_2b[3] = (U8)(dat_e>>8);
- 642   2          cfg_data_2b[4] = (U8)dat_e;
- 643   2        }
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 12  
+ 603   1          mipi_cfg_set( &host_rbg_fmt         ,DSI_HOST_PIXEL_FORMAT);
+ 604   1          mipi_cfg_set( &host_vs_pol          ,DSI_HOST_VSYNC_POLARITY);
+ 605   1          mipi_cfg_set( &host_hs_pol          ,DSI_HOST_HSYNC_POLARITY);
+ 606   1          mipi_cfg_set( &host_video_mode      ,DSI_HOST_VIDEO_MODE);
+ 607   1          mipi_cfg_set( &host_hfp             ,DSI_HOST_HFP);
+ 608   1          mipi_cfg_set( &host_hbp             ,DSI_HOST_HBP);
+ 609   1          mipi_cfg_set( &host_hsa             ,DSI_HOST_HSA);
+ 610   1          mipi_cfg_set( &host_en_mult_pkts    ,DSI_HOST_ENABLE_MULT_PKTS);
+ 611   1          mipi_cfg_set( &host_vbp             ,DSI_HOST_VBP);
+ 612   1          mipi_cfg_set( &host_vfp             ,DSI_HOST_VFP);
+ 613   1          mipi_cfg_set( &host_bllp_mode       ,DSI_HOST_BLLP_MODE);
+ 614   1          mipi_cfg_set( &host_en_null_pkt     ,DSI_HOST_USE_NULL_PKT_BLLP);
+ 615   1          mipi_cfg_set( &host_vactive         ,DSI_HOST_VACTIVE);
+ 616   1          mipi_cfg_set( &host_vc              ,DSI_HOST_VC);
+ 617   1          mipi_cfg_set( &host_phy_d_pre       ,DSI_HOST_DPHY_HS_DATA_PRE);
+ 618   1          mipi_cfg_set( &host_phy_clk_pre     ,DSI_HOST_DPHY_HS_CLOCK_PRE);
+ 619   1          mipi_cfg_set( &host_phy_d_zero      ,DSI_HOST_DPHY_HS_DATA_ZERO);
+ 620   1          mipi_cfg_set( &host_phy_clk_zero    ,DSI_HOST_DPHY_HS_CLOCK_ZERO);
+ 621   1          mipi_cfg_set( &host_phy_d_trail     ,DSI_HOST_DPHY_HS_CLOCK_TRAIL);
+ 622   1          mipi_cfg_set( &host_phy_clk_trail   ,DSI_HOST_DPHY_HS_CLOCK_TRAIL);
+ 623   1          mipi_cfg_set( &host_pll_cn          ,GET_CN_FACTOR());
+ 624   1          mipi_cfg_set( &host_pll_cm          ,GET_CM_FACTOR());
+ 625   1          mipi_cfg_set( &host_pll_co          ,GET_CO_FACTOR());
+ 626   1      
+ 627   1          mipi_sel=1;  //mipi1
+ 628   1          mipi_cfg_set(  &periph_lanes      ,DSI_PERIPHERAL_NUM_LANES-1   );
+ 629   1          mipi_cfg_set(  &periph_vc         ,DSI_PERIPHERAL_VC  );
+ 630   1          mipi_cfg_set(  &periph_vc_check   ,DSI_PERIPHERAL_DISABLE_VC_CHECK  );
+ 631   1          mipi_cfg_set(  &periph_ecc_err    ,DSI_PERIPHERAL_REPRESSED_AFTER_UNRECOVER_ECC_ERR );
+ 632   1          mipi_cfg_set(  &periph_hrx        ,DSI_PERIPHERAL_HRX_TO_COUNT  );
+ 633   1          mipi_cfg_set(  &periph_ltx        ,DSI_PERIPHERAL_LTX_P_TO_COUNT  );
+ 634   1          mipi_cfg_set(  &periph_bta        ,DSI_PERIPHERAL_BTA_P_TO_COUNT  );
+ 635   1          mipi_cfg_set(  &periph_crc_err    ,DSI_PERIPHERAL_CRC_ERR_ASSERTS_INVALID_TX_LENGTH_ERR );
+ 636   1          mipi_cfg_set(  &periph_bta_err    ,DSI_PERIPHERAL_ALLOW_READBACK_AFTER_MISSING_BTA_ERR  );
+ 637   1          mipi_cfg_set(  &periph_dis_rlpdt  ,DSI_PERIPHERAL_DISABLE_RLPDT_CRC );
+ 638   1          mipi_cfg_set(  &periph_dis_eotp   ,DSI_PERIPHERAL_DISABLE_EOTP  );
+ 639   1          mipi_cfg_set(  &periph_clr_status ,DSI_PERIPHERAL_ENABLE_AUTOCLEAR_STATUS_REG );
+ 640   1          mipi_cfg_set(  &periph_m_settle   ,DSI_PERIPHERAL_THS_SETTLE  );
+ 641   1          mipi_cfg_set(  &periph_mc_settle  ,DSI_PERIPHERAL_TCLK_SETTLE ); 
+ 642   1      
+ 643   1          func_set=1;
+ 644   1          fiforst();
+ 645   1          rstn_mipi=1;//mipi dsi controller reset
+ 646   1          while(!tx_dphy_rdy);//wait mipi pll lock
+ 647   1          delay_1ms(1);
+ 648   1          panel_init();
+ 649   1          delay_1ms(1);
+ 650   1          hs_enter(0);
+ 651   1      
+ 652   1      
+ 653   1          //cmd_fill_frame();
+ 654   1          reset_dpi_n=1;  //start to recive vediodata
+ 655   1          while(1){
+ 656   2            if(wd_rdy==1)
+ 657   2            {
+ 658   3                busy = 1;
+ 659   3                reset_dpi_n=0;
+ 660   3                wd_2a_set(wd_2a_dats_h,wd_2a_dats_l,wd_2a_date_h,wd_2a_date_l);
+ 661   3                wd_2b_set(wd_2b_dats_h,wd_2b_dats_l,wd_2b_date_h,wd_2b_date_l);
+ 662   3      
+ 663   3                mydelay(1);
+ 664   3                mipi_lp_cmd_send(0x39,5,cfg_data_2a,1);
+C51 COMPILER V9.60.7.0   MAIN                                                              01/18/2024 23:09:53 PAGE 12  
 
- 644   1          
- 645   1      }
- 646          /***************************************************************/
- 647          
- 648          void main(void)
- 649          
- 650          { 
- 651   1          U32 a;
- 652   1          U8 b=0;
- 653   1          U8 cmd_d[8];
- 654   1          UINT16 u16i;
- 655   1          CKCON=0x55;
- 656   1          D_PAGESEL= 0x04;
- 657   1      
- 658   1          busy=0;
- 659   1          wd_rdy=0;
- 660   1          EAL=1;
- 661   1          EX0=0;
- 662   1          EX1=0;
- 663   1          P1=0;
- 664   1          P0_5 = 1;
- 665   1          pstart=0;
- 666   1          reset_dpi_n=0;
- 667   1          rstn_mipi=0;
- 668   1          //rstn_lcd=1;
- 669   1          rstn_lcd=0;
- 670   1          mipi_sel=0; //mipi2
- 671   1          mipi_cfg_set( &host_num_lanes       ,DSI_HOST_NUM_LANES-1);
- 672   1          mipi_cfg_set( &host_noctn_clk       ,DSI_HOST_NONCONTINUOUS_CLK);
- 673   1          mipi_cfg_set( &host_t_pre           ,DSI_HOST_T_PRE);
- 674   1          mipi_cfg_set( &host_t_post          ,DSI_HOST_T_POST);
- 675   1          mipi_cfg_set( &host_tx_gap          ,DSI_HOST_TX_GAP);
- 676   1          mipi_cfg_set( &host_auto_eotp       ,DSI_HOST_AUTOINSERT_EOTP);
- 677   1          mipi_cfg_set( &host_ext_cmd         ,DSI_HOST_EXTRA_CMDS_AFTER_EOTP);
- 678   1          mipi_cfg_set( &host_hstx_timer      ,DSI_HOST_HTX_TO_COUNT);
- 679   1          mipi_cfg_set( &host_lpdt_timer      ,DSI_HOST_LRX_H_TO_COUNT);
- 680   1          mipi_cfg_set( &host_bta_timer       ,DSI_HOST_BTA_H_TO_COUNT);
- 681   1          mipi_cfg_set( &host_twakeup         ,DSI_HOST_TWAKEUP);
- 682   1          mipi_cfg_set( &host_line_size       ,DSI_HOST_PIXEL_PAYLOAD_SIZE);
- 683   1          mipi_cfg_set( &host_fifo_level      ,DSI_HOST_PIXEL_FIFO_SEND_LEVEL);
- 684   1          mipi_cfg_set( &host_color_code      ,DSI_HOST_INTERFACE_COLOR_CODING);
- 685   1          mipi_cfg_set( &host_rbg_fmt         ,DSI_HOST_PIXEL_FORMAT);
- 686   1          mipi_cfg_set( &host_vs_pol          ,DSI_HOST_VSYNC_POLARITY);
- 687   1          mipi_cfg_set( &host_hs_pol          ,DSI_HOST_HSYNC_POLARITY);
- 688   1          mipi_cfg_set( &host_video_mode      ,DSI_HOST_VIDEO_MODE);
- 689   1          mipi_cfg_set( &host_hfp             ,DSI_HOST_HFP);
- 690   1          mipi_cfg_set( &host_hbp             ,DSI_HOST_HBP);
- 691   1          mipi_cfg_set( &host_hsa             ,DSI_HOST_HSA);
- 692   1          mipi_cfg_set( &host_en_mult_pkts    ,DSI_HOST_ENABLE_MULT_PKTS);
- 693   1          mipi_cfg_set( &host_vbp             ,DSI_HOST_VBP);
- 694   1          mipi_cfg_set( &host_vfp             ,DSI_HOST_VFP);
- 695   1          mipi_cfg_set( &host_bllp_mode       ,DSI_HOST_BLLP_MODE);
- 696   1          mipi_cfg_set( &host_en_null_pkt     ,DSI_HOST_USE_NULL_PKT_BLLP);
- 697   1          mipi_cfg_set( &host_vactive         ,DSI_HOST_VACTIVE);
- 698   1          mipi_cfg_set( &host_vc              ,DSI_HOST_VC);
- 699   1          mipi_cfg_set( &host_phy_d_pre       ,DSI_HOST_DPHY_HS_DATA_PRE);
- 700   1          mipi_cfg_set( &host_phy_clk_pre     ,DSI_HOST_DPHY_HS_CLOCK_PRE);
- 701   1          mipi_cfg_set( &host_phy_d_zero      ,DSI_HOST_DPHY_HS_DATA_ZERO);
- 702   1          mipi_cfg_set( &host_phy_clk_zero    ,DSI_HOST_DPHY_HS_CLOCK_ZERO);
- 703   1          mipi_cfg_set( &host_phy_d_trail     ,DSI_HOST_DPHY_HS_CLOCK_TRAIL);
- 704   1          mipi_cfg_set( &host_phy_clk_trail   ,DSI_HOST_DPHY_HS_CLOCK_TRAIL);
- 705   1          mipi_cfg_set( &host_pll_cn          ,GET_CN_FACTOR());
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 13  
-
- 706   1          mipi_cfg_set( &host_pll_cm          ,GET_CM_FACTOR());
- 707   1          mipi_cfg_set( &host_pll_co          ,GET_CO_FACTOR());
- 708   1      
- 709   1          mipi_sel=1;  //mipi1
- 710   1          mipi_cfg_set(  &periph_lanes      ,DSI_PERIPHERAL_NUM_LANES-1   );
- 711   1          mipi_cfg_set(  &periph_vc         ,DSI_PERIPHERAL_VC  );
- 712   1          mipi_cfg_set(  &periph_vc_check   ,DSI_PERIPHERAL_DISABLE_VC_CHECK  );
- 713   1          mipi_cfg_set(  &periph_ecc_err    ,DSI_PERIPHERAL_REPRESSED_AFTER_UNRECOVER_ECC_ERR );
- 714   1          mipi_cfg_set(  &periph_hrx        ,DSI_PERIPHERAL_HRX_TO_COUNT  );
- 715   1          mipi_cfg_set(  &periph_ltx        ,DSI_PERIPHERAL_LTX_P_TO_COUNT  );
- 716   1          mipi_cfg_set(  &periph_bta        ,DSI_PERIPHERAL_BTA_P_TO_COUNT  );
- 717   1          mipi_cfg_set(  &periph_crc_err    ,DSI_PERIPHERAL_CRC_ERR_ASSERTS_INVALID_TX_LENGTH_ERR );
- 718   1          mipi_cfg_set(  &periph_bta_err    ,DSI_PERIPHERAL_ALLOW_READBACK_AFTER_MISSING_BTA_ERR  );
- 719   1          mipi_cfg_set(  &periph_dis_rlpdt  ,DSI_PERIPHERAL_DISABLE_RLPDT_CRC );
- 720   1          mipi_cfg_set(  &periph_dis_eotp   ,DSI_PERIPHERAL_DISABLE_EOTP  );
- 721   1          mipi_cfg_set(  &periph_clr_status ,DSI_PERIPHERAL_ENABLE_AUTOCLEAR_STATUS_REG );
- 722   1          mipi_cfg_set(  &periph_m_settle   ,DSI_PERIPHERAL_THS_SETTLE  );
- 723   1          mipi_cfg_set(  &periph_mc_settle  ,DSI_PERIPHERAL_TCLK_SETTLE ); 
- 724   1      
- 725   1          func_set=1;
- 726   1          fiforst();
- 727   1          rstn_mipi=1;//mipi dsi controller reset
- 728   1          while(!tx_dphy_rdy);//wait mipi pll lock
- 729   1          delay_1ms(1);
- 730   1          panel_init();
- 731   1          delay_1ms(1);
- 732   1          hs_enter(0);
- 733   1      
- 734   1      
- 735   1          //cmd_fill_frame();
- 736   1          reset_dpi_n=1;  //start to recive vediodata
- 737   1          while(1){
- 738   2            if(wd_rdy==1)
- 739   2            {
- 740   3                busy = 1;
- 741   3                reset_dpi_n=0;
- 742   3                wd_2a_set(wd_2a_dats_h,wd_2a_dats_l,wd_2a_date_h,wd_2a_date_l);
- 743   3                wd_2b_set(wd_2b_dats_h,wd_2b_dats_l,wd_2b_date_h,wd_2b_date_l);
- 744   3      
- 745   3                mydelay(1);
- 746   3                mipi_lp_cmd_send(0x39,5,cfg_data_2a,1);
- 747   3                mipi_lp_cmd_send(0x39,5,cfg_data_2b,1);
- 748   3                mydelay(1);
- 749   3                busy = 0;
- 750   3                while(wd_rdy!=0);
- 751   3                reset_dpi_n=1;
- 752   3            }
- 753   2          }
- 754   1      
- 755   1      }
-*** WARNING C280 IN LINE 651 OF main.c: 'a': unreferenced local variable
-*** WARNING C280 IN LINE 653 OF main.c: 'cmd_d': unreferenced local variable
-*** WARNING C280 IN LINE 654 OF main.c: 'u16i': unreferenced local variable
- 756          
- 757          
- 758          
- 759          
- 760          
- 761          
- 762          
- 763          
- 764          
-C51 COMPILER V9.54   MAIN                                                                  09/19/2019 17:11:12 PAGE 14  
-
- 765          
- 766          
- 767          
- 768          
- 769          
- 770          
- 771          
- 772          
- 773          
-*** WARNING C294 IN LINE 588 OF main.c: unreachable code
-*** WARNING C294 IN LINE 598 OF main.c: unreachable code
-*** WARNING C294 IN LINE 619 OF main.c: unreachable code
-*** WARNING C294 IN LINE 636 OF main.c: unreachable code
+ 665   3                mipi_lp_cmd_send(0x39,5,cfg_data_2b,1);
+ 666   3                mydelay(1);
+ 667   3                busy = 0;
+ 668   3                while(wd_rdy!=0);
+ 669   3                reset_dpi_n=1;
+ 670   3            }
+ 671   2          }
+ 672   1      
+ 673   1      }
+*** WARNING C280 IN LINE 569 OF main.c: 'a': unreferenced local variable
+*** WARNING C280 IN LINE 571 OF main.c: 'cmd_d': unreferenced local variable
+*** WARNING C280 IN LINE 572 OF main.c: 'u16i': unreferenced local variable
+ 674          
+ 675          
+ 676          
+ 677          
+ 678          
+ 679          
+ 680          
+ 681          
+ 682          
+ 683          
+ 684          
+ 685          
+ 686          
+ 687          
+ 688          
+ 689          
+ 690          
+ 691          
+*** WARNING C294 IN LINE 506 OF main.c: unreachable code
+*** WARNING C294 IN LINE 516 OF main.c: unreachable code
+*** WARNING C294 IN LINE 537 OF main.c: unreachable code
+*** WARNING C294 IN LINE 554 OF main.c: unreachable code
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =   3342    ----
+   CODE SIZE        =   2437    ----
    CONSTANT SIZE    =   ----    ----
-   XDATA SIZE       =   1827      73
+   XDATA SIZE       =   1167      73
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----
    IDATA SIZE       =   ----    ----

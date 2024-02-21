@@ -495,15 +495,15 @@ INFO: [Router 05011]: Generating outputs/mipi_rx_pinf_tx_pinf_1080.apa file...
 INFO: [Router 08034]: Dumping .rpt format output data Succeeded.
 Router completed successfully. See outputs/router.log for detailed information
 Router started at: 2023-12-06 22:54:19, Router finished at: 2023-12-06 22:54:48, Router total runtime:28.741s
-================================Bitgen start at: 2023-12-06 22:54:48================================
+================================Bitgen start at: 2024-01-20 22:45:48================================
 command: abcgen "-p" "outputs/mipi_rx_pinf_tx_pinf_1080.apa" "-r" "outputs/mipi_rx_pinf_tx_pinf_1080.ara" "-aoc" "mipi_rx_pinf_tx_pinf_1080.aoc" "-abc" "outputs/mipi_rx_pinf_tx_pinf_1080.abc" "-iostatus" "x"
-Emb data split: started at: 2023-12-06 22:54:49
-Emb data split: finished at: 2023-12-06 22:54:49
+Emb data split: started at: 2024-01-20 22:45:48
+Emb data split: finished at: 2024-01-20 22:45:48
 -----------------------------------------------------------------------------
 Fuxi abcgen Tool Version fx2023.1 win64 Build 20230827-19:04:31
 Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
 -----------------------------------------------------------------------------
-Run started on Wednesday, 06 December 23, at 22:54:49
+Run started on Saturday, 20 January 24, at 22:45:48
 INFO: [Bitgen 00053]: Input APA file: outputs/mipi_rx_pinf_tx_pinf_1080.apa.
 INFO: [Bitgen 00054]: Input ARA file: outputs/mipi_rx_pinf_tx_pinf_1080.ara.
 INFO: [Bitgen 00055]: Input AOC file: mipi_rx_pinf_tx_pinf_1080.aoc.
@@ -527,13 +527,13 @@ INFO: [Bitgen 00050]: Processing IO constraintion finished.
 INFO: [Bitgen 00052]: Output ABC file to: outputs/mipi_rx_pinf_tx_pinf_1080.abc.
 Fuxi fx2023.1 win64 abcgen was successful!
 0 warning(s), 0 error(s).
-CPU Time: 1.031 seconds, Peak Memory: 96 MB
+CPU Time: 1.000 seconds, Peak Memory: 96 MB
 command: acfgen "-iostatus" "x" "-abc" "outputs/mipi_rx_pinf_tx_pinf_1080.abc" "-sf" "outputs/mipi_rx_pinf_tx_pinf_1080_spi.acf" "-bin" "outputs/mipi_rx_pinf_tx_pinf_1080_bin.acf" "-parallel" "2" "-lines" "2" "-ipcmd" "" "-fcfg" "1"
 -----------------------------------------------------------------------------
 Fuxi acfgen Tool Version fx2023.1 win64 Build 20230827-19:04:31
 Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
 -----------------------------------------------------------------------------
-Run started on Wednesday, 06 December 23, at 22:54:50
+Run started on Saturday, 20 January 24, at 22:45:49
 INFO: [Bitgen 00069]: Parsing ABC file:outputs/mipi_rx_pinf_tx_pinf_1080.abc ...
 INFO: [Bitgen 00070]: Device name: H1D03N3W72C7.
 INFO: [Bitgen 00071]: Parsing ABC file finished.
@@ -541,11 +541,11 @@ INFO: [Bitgen 00025]: Loading DeviceDB ...
 INFO: [Bitgen 00026]: Loading DeviceDB finished.
 INFO: [Bitgen 00082]: Loading memory map C:/Software/Fuxi/data/catalog/H6/H6.mmp ...
 INFO: [Bitgen 00083]: Loading memory map finished.
-INFO: [Bitgen 00076]: Loading initialization data file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
-INFO: [Bitgen 00072]: Parsing HEX file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
+INFO: [Bitgen 00076]: Loading initialization data file: C:\Projects\Hercules-FPGA\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
+INFO: [Bitgen 00072]: Parsing HEX file: C:\Projects\Hercules-FPGA\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\51_rx_pinf_tx_pinf_1080_reverse\Objects\mipi_rx_pinf_tx_pinf_1080.hex.
 INFO: [Bitgen 00074]: Parsing HEX file finished.
 INFO: [Bitgen 00077]: Loading initialization data file finished.
-INFO: [Bitgen 00076]: Loading initialization data file: C:\Projects\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\mipi_rx_pinf_tx_pinf_1080_reverse\src\emb_2160_1080_to_1440_720.dat.
+INFO: [Bitgen 00076]: Loading initialization data file: C:\Projects\Hercules-FPGA\hercules-FPGA\H1D03_Ref_Design\H1D03_Ref_Design\mipi_video_mode\mipi_rx_pinf_tx_pinf_1080_reverse\src\emb_2160_1080_to_1440_720.dat.
 INFO: [Bitgen 00079]: The initialization data width: 32.
 total line: 2049
 INFO: [Bitgen 00077]: Loading initialization data file finished.
@@ -563,6 +563,9 @@ INFO: [Bitgen 00089]: Change flash mode to Dual SPI mode according to option -li
 INFO: [Bitgen 00063]: Output SPI bitstream file to: outputs/mipi_rx_pinf_tx_pinf_1080_spi.acf.
 Fuxi fx2023.1 win64 acfgen was successful!
 0 warning(s), 0 error(s).
-CPU Time: 1.344 seconds, Peak Memory: 82 MB
-Bitgen started at: 2023-12-06 22:54:48, Bitgen finished at: 2023-12-06 22:54:52, Bitgen total runtime:3.447s
+CPU Time: 1.281 seconds, Peak Memory: 83 MB
+Bitgen started at: 2024-01-20 22:45:48, Bitgen finished at: 2024-01-20 22:45:51, Bitgen total runtime:2.834s
 ================== Bitstream generation was successful. 0 warning(s), 0 error(s) ===================
+Start to open file C:/Projects/Hercules-FPGA/hercules-FPGA/H1D03_Ref_Design/H1D03_Ref_Design/mipi_video_mode/mipi_rx_pinf_tx_pinf_1080_reverse/mipi_rx_pinf_tx_pinf_1080.aoc.
+Loading AOC...
+Loading AOC finished.

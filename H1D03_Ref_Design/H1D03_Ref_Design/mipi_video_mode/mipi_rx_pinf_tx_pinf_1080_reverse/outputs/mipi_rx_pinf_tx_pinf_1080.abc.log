@@ -2,7 +2,7 @@
 Fuxi abcgen Tool Version fx2023.1 win64 Build 20230827-19:04:31
 Copyright (C) 2017-2023 Hercules Microelectronics Co., Ltd. All rights reserved.
 -----------------------------------------------------------------------------
-Run started on Wednesday, 06 December 23, at 22:54:49
+Run started on Saturday, 20 January 24, at 22:45:48
 INFO: 00053: Input APA file: outputs/mipi_rx_pinf_tx_pinf_1080.apa.
 INFO: 00054: Input ARA file: outputs/mipi_rx_pinf_tx_pinf_1080.ara.
 INFO: 00055: Input AOC file: mipi_rx_pinf_tx_pinf_1080.aoc.
@@ -25,4 +25,4 @@ INFO: 00050: Processing IO constraintion finished.
 INFO: 00052: Output ABC file to: outputs/mipi_rx_pinf_tx_pinf_1080.abc.
 Fuxi fx2023.1 win64 abcgen was successful!
 0 warning(s), 0 error(s).
-CPU Time: 1.031 seconds, Peak Memory: 96 MB
+CPU Time: 1.000 seconds, Peak Memory: 96 MB

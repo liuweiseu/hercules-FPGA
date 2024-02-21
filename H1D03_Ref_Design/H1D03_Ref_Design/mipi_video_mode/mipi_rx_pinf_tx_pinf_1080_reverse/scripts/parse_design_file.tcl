@@ -16,5 +16,5 @@ if {[info exists vhdl_design_files]} {
 if {[info exists verilog_design_files]} {
     parse_design -work work -format verilog ${verilog_design_files} -incdir ${include_path} -v ${bbox_lib} -print_message
 }
-dump_design_info -work work -format "verilog" -dump "C:/Projects/hercules-FPGA/H1D03_Ref_Design/H1D03_Ref_Design/mipi_video_mode/mipi_rx_pinf_tx_pinf_1080_reverse/outputs/mipi_rx_pinf_tx_pinf_1080_design_info.xml" -top "mipi_rx_pinf_tx_pinf_1080"
+dump_design_info -work work -format "verilog" -dump "C:/Projects/Hercules-FPGA/hercules-FPGA/H1D03_Ref_Design/H1D03_Ref_Design/mipi_video_mode/mipi_rx_pinf_tx_pinf_1080_reverse/outputs/mipi_rx_pinf_tx_pinf_1080_design_info.xml" -top "mipi_rx_pinf_tx_pinf_1080"
 exit 0
